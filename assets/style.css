@@ -279,9 +279,9 @@ body {
 
 .home-page .home-promo-banner-top,
 .home-page .home-promo-banner-top-1 {  
-    width: 200px;  
-    height: 52px;  
-    border-radius: 8px;
+    width: 280px;  
+    height: 70px;  
+    border-radius: 12px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.08);
     display: flex; 
     align-items: center;
@@ -333,17 +333,17 @@ body {
     font-size: 0.9rem;
 }
 
-.home-page .promo-subtitle {
-    color: var(--text-light);
-    font-size: 0.75rem;
-}
-
 .home-page .service-grid {
-    padding: 1.25rem 1rem;
-    background-color: #ffffff;
-    margin: 1rem;  
-    border-radius: 12px;
+    padding: calc(1.25rem + 20px) 1rem 1.25rem 1rem;
+    background-color: #ffffff; 
+    margin: -20px 0rem 0rem 0rem; 
+    border-top-left-radius: 20px;  
+    border-top-right-radius: 20px;  
+    border-bottom-left-radius: 12px; 
+    border-bottom-right-radius: 12px; 
     box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    position: relative;  
+    z-index: 1; 
 }
 
 .home-page .service-item {
