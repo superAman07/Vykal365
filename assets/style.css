@@ -336,9 +336,9 @@ body {
 .home-page .service-grid {
     padding: calc(1.25rem + 20px) 1rem 1.25rem 1rem;
     background-color: #ffffff; 
-    margin: -20px 0rem 0rem 0rem; 
-    border-top-left-radius: 20px;  
-    border-top-right-radius: 20px;  
+    margin: -15px 0rem 0rem 0rem; 
+    border-top-left-radius: 12px;  
+    border-top-right-radius: 12px;  
     border-bottom-left-radius: 12px; 
     border-bottom-right-radius: 12px; 
     box-shadow: 0 3px 10px rgba(0,0,0,0.07);
