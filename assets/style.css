@@ -341,13 +341,25 @@ body {
     border-top-right-radius: 12px;  
     border-bottom-left-radius: 12px; 
     border-bottom-right-radius: 12px; 
-    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
     position: relative;  
     z-index: 1; 
 }
 
-.home-page .service-item {
-    background: #f7f7f7;  
+.home-page .service-grid .col-4 {
+    padding: 0.75rem 0.5rem;  
+    border-bottom: 1px solid var(--border-color);
+}
+ 
+.home-page .service-grid .col-4:not(:nth-child(3n)) {
+    border-right: 1px solid var(--border-color);
+}
+
+.home-page .service-grid .col-4:nth-child(n+4):nth-child(-n+6) {  
+    border-bottom: none;
+}
+
+
+.home-page .service-item { 
     border-radius: 12px;  
     width: 65px;
     height: 65px;
@@ -367,7 +379,7 @@ body {
     font-size: 0.7rem; 
     text-align: center;
     color: var(--text-dark);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .home-page .promo-card {
