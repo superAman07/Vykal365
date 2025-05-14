@@ -3,7 +3,7 @@
     --vykal-blue: #3671c7; 
     --text-dark: #333333;
     --text-light: #555555;
-    --bg-light-grey: #f8f9fa;
+    --bg-light-grey: #ffff;
     --border-color: #eeeeee;
 }
 
@@ -235,6 +235,7 @@ body {
 
 .home-page .home-header-content {
     margin-bottom: 1.25rem; 
+    height: 45px; 
 }
 
 .home-page .location-btn {
