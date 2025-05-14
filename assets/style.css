@@ -384,47 +384,26 @@ body {
 
 .home-page .promo-card {
     border-radius: 12px;
-    padding: 1rem;
-    margin: 0 1rem 1rem 1rem;
+    padding: 0;
+    margin: 0;
     position: relative;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0,0,0,0.07);
 }
 
-.home-page .promo-card-title {  
-    font-weight: 600;
-    font-size: 0.95rem;  
-    margin-bottom: 0.25rem;
+.home-page .promo-card-full-image {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;  
+    display: block;
+    border-radius: 12px; 
 }
-.home-page .promo-card-subtitle {  
-    font-size: 0.8rem;
-    color: var(--text-light);
-    margin-bottom: 0.75rem;
-}
-
-.home-page .promo-card.orange {
-    background: #FFF0E6;  
-}
-.home-page .promo-card.orange .promo-card-title { color: var(--theme-color); }
-.home-page .promo-card.orange .register-btn {
-    background-color: var(--theme-color);
-    font-size: 0.7rem;
-    padding: 0.4rem 0.9rem;
-    border-radius: 20px;
-    font-weight: 500;
-}
-.home-page .promo-image-scooter {
-    width: 90px;  
-    height: auto;
-    position: absolute;
-    right: 0.5rem;
-    bottom: 0rem; 
-}
+ 
 
 .home-page .promo-card.blue {
     background: #E9F5FF;  
 }
-.home-page .promo-card.blue .promo-card-title { color: #005A9E; } 
+
 .home-page .promo-card.blue .car-prime-badge {
     background: rgba(0, 90, 158, 0.1);  
     color: #005A9E;
