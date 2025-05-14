@@ -408,6 +408,24 @@ body {
     background: #E9F5FF;  
 }
 
+.home-page .promo-cards-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+    -ms-overflow-style: none;  
+}
+
+.home-page .promo-cards-scroll-container::-webkit-scrollbar {
+    display: none;  
+}
+
+.home-page .promo-cards-scroll-container .col-6 { 
+    flex: 0 0 auto;   
+    width: 160px;        
+    height: 220px;      
+}
+
 .advantage-header {
     display: flex;
     align-items: center;
