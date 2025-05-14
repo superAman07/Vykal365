@@ -470,17 +470,22 @@ body {
   white-space: nowrap;
 }
 
-.article-cards-scroll-container {
+.article-cards-container {
     display: flex;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    gap: 1rem;  
-    padding: 0.5rem 0.25rem 1rem 0.25rem;  
-    -ms-overflow-style: none; 
+    overflow-x: auto;  
+    width: 100%;
+    height:auto;
+    top: 3.82px;
+    left: 27px;
 }
 
-.article-cards-scroll-container::-webkit-scrollbar {
+.article-cards-container::-webkit-scrollbar {
     display: none;
+}
+.card-large-article{
+  width: 220.54px;
+  height: 278px;
+  border-radius: 7px; 
 }
 
 .article-card {
@@ -493,24 +498,35 @@ body {
     border: 1px solid rgba(0,0,0,0.05); 
 }
 
-.article-card-large {
-    padding-top: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
-    width: 230px; 
+.article-card-large { 
+    width: 211.1px;
+    height: 257.57px;  
+    top: 3.43px;
+    left: 4.29px;
+    padding: 3px;
 }
 
-.article-card-small {
-    padding-top: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
-    width: 220px;  
+.card-small-article{
+  width: auto;
+    height: auto;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.article-card-small { 
+    width: 127.86px;
+    height: auto;
+    min-height: 278px; 
+}
+.article-card-small .article-card-image-container {
+  height: 109px;
 }
 
 .article-card-image-container {
     position: relative;
     width: 100%;
-    height: 150px; 
+    height: 100%; 
     overflow: hidden;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -519,9 +535,15 @@ body {
 }
 
 .article-card-image {
+    width: 211.1px;
+    height: 125.27px;
+    object-fit: cover;
+}
+.article-card-image-small {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block; 
 }
 
 .article-card-image-container::after {
@@ -543,14 +565,22 @@ body {
     flex-grow: 1;
 }
 .article-card-title {
-    font-size: 1.05rem;
+    font-size: 12px;
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 0.5rem;
     line-height: 1.35;
 }
+.article-card-title-small {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    line-height: 114.99999999999999%;
+    letter-spacing: 0%;
+}
 .article-card-text {
-    font-size: 0.85rem;
+    font-size: 8px;
     color: #6c757d;
     margin-bottom: 1.25rem;
     flex-grow: 1;
@@ -558,17 +588,23 @@ body {
 }
 
 .article-card-link {
-    font-size: 0.8rem;
+    font-size: 7px;
+    width: 72.35px;
+    height: 18.18px;
+    top: 242.82px;
+    left: 11.37px;
+    padding: 7.61px;  
+    gap: 7.61px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-radius: 15.22px;
     font-weight: 500;
     color: var(--theme-color);
     text-decoration: none;
     background-color: #ffff;
-    border: 1px solid var(--theme-color);
-    border-radius: 20px;
-    padding: 0.4rem 1rem;
+    border: 0.38px solid var(--theme-color);
     display: inline-flex;
-    align-items: center;
-    align-self: flex-start;
+    align-items: center; 
     transition: all 0.2s ease;
 }
 
