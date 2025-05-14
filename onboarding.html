@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Onboarding — Vykal 365</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="vh-100">
+
+  <div class="mobile-container">
+    <div class="d-flex align-items-center mb-4 mt-4">  
+      <img src="assets/vykal-logo.png" alt="Logo" width="231.26" height="60">   
+    </div>
+
+    <div class="d-flex text-muted tagline-text mb-2 mt-2">
+      <span id="tag1">Quick</span>
+      <span class="mx-4 text-warning-custom">|</span>
+      <span id="tag2">Affordable</span>
+      <span class="mx-4 text-warning-custom">|</span>
+      <span id="tag3">Trusted</span>
+    </div>
+
+    <div class="position-relative mb-4 mt-4 car-img-container">
+      <div class="position-absolute w-100 h-100 rounded-circle bg-light"></div>
+      <img id="car-img" src="" alt="Car" class="position-absolute top-50 start-50 translate-middle car-img-main w-100 h-100">
+    </div>
+
+    <div class="text-center mb-3 mt-3">
+      <h2 class="h5 fw-semibold mb-1" id="title">Convenience</h2>
+      <p class="small text-muted" id="subtitle">Simplified Vehicle Maintenance</p>
+    </div>
+
+    <div class="d-flex gap-1 mb-4">
+      <div id="dot1" class="dot bg-warning-custom"></div>
+      <div id="dot2" class="dot bg-dot-inactive-custom"></div>
+      <div id="dot3" class="dot bg-dot-inactive-custom"></div>
+    </div>
+
+    <div class="w-100 mt-auto px-3 pb-4"> 
+      <div class="mb-3"> 
+        <div class="input-group">
+          <span class="input-group-text bg-white border-secondary">
+            <img src="assets/india-flag.png" alt="IN" width="30" height="20" class="me-2"> <span>+91</span>
+          </span>
+          <input id="phone" type="tel" class="form-control border-secondary" placeholder="98765 43210">
+        </div>
+        <div id="phone-error" class="text-danger small mt-1 d-none"></div> 
+      </div> 
+
+      <div> 
+        <button type="button" id="get-otp" class="btn bg-warning-custom text-white w-100 fw-medium">Get OTP</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const data = [
+      { title: "Convenience", subtitle: "Simplified Vehicle Maintenance", img: "car-convenience.png" },
+      { title: "Quality Service", subtitle: "Experience the Expert Care", img: "car-quality.png" },
+      { title: "Vykal 365", subtitle: "Your Trusted Service Partner", img: "car-trusted.png" }
+    ];
+    let step = 1;
+    const imageChangeInterval = 3000; 
+
+    function render() {
+      document.getElementById('title').textContent = data[step-1].title;
+      document.getElementById('subtitle').textContent = data[step-1].subtitle;
+      document.getElementById('car-img').src = `assets/${data[step-1].img}`;
+      
+      [1,2,3].forEach(i => {
+        const tagEl = document.getElementById(`tag${i}`);
+        tagEl.classList.toggle('text-warning-custom', i === step);
+        tagEl.classList.toggle('fw-medium', i === step);
+
+        const dotEl = document.getElementById(`dot${i}`);
+        dotEl.classList.remove('bg-warning-custom', 'bg-dot-inactive-custom', 'bg-light', 'bg-secondary'); 
+        if (i === step) {
+          dotEl.classList.add('bg-warning-custom');
+        } else {
+          dotEl.classList.add('bg-dot-inactive-custom');
+        }
+      });
+    }
+
+    function autoChangeStep() {
+      step = step % 3 + 1;
+      render();
+    }
+
+    document.getElementById('get-otp').onclick = () => {
+      const phoneInput = document.getElementById('phone');
+      const phoneNumber = phoneInput.value.trim();
+      const phoneErrorEl = document.getElementById('phone-error');
+
+      if (phoneNumber) {
+        localStorage.setItem('userPhoneNumber', phoneNumber);
+        if (phoneErrorEl) {  
+            phoneErrorEl.style.display = 'none'; 
+            phoneErrorEl.textContent = ''; 
+        }
+        window.location.href = 'otp.html';
+      } else { 
+        if (phoneErrorEl) {  
+            phoneErrorEl.textContent = 'Please enter your phone number.';  
+            phoneErrorEl.style.display = 'block'; 
+        }
+        phoneInput.focus();  
+      }
+    };
+
+    render();  
+    setInterval(autoChangeStep, imageChangeInterval);
+  </script>
+</body>
+</html>

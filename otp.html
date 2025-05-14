@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OTP — Vykal 365</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body class="vh-100">
+
+  <div class="mobile-container">
+    <div class="otp-logo-container">  
+      <img src="assets/vykal-logo.png" alt="Logo" width="231.26" height="60"> 
+    </div>
+
+    <div class="otp-header">
+      <h2 class="fw-semibold">Verify your number</h2>
+      <p>Enter the verification code sent to your phone to confirm your number.</p>
+    </div>
+
+    <div class="phone-edit-container">
+      <span id="phone-num" class="fw-medium me-2">+91 98765 43210</span> 
+      <button id="edit-phone-btn" type="button" class="btn btn-link text-warning-custom small fw-medium">Edit</button>
+    </div>
+
+    <div class="d-flex justify-content-center gap-3 mb-4 px-3 w-100 otp-input-group" role="group" aria-label="OTP input">
+      <label for="o0" class="visually-hidden">OTP Digit 1</label>
+      <input id="o0" type="tel" maxlength="1" class="form-control text-center fs-4 fw-bold otp-input" placeholder="●" title="Enter first OTP digit" autocomplete="one-time-code">
+      <label for="o1" class="visually-hidden">OTP Digit 2</label>
+      <input id="o1" type="tel" maxlength="1" class="form-control text-center fs-4 fw-bold otp-input" placeholder="●" title="Enter second OTP digit" autocomplete="one-time-code">
+      <label for="o2" class="visually-hidden">OTP Digit 3</label>
+      <input id="o2" type="tel" maxlength="1" class="form-control text-center fs-4 fw-bold otp-input" placeholder="●" title="Enter third OTP digit" autocomplete="one-time-code">
+      <label for="o3" class="visually-hidden">OTP Digit 4</label>
+      <input id="o3" type="tel" maxlength="1" class="form-control text-center fs-4 fw-bold otp-input" placeholder="●" title="Enter fourth OTP digit" autocomplete="one-time-code">
+    </div>
+ 
+    <div class="w-100 otp-continue-container">
+      <div class="mb-3 small" id="timer-container"> 
+        <span id="timer">Waiting for OTP (02:00)</span>
+      </div>
+      <button type="button" id="continue" class="btn bg-warning-custom text-white w-100 fw-medium">Continue</button>
+    </div>
+  </div>
+
+  <script>
+    let time = 120; 
+    let otpStep = 1;  
+    const timerDisplayEl = document.getElementById('timer');
+    const timerContainerEl = document.getElementById('timer-container');
+    let timerInterval;
+
+    const storedPhoneNumber = localStorage.getItem('userPhoneNumber');
+    const phoneNumDisplayEl = document.getElementById('phone-num');
+
+    if (storedPhoneNumber && phoneNumDisplayEl) {
+      phoneNumDisplayEl.textContent = `+91 ${storedPhoneNumber}`;
+    } else if (phoneNumDisplayEl) {
+      phoneNumDisplayEl.textContent = '+91 98765 43210';  
+    }
+
+    const editButton = document.getElementById('edit-phone-btn');
+    if (editButton) {  
+      editButton.onclick = () => {
+        window.location.href = 'onboarding.html';
+      };
+    } else {
+      console.error("Edit button with ID 'edit-phone-btn' not found.");
+    }
+
+    function startTimer() {
+      time = 120;  
+      timerDisplayEl.textContent = `Waiting for OTP (02:00)`;
+      timerContainerEl.innerHTML = '';  
+      timerContainerEl.appendChild(timerDisplayEl);  
+
+      timerInterval = setInterval(() => {
+        if (otpStep === 1 && time > 0) {
+          time--;
+          const m = String(Math.floor(time / 60)).padStart(2, '0');
+          const s = String(time % 60).padStart(2, '0');
+          timerDisplayEl.textContent = `Waiting for OTP (${m}:${s})`;
+        } else if (otpStep === 1 && time === 0) {
+            
+          clearInterval(timerInterval);
+          timerContainerEl.innerHTML = `<button id="resend" class="btn btn-link text-warning-custom small fw-medium">
+            <i class="bi bi-arrow-clockwise"></i> Resend code
+          </button>`;
+          const resendButton = document.getElementById('resend'); 
+          if (resendButton) {
+            resendButton.onclick = () => { 
+              timerContainerEl.innerHTML = `<span class="text-success small fw-medium">OTP Resent!</span>`;
+              setTimeout(() => {
+                otpStep = 1;  
+                startTimer(); 
+              }, 2000); 
+            };
+          }
+        }
+      }, 1000);
+    }
+    
+    const continueBtn = document.getElementById('continue');  
+    if (continueBtn) {
+      continueBtn.onclick = () => { 
+        window.location.href = 'home.html';
+        otpStep = 2;  
+        clearInterval(timerInterval);  
+        if (time > 0) {  
+          timerContainerEl.innerHTML = `<button id="resend" class="btn btn-link text-warning-custom small fw-medium">
+            <i class="bi bi-arrow-clockwise"></i> Resend code
+          </button>`;
+          const resendButton = document.getElementById('resend');  
+          if (resendButton) {
+            resendButton.onclick = () => { 
+              timerContainerEl.innerHTML = `<span class="text-success small fw-medium">OTP Resent!</span>`;
+              
+              setTimeout(() => {
+                otpStep = 1;
+                startTimer();
+              }, 1500);  
+            };
+          }
+        } 
+      };
+    }
+
+    const otpInputs = [];
+    for (let i = 0; i < 4; i++) {
+      const inp = document.getElementById(`o${i}`);
+      if(inp){
+          otpInputs.push(inp);
+          inp.addEventListener('input', (e) => {
+            if (e.target.value) {
+              e.target.classList.add('filled');  
+              if (i < 3) otpInputs[i+1].focus();
+            } else {
+              e.target.classList.remove('filled');
+            }
+          });
+          inp.addEventListener('keydown', (e) => {
+            if (e.key === 'Backspace' && !inp.value && i > 0) {
+              otpInputs[i-1].focus();
+              otpInputs[i-1].classList.remove('filled');
+            } else if (e.key === 'Backspace' && inp.value && i >= 0) {
+               // If backspace is pressed on a filled input, clear it and stay, or move to previous if it was already empty
+               // The default behavior of clearing and then the above 'input' event handles removing 'filled'
+            }
+          });
+      }
+    } 
+    startTimer();
+  </script>
+</body>
+</html>
