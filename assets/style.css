@@ -1009,8 +1009,8 @@ body {
     left: 0;
     right: 0;
     width: 100%;
-    max-width: 430px; /* Consistent with app-container */
-    margin: 0 auto; /* Center it */
+    max-width: 430px;  
+    margin: 0 auto;  
     background: white;
     border-top: 1px solid var(--border-color);
     padding: 0.3rem 0;
@@ -1027,7 +1027,7 @@ body {
     align-items: center;
     padding: 0.25rem 0;
 }
-.referral-page .nav-item.active { /* Style for active item if needed */
+.referral-page .nav-item.active {  
     color: var(--theme-color);
 }
 .referral-page .nav-item i {
@@ -1123,4 +1123,159 @@ body {
   object-fit: cover;
   z-index: 0;  
   opacity: 0.3;
+}
+
+.referral-header-content-blog { 
+    z-index: 1;
+    margin-top: -63px;
+    width: 100%;
+}
+
+.blog-header-bg {
+    background: #fff7f4;
+    padding: 1rem 1rem;
+    position: relative;  
+    width: 100%;
+    height: 212px;
+    min-height: 212px;  
+    display: flex;  
+    align-items: center;  
+    z-index: 1;
+}
+
+.blog-overlap {
+  margin-top: -80px;
+  position: relative;
+  z-index: 10;
+} 
+
+
+.top-orange-line {
+  height: 5px;
+  width: 100%;
+  padding-left: 2rem;
+  background-color: #FF6A00;  
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  position: absolute;
+  top: 0; 
+  z-index: 2;
+}
+
+.blog-image-wrapper {
+  position: relative;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  overflow: hidden;
+}
+
+.image-bottom-shade {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #3671C7, transparent);  
+  z-index: 2;
+}
+
+.card-blog .card-body {
+    padding: 0.75rem; 
+    text-align: left;
+}
+
+.card-blog .card-body .badge.category {
+  background: #ffdbcb;
+  color: #ff5505;
+  font-size: 8px;
+  width: 132px;
+  height: 21px;
+  font-weight: 700;
+  padding: .35rem .75rem;
+  border-radius: 30px;
+}
+
+.card-blog .card-body .post-heading {
+  font-size: 25px;
+  font-weight: 700;
+  color: #3A3A3A;
+  margin: .5rem 0 .25rem;
+  line-height: 1.2;
+}
+
+.card-blog .card-body .post-heading .prefix {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: .2rem;
+}
+
+.card-blog .card-body .lead {
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+.card-blog .card-body .meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+.meta .author {
+  position: relative;
+  margin-left: 1rem;    
+  padding-left: 1rem;   
+}
+
+.meta .author::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.5px;
+  height: 1em;               
+  background-color: #FFE6DD;
+}
+
+.card-blog .card-body .meta i {
+  margin-right: .3rem;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+.card-blog .card-body hr {
+  border: none;
+  border-top: 1px solid #060606;
+  margin: 1rem 0;
+}
+
+.card-blog .card-body .checklist {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+.card-blog .card-body .checklist li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: .75rem;
+  font-size: .95rem;
+  color: #444;
+}
+.card-blog .card-body .checklist li:before {
+  content: "\2713";  
+  position: absolute;
+  left: 0; top: 0;
+  font-size: 1rem;
+  color: #28a745;
+  line-height: 1;
+}
+
+.read-more {
+  font-size: .9rem;
+  font-weight: 600;
+  color: #FF6A00;
+  text-decoration: none;
+}
+.read-more:hover {
+  text-decoration: underline;
 }
