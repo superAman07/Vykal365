@@ -790,7 +790,6 @@ body {
 
 .card.referral-main-card,
 .card.how-it-works-card,
-.card.referral-actions-card,
 .earnings-card.referral-earnings-card {
     border-radius: 12px;
     border: none;
@@ -866,40 +865,72 @@ body {
 .referral-actions-card .card-body {
     padding: 1rem;
 }
+/* Referral Code Display */
 
 .referral-code-display {
     display: flex;
     justify-content: center;
-    gap: 0.3rem;
-    margin-bottom: 0.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 2px dotted #bdbdbd; 
+    border-radius: 10px;
+    height: 52px;
+    width: 197px;
+    margin: 0 auto 0.5rem auto;
+    position: relative;
+}
+
+.referral-code-display::before {
+    content: "Your Referral Code";
+    position: absolute;
+    top: -0.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 0.1rem 0.3rem;
+    font-size: 10px;
+    color: #1976d2;
+    text-align: center;
 }
 
 .referral-code-display span {
-    background-color: #e3f2fd; /* Light blue */
-    color: var(--vykal-blue);
-    padding: 0.5rem 0.75rem;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    border: 1px dashed var(--vykal-blue);
+    background-color: #1976d2;
+    width: 21.52px;
+    height: 21.52px;
+    color: white; 
+    font-weight: 700;
+    font-size: 8.61px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.whatsapp-share-btn {
-    background-color: #25D366;
-    color: white;
-    font-weight: 500;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
+.referral-actions-card p.small.text-muted.mb-3 {
+    color: #999;
+    margin-bottom: 1rem;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
 }
 
-.whatsapp-share-btn:hover {
-    background-color: #1DAE50;
-    color: white;
+.whatsapp-share-btn { 
+    color: #002e70;
+    font-weight: 600;  
+} 
+.whatsapp-logo {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
 }
 
 .terms-text {
     font-size: 0.75rem !important;
+    color: #6c757d;
+    text-align: center; 
 }
+
 
 /* Re-using and adjusting earnings card for referral page */
 .earnings-card.referral-earnings-card {
