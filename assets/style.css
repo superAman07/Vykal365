@@ -934,54 +934,73 @@ body {
 
 /* Re-using and adjusting earnings card for referral page */
 .earnings-card.referral-earnings-card {
-    margin-top: 0; /* Remove top margin if any from home page version */
-    max-width: 100%; /* Allow it to take full width within its container */
+    width: 369px;  
+    height: 129px;  
+    margin: 0 auto;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    border: 1px solid #ff5505;  
+    overflow: hidden;
+    position: relative;
+    background-color: #ff5505;
 }
 
 .earnings-card .earnings-header {
-    background: var(--theme-color); /* Orange header */
-    color: #fff;
+    background: #ff5505;  
+    color: white;
     text-align: center;
-    font-weight: 600;
-    padding: 0.6rem; /* Slightly less padding */
-    font-size: 0.95rem; /* Slightly smaller font */
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    font-weight: 600;  
+    font-size: 1rem;    
 }
 
-.earnings-card .earnings-stats {
+.earnings-card .earnings-body {
     display: flex;
     align-items: center;
-    padding: 0.75rem 1rem;  
+    padding: 1.75rem 1rem;
+    gap: 1rem;
     background-color: white;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .earnings-card .earnings-avatar {
     flex-shrink: 0;
-    width: 45px;   /* Slightly smaller avatar */
-    height: 45px;
+    width: 60px; 
+    height: 60px;
     border-radius: 50%;
+    overflow: hidden; 
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 1.1rem;  
-    margin-right: 0.75rem;  
+    justify-content: center;  
 }
+.earnings-card .earnings-avatar .avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.earnings-card .earnings-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
 
 .earnings-card .earnings-details .referrals,
 .earnings-card .earnings-details .earned {
-    font-size: 0.8rem; 
+    font-size: 0.9rem;
     color: #555;
-    margin-bottom: 0.15rem;  
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;  
 }
 
 .earnings-card .earnings-details .count {
     font-weight: 700;
     color: #333;
-    margin-right: 0.25rem;
+    font-size: 1.1rem;
 }
 
 /* Ensure bottom nav on referral page is styled like home page */
