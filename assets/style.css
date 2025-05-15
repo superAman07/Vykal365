@@ -691,6 +691,250 @@ body {
     object-fit: cover;
 }
 
+
+/* --- Referral Page Specific Styles --- */
+.referral-page {
+    background-color: var(--bg-light-grey); /* Or #f0f2f5 if you prefer a slightly off-white */
+    padding-bottom: 70px; /* For bottom nav */
+    overflow-y: auto;
+}
+
+.referral-page .app-container {
+    max-width: 430px;
+    margin: 0 auto;
+    background-color: var(--bg-light-grey);  
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 70px; /* For bottom nav */
+}
+
+.referral-header-bg {
+    background: linear-gradient(90deg, #3671C7 0%, #002E70 100%);
+    padding: 1rem 1rem;
+    position: relative;  
+    width: 100%;
+    height: 212px;
+    min-height: 212px;  
+    display: flex;  
+    align-items: center;  
+}
+
+.referral-header-bg .background-pattern { 
+    object-fit: cover;
+    z-index: 0;
+}
+
+.referral-header-content { 
+    z-index: 1;
+    margin-top: -40px;
+    width: 100%;
+}
+
+.back-button-circled {
+    display: inline-flex !important;  
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px;   
+    height: 38px; 
+    border-radius: 50% !important;  
+    background-color: rgba(0, 0, 0, 0.15) !important; 
+    padding: 0 !important;  
+    text-decoration: none !important;  
+    box-shadow: none !important; 
+}
+
+.back-arrow-icon {
+    width: 38px;  
+    height: 38px;  
+}
+
+.back-button-circled:hover,
+.back-button-circled:focus {
+    background-color: rgba(0, 0, 0, 0.25) !important; 
+    color: #fff !important; 
+    text-decoration: none !important;
+}
+
+.referral-header-content .btn-link i {
+    font-size: 1.5rem;  
+} 
+
+.referral-content-area {
+    flex-grow: 1;
+    background-color: #f8f9fa; 
+}
+
+.card.referral-main-card,
+.card.how-it-works-card,
+.card.referral-actions-card,
+.earnings-card.referral-earnings-card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card.referral-main-card {
+    width: 398px;  
+    height: 292px; 
+    position: relative; 
+    margin-top: -90px;  
+    border: none; 
+    box-shadow: none; 
+    background-color: #fff;
+}
+
+.referral-main-card .card-body {
+    padding: 1rem;
+}
+
+.how-it-works-card .card-body {
+    padding: 1rem;
+}
+
+.step-icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffe0b2; /* Light orange */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.step-icon {
+    width: 24px; /* Adjust as needed */
+    height: 24px; /* Adjust as needed */
+    object-fit: contain;
+}
+
+.referral-actions-card .card-body {
+    padding: 1rem;
+}
+
+.referral-code-display {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.referral-code-display span {
+    background-color: #e3f2fd; /* Light blue */
+    color: var(--vykal-blue);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px dashed var(--vykal-blue);
+}
+
+.whatsapp-share-btn {
+    background-color: #25D366;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+}
+
+.whatsapp-share-btn:hover {
+    background-color: #1DAE50;
+    color: white;
+}
+
+.terms-text {
+    font-size: 0.75rem !important;
+}
+
+/* Re-using and adjusting earnings card for referral page */
+.earnings-card.referral-earnings-card {
+    margin-top: 0; /* Remove top margin if any from home page version */
+    max-width: 100%; /* Allow it to take full width within its container */
+}
+
+.earnings-card .earnings-header {
+    background: var(--theme-color); /* Orange header */
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.6rem; /* Slightly less padding */
+    font-size: 0.95rem; /* Slightly smaller font */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.earnings-card .earnings-stats {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem; /* Adjust padding */
+    background-color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.earnings-card .earnings-avatar {
+    flex-shrink: 0;
+    width: 45px;   /* Slightly smaller avatar */
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem; /* Adjust font size in avatar */
+    margin-right: 0.75rem; /* Adjust margin */
+}
+
+.earnings-card .earnings-details .referrals,
+.earnings-card .earnings-details .earned {
+    font-size: 0.8rem; /* Smaller text */
+    color: #555;
+    margin-bottom: 0.15rem; /* Tighter spacing */
+}
+
+.earnings-card .earnings-details .count {
+    font-weight: 700;
+    color: #333;
+    margin-right: 0.25rem;
+}
+
+/* Ensure bottom nav on referral page is styled like home page */
+.referral-page .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 430px; /* Consistent with app-container */
+    margin: 0 auto; /* Center it */
+    background: white;
+    border-top: 1px solid var(--border-color);
+    padding: 0.3rem 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+}
+
+.referral-page .nav-item {
+    color: #888888;
+    text-decoration: none;
+    font-size: 0.65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+.referral-page .nav-item.active { /* Style for active item if needed */
+    color: var(--theme-color);
+}
+.referral-page .nav-item i {
+    font-size: 1.25rem;
+    margin-bottom: 2px;
+}
+
+
 /*  */
 
 
