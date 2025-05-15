@@ -507,11 +507,12 @@ body {
   width: auto;
   height: auto;
   max-height: 278px;
+
   border-radius: 7px; 
 }
 
 .article-card-small { 
-    width: 140.44px;
+    width: 180.44px;
     height: auto; 
     min-height: 278px;  
     padding: 3px;
