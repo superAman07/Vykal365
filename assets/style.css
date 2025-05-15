@@ -620,6 +620,31 @@ body {
     font-size: 0.9em;
 }
 
+/* Expert-Care banner styling */
+
+.expert-care-banner {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0.1rem;
+    margin-bottom: 1rem;
+}
+.expert-care-banner .expert-card {
+    width: 100%;
+    max-width: 363.44px;  
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0; 
+}
+
+.expert-care-banner .expert-card-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
 /*  */
 
 
