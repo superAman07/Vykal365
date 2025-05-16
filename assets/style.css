@@ -123,6 +123,10 @@ body {
     border: none;
     background-color: transparent;
 }
+.input-group-area .input-group-text .form-control:focus {
+  border-color: transparent; 
+  box-shadow: none;
+}
 .input-group-button {
     height: 60px;
 }
