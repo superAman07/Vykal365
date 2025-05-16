@@ -76,17 +76,65 @@ body {
 .bg-warning-custom { background-color: #f97316 !important; }
 .text-warning-custom { color: #f97316 !important; font-weight: lighter; }
 .tagline-text { font-size: 16px; }
-.car-img-container { width:350px; height:350px; }
+.car-img-container { 
+    width:285px; 
+    height:285px; 
+    margin-top: 40px;
+} 
+.texts-after-image {
+    margin-top: 40px;
+}
+.texts-after-image .title-after-image{
+    margin-top: 40px;
+}
+.dots-after-texts {
+    margin-top: 20px;
+}
 .car-img-main { object-fit: contain; z-index: 1; }
 .bg-dot-inactive-custom { background-color: #dee2e6 !important; }  
-.input-group .form-control, 
-.input-group .input-group-text {
+.input-group-area .input-group-text {
     padding-top: 0.65rem;  
     padding-bottom: 0.65rem;  
 }
+.bottom-input-and-button-group{ 
+    width: 361px; 
+}
+.input-group{  
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+}
+.mobile-container .input-group-area {
+    max-width: 361px;
+    width: 100%;
+    max-height: 60px;
+    height: 100%;
+    border-radius: 15px;
+}
+.input-group-text {
+    border: 1px solid #CFCFCF;
+    border-radius: 15px;
+}
+.input-group-area .input-group-text .form-control {
+    width: 100%;
+    height: 100%; 
+    border: none;
+    background-color: transparent;
+}
+.input-group-button {
+    height: 60px;
+}
+.input-group-button-text{
+    font-size: 20px;
+}
+
+
 #get-otp {
-    padding-top: 0.65rem;  
-    padding-bottom: 0.65rem;  
+    padding-top: 0.5rem;  
+    padding-bottom: 0.5rem; 
+    border-radius: 15px; 
 }
 #title { font-size: 20px; }
 #subtitle { font-size: 18px; }
@@ -103,7 +151,7 @@ body {
   padding-top: 1.5rem; 
   padding-bottom: 1.5rem;
   overflow-y: auto;
-}
+} 
 
 .text-warning-custom { color: #f97316 !important; }
 .bg-warning-custom { background-color: #f97316 !important; }

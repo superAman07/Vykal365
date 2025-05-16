@@ -11,7 +11,7 @@
 
   <div class="mobile-container">
     <div class="d-flex align-items-center mb-4 mt-4">  
-      <img src="assets/vykal-logo.png" alt="Logo" width="231.26" height="60">   
+      <img src="assets/vykal-logo.png" alt="Logo" width="231.26" height="60" class="mt-4">   
     </div>
 
     <div class="d-flex text-muted tagline-text mb-2 mt-2">
@@ -22,35 +22,34 @@
       <span id="tag3">Trusted</span>
     </div>
 
-    <div class="position-relative mb-4 mt-4 car-img-container">
-      <div class="position-absolute w-100 h-100 rounded-circle bg-light"></div>
+    <div class="position-relative car-img-container">
       <img id="car-img" src="" alt="Car" class="position-absolute top-50 start-50 translate-middle car-img-main w-100 h-100">
     </div>
 
-    <div class="text-center mb-3 mt-3">
-      <h2 class="h5 fw-semibold mb-1" id="title">Convenience</h2>
+    <div class="text-center texts-after-image">
+      <h2 class="title-after-image" id="title">Convenience</h2>
       <p class="small text-muted" id="subtitle">Simplified Vehicle Maintenance</p>
     </div>
 
-    <div class="d-flex gap-1 mb-4">
+    <div class="d-flex gap-1 dots-after-texts mb-4">
       <div id="dot1" class="dot bg-warning-custom"></div>
       <div id="dot2" class="dot bg-dot-inactive-custom"></div>
       <div id="dot3" class="dot bg-dot-inactive-custom"></div>
     </div>
 
-    <div class="w-100 mt-auto px-3 pb-4"> 
-      <div class="mb-3"> 
-        <div class="input-group">
-          <span class="input-group-text bg-white border-secondary">
-            <img src="assets/india-flag.png" alt="IN" width="30" height="20" class="me-2"> <span>+91</span>
+    <div class="bottom-input-and-button-group mt-auto pb-4"> 
+      <div class="mb-3 input-group"> 
+        <div class="input-group-area">
+          <span class="input-group-text">
+            <img src="assets/india-flag.png" alt="IN" width="30" height="30" class="me-2"> <span>+91</span>
+            <input id="phone" type="tel" class="form-control" placeholder="98765 43210">
           </span>
-          <input id="phone" type="tel" class="form-control border-secondary" placeholder="98765 43210">
         </div>
         <div id="phone-error" class="text-danger small mt-1 d-none"></div> 
       </div> 
 
-      <div> 
-        <button type="button" id="get-otp" class="btn bg-warning-custom text-white w-100 fw-medium">Get OTP</button>
+      <div class="input-group-button"> 
+        <button type="button" id="get-otp" class="btn input-group-button-text bg-warning-custom text-white w-100 fw-medium">Get OTP</button>
       </div>
     </div>
   </div>
