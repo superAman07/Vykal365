@@ -1603,7 +1603,26 @@ body.my-booking-page {
     color: #9d9d9d;
     margin-bottom: 0.75rem; 
     text-align: center;
-    padding: 0 0.5rem;
+    padding: 3px 3px;
+    border: none;
+    position: relative;
+}
+.booking-card .partner-message::before,
+.booking-card .partner-message::after {
+  content: "";
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  height: 0;
+  border-top: 0.5px solid #E3E3E3;
+}
+.booking-card .partner-message::before {
+  top: 0;
+  transform: translateY(-100%);  
+}
+.booking-card .partner-message::after {
+  bottom: 0;
+  transform: translateY(100%);
 }
 
 .booking-card .vehicle-details-section {
@@ -1714,7 +1733,7 @@ body.my-booking-page {
     justify-content: space-between;
     align-items: center;
     border-top: none;
-    margin-top: 0.5rem; 
+    margin-top: 0.1rem; 
     font-family: "Inter", Helvetica, sans-serif;
     padding: 0.5rem; 
 }
@@ -1725,7 +1744,7 @@ body.my-booking-page {
     top: 0;                    
     left: 3%;                
     right: 3%;               
-    border-top: 1px dotted #AAAAAA;
+    border-top: 0.8px dotted #AAAAAA;
 }
 .booking-card .view-details-btn {
     background-color: #ffffff;
