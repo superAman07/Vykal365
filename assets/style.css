@@ -1720,12 +1720,12 @@ body.my-booking-page {
 }
 
 .booking-card .card-footer-section::before {
-  content: "";
-  position: absolute;
-  top: 0;                    
-  left: 3%;                
-  right: 3%;               
-  border-top: 1px dotted #AAAAAA;
+    content: "";
+    position: absolute;
+    top: 0;                    
+    left: 3%;                
+    right: 3%;               
+    border-top: 1px dotted #AAAAAA;
 }
 .booking-card .view-details-btn {
     background-color: #ffffff;
