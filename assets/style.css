@@ -1518,10 +1518,12 @@ body.my-booking-page {
 
 .booking-tabs {
     display: flex;
-    justify-content: space-around;
-    background-color: #ffefe8;  
+    background-color: #FFF9F6;
+    justify-content: space-around;   
     padding: 0 1rem;
     position: relative;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
     z-index: 2;  
 }
 
@@ -1547,7 +1549,7 @@ body.my-booking-page {
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
     padding: 1.5rem 1rem 1rem 1rem; 
-    margin-top: -14px;  
+    margin-top: -1px;  
     position: relative;
     z-index: 1;
     flex-grow: 1;
@@ -1770,20 +1772,27 @@ body.my-booking-page {
 
 .status-banner {
     background-color: #4cb050;
+    margin-top: -70px;
+    margin-left: 20px;
+    width: 369px;
+    height: 67px;
     border-radius: 8px;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 33px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Inter", Helvetica, sans-serif;
 }
 .status-banner .status-label {
+    padding-top: 25px;
     font-weight: 500;
+    left: 33px;
     color: #c8e6c9;  
     font-size: 0.75rem;  
     text-transform: uppercase;
 }
 .status-banner .status-value {
+    padding-top: 25px;
     font-weight: 700;
     color: #ffffff;
     font-size: 0.875rem;  
