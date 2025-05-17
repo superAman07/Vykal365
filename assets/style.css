@@ -1431,3 +1431,341 @@ body {
   --header-h: 120px;  
   --nav-h:    56px;   
 }
+
+/* styling for my-booking.html */
+
+
+body.my-booking-page {
+    background-color: #ffff; 
+    padding-bottom: 70px;  
+    overflow-x: hidden;
+}
+
+.my-bookings-container {
+    max-width: 430px;
+    margin: 0 auto;
+    background-color: #ffefe8;
+    min-height: calc(100vh - 70px); 
+    display: flex;
+    flex-direction: column;
+}
+
+.my-booking-header {
+    position: relative;
+    padding: 1.5rem 1rem 1rem 1rem;  
+    height: 130px;  
+    display: flex;  
+    align-items: flex-start;  
+}
+
+.my-booking-header .header-bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;  
+    z-index: 1;
+}
+
+.my-booking-header .header-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.5rem;  
+}
+
+.my-booking-header .back-button {
+    background-color: var(--theme-color);
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+}
+
+.my-booking-header .back-button img {
+    width: 20px; 
+    height: 20px;
+}
+
+.my-booking-header .header-title {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-weight: 600;
+    color: #3f3f3f;
+    font-size: 1.125rem;  
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;  
+}
+
+.my-booking-header .search-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.my-booking-header .search-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.booking-tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffefe8;  
+    padding: 0 1rem;
+    position: relative;
+    z-index: 2;  
+}
+
+.booking-tabs .tab-item {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 0.9375rem;  
+    color: #818181;
+    padding: 0.75rem 0.5rem;
+    cursor: pointer;
+    text-align: center;
+    flex-grow: 1;
+    border-bottom: 3px solid transparent;
+}
+
+.booking-tabs .tab-item.active {
+    color: var(--theme-color);
+    font-weight: 500;
+    border-bottom: 3px solid var(--theme-color);
+}
+
+.booking-content-area {
+    background-color: #ffffff;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    padding: 1.5rem 1rem 1rem 1rem; 
+    margin-top: -14px;  
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+}
+
+.booking-card {
+    width: 369px;  
+    height: 271px;  
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 1rem; 
+    margin-bottom: 1.5rem; 
+    background-image: url('Subtract.png');  
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;  
+    position: relative; 
+    display: flex;  
+    flex-direction: column;  
+    justify-content: space-between;  
+}
+
+.booking-card .card-header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    margin-bottom: 0.5rem;  
+    font-family: "Inter", Helvetica, sans-serif;
+    padding: 0.5rem 0.5rem 0 0.5rem; 
+}
+.booking-card .booking-id-label {
+    font-size: 12px;  
+    color: #9D9D9D;
+    margin-bottom: 0.1rem;
+    font-weight: 500;
+}
+.booking-card .booking-id-value {
+    font-size: 14px;  
+    font-weight: 700;
+    color: #292929;
+}
+.booking-card .booking-date-time {
+    font-size: 10px;  
+    color: #9d9d9d;
+    text-align: right;
+    line-height: 1.4;
+}
+
+.booking-card .partner-message {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 0.6875rem; 
+    color: #9d9d9d;
+    margin-bottom: 0.75rem; 
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
+.booking-card .vehicle-details-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;  
+    font-family: "Inter", Helvetica, sans-serif;
+    padding: 0 0.5rem;
+}
+.booking-card .vehicle-name {
+    font-size: 12px; 
+    font-weight: 600;
+    color: #565656;
+    line-height: 1.3;
+}
+.booking-card .vehicle-number {
+    font-size: 0.75rem;  
+    color: #9D9D9D;
+}
+.booking-card .service-tag {
+    background-color: #ffc068;
+    width: 76px;
+    height: 26px;
+    border-radius: 15px;
+    padding: 7.52px;
+    font-size: 9px;  
+    font-weight: 600;
+    color: #353535;
+    white-space: nowrap;
+}
+
+.booking-card .booking-progress-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    margin-bottom: 1rem;  
+    padding: 0 0.75rem;  
+}
+.booking-progress-bar .progress-line-bg,
+.booking-progress-bar .progress-line-fg {
+    position: absolute;
+    height: 2px;  
+    top: 6px;   
+    border-radius: 1px;
+}
+.booking-progress-bar .progress-line-bg { 
+    position: absolute;
+    top: 7px;                
+    left: 13.2%;               
+    right: 13.2%;
+    height: 2px;
+    background-color: #d9d9d9;  
+    border-radius: 1px;
+    z-index: 1;
+}
+.booking-progress-bar .progress-line-fg {
+    position: absolute;
+    top: 7px;
+    left: 13%;
+    height: 2px;
+    background-color: #54c95b;
+    border-radius: 1px;
+    z-index: 2;
+}
+.booking-progress-bar .progress-line-fg.progress-width-0   { width:   0%; }
+.booking-progress-bar .progress-line-fg.progress-width-25  { width:  25%; }
+.booking-progress-bar .progress-line-fg.progress-width-50  { width:  50%; }
+.booking-progress-bar .progress-line-fg.progress-width-75  { width:  75%; }
+.booking-progress-bar .progress-line-fg.progress-width-100 { width: 100%; }
+
+.booking-progress-bar .progress-step {
+    position: relative;
+    z-index: 3;
+    width: 25%;
+    text-align: center;
+    font-size: 0.625rem;
+    color: #9d9d9d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.booking-progress-bar .step-circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #d9d9d9;  
+    margin-bottom: 0.3rem;
+    border: 2px solid #fff;  
+    box-sizing: border-box;
+}
+.booking-progress-bar .progress-step.completed .step-circle,
+.booking-progress-bar .progress-step.active .step-circle {
+    background-color: #54c95b;  
+}
+.booking-progress-bar .progress-step.active .step-label {
+    color: #646464;  
+}
+.booking-progress-bar .step-label {
+    line-height: 1.2;
+}
+
+
+.booking-card .card-footer-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: none;
+    margin-top: 0.5rem; 
+    font-family: "Inter", Helvetica, sans-serif;
+    padding: 0.5rem; 
+}
+
+.booking-card .card-footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;                    
+  left: 3%;                
+  right: 3%;               
+  border-top: 1px dotted #AAAAAA;
+}
+.booking-card .view-details-btn {
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    border-radius: 20px; 
+    font-weight: 500;
+    color: #7d7d7d;
+    cursor: pointer;
+    width: 81px;
+    height: 23px;
+    font-size: 9px;  
+}
+.booking-card .amount-label {
+    font-size: 13.69px; 
+    color: #9d9d9d;
+    margin-right: 0.5rem;
+}
+.booking-card .amount-value {
+    font-size: 15.21px;  
+    font-weight: 700;
+    color: #292929;
+}
+
+.status-banner {
+    background-color: #4cb050;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter", Helvetica, sans-serif;
+}
+.status-banner .status-label {
+    font-weight: 500;
+    color: #c8e6c9;  
+    font-size: 0.75rem;  
+    text-transform: uppercase;
+}
+.status-banner .status-value {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 0.875rem;  
+}
