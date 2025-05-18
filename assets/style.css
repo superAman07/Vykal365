@@ -1818,8 +1818,8 @@ body.my-booking-page {
     left: 0;
     right: 0;
     width: 100%;
-    max-width: 430px;  /* Ensures it matches the app container width */
-    margin: 0 auto;    /* Centers the nav if screen is wider than max-width */
+    max-width: 430px;   
+    margin: 0 auto;    
     background: white;
     border-top: 1px solid var(--border-color);
     padding: 0.3rem 0; 
@@ -1828,7 +1828,7 @@ body.my-booking-page {
 }
 
 .my-booking-page .nav-item {
-    color: #888888; /* Default color for nav items */
+    color: #888888;  
     text-decoration: none;
     font-size: 0.65rem;  
     display: flex;
