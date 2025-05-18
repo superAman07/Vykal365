@@ -1479,9 +1479,7 @@ body.my-booking-page {
     top: 52px;
 }
 
-.my-booking-header .back-button {
-    /* background-color: var(--theme-color); */
-    /* border-radius: 50%; */
+.my-booking-header .back-button { 
     width: 38px;
     height: 38px;
     display: flex;
@@ -1812,4 +1810,37 @@ body.my-booking-page {
     font-weight: 700;
     color: #ffffff;
     font-size: 0.875rem;  
+}
+
+.my-booking-page .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 430px;  /* Ensures it matches the app container width */
+    margin: 0 auto;    /* Centers the nav if screen is wider than max-width */
+    background: white;
+    border-top: 1px solid var(--border-color);
+    padding: 0.3rem 0; 
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+}
+
+.my-booking-page .nav-item {
+    color: #888888; /* Default color for nav items */
+    text-decoration: none;
+    font-size: 0.65rem;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+
+.my-booking-page .nav-item.active { 
+    color: var(--theme-color);  
+}
+.my-booking-page .nav-item i {
+    font-size: 1.25rem;  
+    margin-bottom: 2px;  
 }
