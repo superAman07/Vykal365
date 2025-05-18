@@ -1844,3 +1844,59 @@ body.my-booking-page {
     font-size: 1.25rem;  
     margin-bottom: 2px;  
 }
+
+.booking-card .header-meta-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  
+}
+
+.booking-card .partner-message-accepted {
+    font-family: "Inter", Helvetica, sans-serif;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 0.75rem;
+    border-top: 0.5px solid #E3E3E3;
+    border-bottom: 0.5px solid #E3E3E3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking-card .pickup-otp-label {
+    font-size: 10px;
+    color:  var(--vykal-blue);
+    font-weight: 500;
+}
+.booking-card .call-partner-btn {
+    font-size: 10px; 
+    color: var(--theme-color);
+    border: none;
+    background-color: transparent; 
+    border-radius: 15px;
+    padding: 0.25rem 0.5rem;
+    font-weight: 500; 
+    display: inline-flex;
+    align-items: center;
+}
+.booking-card .call-partner-btn .call-partner-icon { 
+    width: 12px;
+    height: 12px;
+    margin-right: 0.25rem;  
+}
+.booking-card .otp-display-boxes {
+    display: flex; 
+    gap: 0.3rem;
+}
+.booking-card .otp-display-boxes span {
+    background-color: var(--vykal-blue); 
+    color: #ffffff; 
+    font-weight: 600;
+    font-size: 10px;  
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #D0D0D0;  
+    border: none;
+}
