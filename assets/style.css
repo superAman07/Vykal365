@@ -1833,6 +1833,25 @@ body.my-booking-page {
     right: 3%;               
     border-top: 0.8px dotted #AAAAAA;
 }
+.booking-card .card-footer-section-wip {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: none;
+    margin-top: 0.6rem; 
+    font-family: "Inter", Helvetica, sans-serif;
+    padding: 0.5rem; 
+}
+
+.booking-card .card-footer-section-wip::before {
+    content: "";
+    position: absolute;
+    top: 0;                    
+    left: 3%;                
+    right: 3%;               
+    border-top: 0.8px dotted #AAAAAA;
+}
 
 
 .my-booking-page .bottom-nav {
