@@ -1900,3 +1900,7 @@ body.my-booking-page {
     border: 1px solid #D0D0D0;  
     border: none;
 }
+.booking-card .partner-message-accepted.placeholder-for-otp {
+    border-top: none;
+    border-bottom: none;
+}
