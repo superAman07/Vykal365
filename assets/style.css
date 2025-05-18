@@ -1561,12 +1561,14 @@ body.my-booking-page {
     margin-bottom: 1rem;   
     max-width: 369px;
     width: 100%;
-    height: auto;
+    max-height: 270.81px;
+    height: 100%;
     padding: 0;
 }
 .booking-card {
     position: relative; 
     width: 100%;
+    height: 270.81px;
     margin-top: 20px;
     margin-bottom: -2.5rem;
     background-color: #1E54A1; 
@@ -1811,6 +1813,27 @@ body.my-booking-page {
     color: #ffffff;
     font-size: 0.875rem;  
 }
+
+.booking-card .card-footer-section-booking-accepted {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: none;
+    margin-top: -0.7rem; 
+    font-family: "Inter", Helvetica, sans-serif;
+    padding: 0.5rem; 
+}
+
+.booking-card .card-footer-section-booking-accepted::before {
+    content: "";
+    position: absolute;
+    top: 0;                    
+    left: 3%;                
+    right: 3%;               
+    border-top: 0.8px dotted #AAAAAA;
+}
+
 
 .my-booking-page .bottom-nav {
     position: fixed;
