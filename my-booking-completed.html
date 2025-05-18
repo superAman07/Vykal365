@@ -76,7 +76,7 @@
                 </div>
                 <div class="progress-step completed">
                   <div class="step-circle"></div>
-                  <div class="step-label">Service in Progress</div>
+                  <div class="step-label">Service Completed</div>
                 </div>
                 <div class="progress-step">
                   <div class="step-circle"></div>
@@ -101,7 +101,7 @@
           </div>
       </div>
 
-    </div>
+    </div> 
     
     <!-- Bottom Navigation -->
     <div class="bottom-nav">
@@ -126,5 +126,59 @@
             </div>
         </div>
     </div>
+    <div class="invoice-modal-overlay" id="invoiceModalOverlay"></div>
+    <div class="invoice-modal" id="invoiceModal">
+        <div class="invoice-modal-header">
+            <h5 class="invoice-modal-title">Here is your Invoice</h5>
+            <button type="button" class="invoice-modal-close" id="closeInvoiceModal" aria-label="Close">
+                <img src="assets/cross-invoice.png" alt="Close">
+            </button>
+        </div>
+        <div class="invoice-modal-body">
+            <p class="invoice-text">
+                Dear Customer,<br>
+                Your service request with Booking ID BAN25021220107 for Vehicle Standard Service is completed. Payable amount is <strong>₹ 1999/-</strong>
+            </p>
+        </div>
+        <div class="invoice-modal-footer">
+            <button type="button" class="btn btn-view-invoice">View Invoice</button>
+            <button type="button" class="btn btn-pay-now">Pay Now</button>
+        </div>
+    </div>
+    <!-- Invoice Modal End -->
+    
+    <script>
+      // JavaScript to control the modal
+      const viewDetailsBtns = document.querySelectorAll('.view-details-btn');
+      const invoiceModal = document.getElementById('invoiceModal');
+      const invoiceModalOverlay = document.getElementById('invoiceModalOverlay');
+      const closeInvoiceModalBtn = document.getElementById('closeInvoiceModal');
+
+      function openModal() {
+        if(invoiceModal && invoiceModalOverlay) {
+          invoiceModal.style.display = 'flex';
+          invoiceModalOverlay.style.display = 'block';
+        }
+      }
+
+      function closeModal() {
+        if(invoiceModal && invoiceModalOverlay) {
+          invoiceModal.style.display = 'none';
+          invoiceModalOverlay.style.display = 'none';
+        }
+      }
+
+      viewDetailsBtns.forEach(btn => {
+        btn.addEventListener('click', openModal);
+      });
+
+      if(closeInvoiceModalBtn) {
+        closeInvoiceModalBtn.addEventListener('click', closeModal);
+      }
+      if(invoiceModalOverlay) {
+        invoiceModalOverlay.addEventListener('click', closeModal); // Close if overlay is clicked
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
-</html>
+  </html>
