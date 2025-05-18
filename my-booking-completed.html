@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">  
+    <title>My Bookings Completed</title>
+  </head>
+  <body class="my-booking-page">  
+   <div class="my-bookings-container">  
+      
+      <div class="my-booking-header">
+        <img class="header-bg-pattern" src="assets/referalbgpatterncream.png" alt="Pattern" />
+        <div class="header-content">
+          <a href="home.html" class="btn btn-link text-white me-2 fs-4 back-button-circled">
+            <img src="assets/arrow-curved-left-orange.png" alt="Back" class="back-arrow-icon" />
+          </a>
+          <h1 class="h5 text-black fw-semibold">My Bookings</h1>
+          <button type="button" class="search-button ms-auto">
+            <img src="assets/Vector.png" alt="Search" />
+          </button>
+        </div>
+      </div>
+
+      <div class="booking-tabs">
+        <div class="tab-item active">Ongoing</div>
+        <div class="tab-item">Completed</div>
+        <div class="tab-item">Cancelled</div>
+      </div>
+
+      <div class="booking-content-area"> 
+          <div class="booking-card-container">
+            <div class="booking-card">
+              
+              <div class="card-header-section">
+                <div>
+                  <div class="booking-id-label">Booking ID</div>
+                  <div class="booking-id-value">#BAN25020720104</div>
+                </div>
+                <div class="header-meta-actions"> 
+                    <button type="button" class="btn btn-sm call-partner-btn">
+                       <img src="assets/call-partner-logo.png" alt="Call" class="call-partner-icon"> Call Partner
+                    </button>
+                    <div class="booking-date-time">
+                      <span class="fw-medium">Sun, 20 Feb</span> | <span class="fw-medium">10:00 AM</span>
+                    </div>
+                </div>
+              </div>
+            
+              <div class="partner-message-accepted placeholder-for-otp">  
+                <span class="pickup-otp-label"> </span>
+                <div class="otp-display-boxes">
+                </div>
+              </div>
+            
+              <div class="vehicle-details-section">
+                <div>
+                  <div class="vehicle-name">ROYAL ENFIELD THUNDERBIRDX</div>
+                  <div class="vehicle-number">KL65N5556</div>
+                </div>
+                <div class="service-tag">Prime Service</div>
+              </div>
+            
+              <div class="booking-progress-bar">
+                <div class="progress-line-bg"></div>
+                <div class="progress-line-fg progress-width-50"></div>
+                <div class="progress-step completed">
+                  <div class="step-circle"></div>
+                  <div class="step-label">Booked</div>
+                </div>
+                <div class="progress-step completed">
+                  <div class="step-circle"></div>
+                  <div class="step-label">Accepted</div>
+                </div>
+                <div class="progress-step completed">
+                  <div class="step-circle"></div>
+                  <div class="step-label">Service in Progress</div>
+                </div>
+                <div class="progress-step">
+                  <div class="step-circle"></div>
+                  <div class="step-label">Delivered</div>
+                </div>
+              </div>
+
+              <div class="card-footer-section-wip">
+                <button type="button" class="view-details-btn">VIEW DETAILS</button>
+                <div class="amount-section">
+                  <span class="amount-label">Amount</span>
+                  <span class="amount-value">₹ 1,999</span>
+                </div>
+              </div>
+            </div>
+            <div class="status-banner-container">
+              <div class="status-banner">
+                <span class="status-label">STATUS</span>
+                <span class="status-value">SERVICE COMPLETED</span>
+              </div> 
+            </div>
+          </div>
+      </div>
+
+    </div>
+    
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <div class="row text-center g-0 w-100"> 
+            <div class="col">
+                <a href="bookings.html" class="nav-item active">
+                    <i class="bi bi-calendar2-check"></i>
+                    <span>My Bookings</span>
+                </a>
+            </div>
+            <div class="col">
+                <a href="home.html" class="nav-item">
+                    <i class="bi bi-house-door-fill"></i>  
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="nav-item">
+                    <i class="bi bi-person"></i>
+                    <span>Account</span>
+                </a>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
