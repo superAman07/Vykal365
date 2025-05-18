@@ -1473,15 +1473,15 @@ body.my-booking-page {
     position: relative;
     z-index: 2;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 0.5rem;  
+    align-items: center; 
+    justify-content: flex-start;
+    width: 100%; 
+    top: 52px;
 }
 
 .my-booking-header .back-button {
-    background-color: var(--theme-color);
-    border-radius: 50%;
+    /* background-color: var(--theme-color); */
+    /* border-radius: 50%; */
     width: 38px;
     height: 38px;
     display: flex;
@@ -1547,31 +1547,42 @@ body.my-booking-page {
 .booking-content-area {
     background-color: #ffffff;
     border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    padding: 1.5rem 1rem 1rem 1rem; 
+    border-top-right-radius: 14px; 
     margin-top: -1px;  
     position: relative;
     z-index: 1;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
-
+.booking-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;   
+    max-width: 369px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
 .booking-card {
-    width: 369px;  
-    height: 271px;  
-    margin-left: auto; 
-    margin-right: auto; 
-    padding: 1rem; 
-    margin-bottom: 1.5rem; 
-    background-image: url('Subtract.png');  
-    background-size: 100% 100%; 
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;  
     position: relative; 
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: -2.5rem;
+    background-color: #1E54A1; 
+    padding: 15px;  
+    background: url('Subtract.png') no-repeat;
+    background-size: 100% 100%;  
+    background-position: top left;
+    background-repeat: no-repeat;
+    border: none;  
     display: flex;  
     flex-direction: column;  
     justify-content: space-between;  
 }
+
 
 .booking-card .card-header-section {
     display: flex;
@@ -1768,21 +1779,26 @@ body.my-booking-page {
     font-size: 15.21px;  
     font-weight: 700;
     color: #292929;
+} 
+.status-banner-container {
+    max-width: 369px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-
 .status-banner {
     background-color: #4cb050;
-    margin-top: -70px;
-    margin-left: 20px;
-    width: 369px;
+    margin-top: -70px; 
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 346.8px; 
     height: 67px;
     border-radius: 8px;
-    padding: 0.75rem 33px;
+    padding: 0.75rem 16px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
     font-family: "Inter", Helvetica, sans-serif;
-}
+} 
 .status-banner .status-label {
     padding-top: 25px;
     font-weight: 500;
