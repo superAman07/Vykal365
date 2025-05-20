@@ -2203,7 +2203,7 @@ body .my-booking-view-invoice-page {
     box-sizing: border-box;  
 }
 .booking-details-page-content .service-breakdown-section .service-item:first-child {
-    margin-top: -7px;
+    margin-top: -1px;
 }
 
 .booking-details-page-content .service-breakdown-section .service-item {
