@@ -2186,8 +2186,41 @@ body .my-booking-view-invoice-page {
 } 
 .dotted-line-separator {
     width: 100%;
-    max-width: 354px; 
+    max-width: 340px; 
     border-top: 1px dotted #AAAAAA;  
     margin-left: auto;    
     margin-right: auto;  
+}
+.booking-details-page-content .service-breakdown-section {
+    width: 369px;
+    height: 77px;
+    background: url('invoice-bg-cut-card-image.png') no-repeat center center;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 18px 35px 6px;
+    box-sizing: border-box;  
+}
+.booking-details-page-content .service-breakdown-section .service-item:first-child {
+    margin-top: -7px;
+}
+
+.booking-details-page-content .service-breakdown-section .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    line-height: 1;  
+}
+.booking-details-page-content .service-breakdown-section .service-item span {
+    font-size: 12px;
+    font-family: "Inter", Helvetica, sans-serif;
+    font-weight: 500;
+    color: #747474;
+}
+.booking-details-page-content .service-breakdown-section hr { 
+    border: none;
+    border-top: 0.8px dotted #AAAAAA;
+    margin: 0.25rem 0;  
+    opacity: 1;
 }
