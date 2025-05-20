@@ -2097,16 +2097,6 @@ body .my-booking-view-invoice-page {
     display: flex;
     flex-direction: column; 
 }
-/* .my-booking-view-invoice-page .my-bookings-container .invoice-container{
-    max-width: 430px; 
-    background-color: #ffffff;
-    min-height: calc(100dvh - 30px);  
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    z-index: 10;
-
-} */
-
 .my-booking-view-invoice-page .my-booking-header .call-partner-icon-parent {
     background-color: transparent;
     border: none;
@@ -2223,4 +2213,27 @@ body .my-booking-view-invoice-page {
     border-top: 0.8px dotted #AAAAAA;
     margin: 0.25rem 0;  
     opacity: 1;
+}
+.booking-details-page-content .booking-details-page-content-pending {
+    width: 81px;
+    margin-top: 7px; 
+    height: 23px;
+    border: 0.5px solid #FF8952;
+    border-radius: 15px;
+    padding: 7.52px;
+    display: flex;
+    justify-content: center;
+}
+.booking-details-page-content .booking-details-page-content-pending span {
+    font-size: 12px;
+    color: #FF8952;
+    font-weight: 500;
+}
+
+.booking-details-page-content .booking-id-large {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #292929;
+    margin-top: 16px;
 }
