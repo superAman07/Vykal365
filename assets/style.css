@@ -2113,7 +2113,7 @@ body .my-booking-view-invoice-page {
     color: var(--theme-color); 
     font-size: 12px;  
     font-weight: 500;  
-    padding: 0.25rem 0.1rem;  
+    padding: 0.25rem 1.1rem;  
     display: inline-flex;  
     align-items: center;  
 }
@@ -2127,5 +2127,67 @@ body .my-booking-view-invoice-page {
     z-index: 10;
     background-color: #ffffff;
     border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    border-top-right-radius: 14px; 
+    display: flex;
+    flex-direction: column;
+    padding: 17px !important;
+    align-items: center;
+}
+
+.invoice-content-divider {
+  width: 100%;
+  height: 4px;  
+  background-color: var(--theme-color); 
+  width: 100%;  
+  max-width: 369px;
+  border-radius: 14px; 
+  margin-left: auto;  
+  margin-right: auto;
+}
+
+.my-bookings-container .booking-details-page-content .assistance-banner {
+    display: flex;
+    background-color: #ffffff;
+    height: 91px;
+    max-width: 369px;
+    width: 100%;
+    justify-content: space-evenly; 
+    border: 0.7px solid #525252;
+    border-radius: 10px;
+    align-items: center;
+}
+.my-bookings-container .booking-details-page-content .assistance-banner .assistance-text p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #292929;
+    margin: 0;  
+}
+.my-bookings-container .booking-details-page-content .assistance-banner .assistance-icon-container{
+    height: 45px;
+    width: 45px;
+    background-color: #FF5505;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-bookings-container .booking-details-page-content .assistance-banner .assistance-icon-container .assistance-icon {
+    width: 20px;  
+    height: 20px;  
+}
+.booking-details-page-content .btn-pay-now-large {
+    position: relative;
+    width: 354px;
+    height: 60px; 
+    border-radius: 15px;
+    border-width: 1px;
+    background-color: var(--theme-color);
+    color: #ffffff;
+} 
+.dotted-line-separator {
+    width: 100%;
+    max-width: 354px; 
+    border-top: 1px dotted #AAAAAA;  
+    margin-left: auto;    
+    margin-right: auto;  
 }
