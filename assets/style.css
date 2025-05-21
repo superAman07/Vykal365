@@ -2177,7 +2177,7 @@ body .my-booking-view-invoice-page {
 .dotted-line-separator {
     width: 100%;
     max-width: 340px; 
-    border-top: 1px dotted #AAAAAA;  
+    border-top: 0.4px dotted #AAAAAA;  
     margin-left: auto;    
     margin-right: auto;  
 }
@@ -2254,4 +2254,7 @@ body .my-booking-view-invoice-page {
     font-size: 9px;
     font-weight: 500;
     color: #F00000;
+}
+.booking-details-page-content hr{
+    border-top: 0.4px dotted #AAAAAA;   
 }
