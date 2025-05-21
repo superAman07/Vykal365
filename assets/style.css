@@ -2252,6 +2252,7 @@ body .my-booking-view-invoice-page {
     border-radius: 15px;
     font-size: 9px;
     font-weight: 500;
+    padding: 4.5px;
     color: #F00000;
 }
 .booking-details-page-content hr{
@@ -2260,17 +2261,12 @@ body .my-booking-view-invoice-page {
 .booking-details-box {
   font-family: "Inter", Helvetica, sans-serif;
   width: 343px;
-  height: 180px;
-  background: #fff;
-  border: 1.5px solid #1976d2;
-  border-radius: 8px;
-  margin: 0 auto 18px auto;
-  /* padding: 22px 22px 10px 22px; */
+  height: 180px; 
+  margin: 0 auto 18px auto; 
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* gap: 10px; */
+  justify-content: center; 
 }
 
 .booking-details-box .detail-item {
@@ -2299,7 +2295,7 @@ body .my-booking-view-invoice-page {
 }
 .booking-details-box .detail-value {
   font-family: "Inter", Helvetica, sans-serif;
-  color: #565656;
+  color: #292929;
   font-size: 12px;
   font-weight: 500;
   text-align: left;
@@ -2307,8 +2303,8 @@ body .my-booking-view-invoice-page {
 }
 
 .booking-details-box .detail-value small {
-  font-size: 13px;
-  color: #bdbdbd;
+  font-size: 12px;
+  color: #9D9D9D;
   font-weight: 400;
   display: block;
   margin-top: 2px;
