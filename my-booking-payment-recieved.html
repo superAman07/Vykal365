@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">  
-    <title>My Bookings</title>
+    <title>My Bookings accepted</title>
   </head>
   <body class="my-booking-page">  
    <div class="my-bookings-container">  
@@ -39,12 +39,22 @@
                   <div class="booking-id-label">Booking ID</div>
                   <div class="booking-id-value">#BAN25020720104</div>
                 </div>
-                <div class="booking-date-time">
-                  <span class="fw-medium">Sun, 20 Feb</span> | <span class="fw-medium">10:00 AM</span>
+                <div class="header-meta-actions"> 
+                    <button type="button" class="btn btn-sm call-partner-btn">
+                       <img src="assets/call-partner-logo.png" alt="Call" class="call-partner-icon"> Call Partner
+                    </button>
+                    <div class="booking-date-time">
+                      <span class="fw-medium">Sun, 20 Feb</span> | <span class="fw-medium">10:00 AM</span>
+                    </div>
                 </div>
               </div>
             
-              <p class="partner-message">Our Partner will accept your booking shortly</p>
+              <div class="partner-message-accepted">
+                <span class="pickup-otp-label">Pick Up OTP</span>
+                <div class="otp-display-boxes">
+                    <span>9</span><span>1</span><span>1</span><span>5</span>
+                </div>
+              </div>
             
               <div class="vehicle-details-section">
                 <div>
@@ -56,18 +66,18 @@
             
               <div class="booking-progress-bar">
                 <div class="progress-line-bg"></div>
-                <div class="progress-line-fg progress-width-0"></div>
+                <div class="progress-line-fg progress-width-50"></div>
                 <div class="progress-step completed">
                   <div class="step-circle"></div>
                   <div class="step-label">Booked</div>
                 </div>
-                <div class="progress-step">
+                <div class="progress-step completed">
                   <div class="step-circle"></div>
                   <div class="step-label">Accepted</div>
                 </div>
-                <div class="progress-step">
+                <div class="progress-step active completed">
                   <div class="step-circle"></div>
-                  <div class="step-label">Service in Progress</div>
+                  <div class="step-label">Service Completed</div>
                 </div>
                 <div class="progress-step">
                   <div class="step-circle"></div>
@@ -75,7 +85,7 @@
                 </div>
               </div>
 
-              <div class="card-footer-section">
+              <div class="card-footer-section-booking-accepted">
                 <button type="button" class="view-details-btn">VIEW DETAILS</button>
                 <div class="amount-section">
                   <span class="amount-label">Amount</span>
@@ -86,7 +96,7 @@
             <div class="status-banner-container">
               <div class="status-banner">
                 <span class="status-label">STATUS</span>
-                <span class="status-value">SERVICE BOOKED</span>
+                <span class="status-value">PAYMENT RECEIVED</span>
               </div> 
             </div>
           </div>
@@ -117,6 +127,7 @@
             </div>
         </div>
     </div>
+
     <!-- Invoice Modal Starts here -->
     <div class="invoice-modal-overlay" id="invoiceModalOverlay"></div>
     <div class="invoice-modal" id="invoiceModal">
@@ -171,6 +182,5 @@
       }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
   </body>
 </html>

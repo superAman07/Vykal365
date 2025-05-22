@@ -1196,7 +1196,11 @@ body {
     align-items: center;  
     z-index: 1;
 }
-
+.blog-header-bg .referral-header-content-blog h1 {
+    color: #404040;
+    font-weight: 500;
+    margin-top: auto;
+}
 .blog-overlap {
   margin-top: -80px;
   position: relative;
@@ -1438,6 +1442,7 @@ body {
 
 
 body.my-booking-page {
+    font-family: "Inter", Helvetica, sans-serif;
     background-color: #ffff; 
     padding-bottom: 70px;  
     overflow-x: hidden;
@@ -1736,7 +1741,7 @@ body.my-booking-page {
     background-color: #54c95b;  
 }
 .booking-progress-bar .progress-step.active .step-label {
-    color: #646464;  
+    color: #54CA5C;  
 }
 .booking-progress-bar .step-label {
     line-height: 1.2;
@@ -1811,6 +1816,7 @@ body.my-booking-page {
     text-transform: uppercase;
 }
 .status-banner .status-value {
+    font-family: "Inter", Helvetica, sans-serif;
     padding-top: 25px;
     font-weight: 700;
     color: #ffffff;
@@ -2085,6 +2091,8 @@ body.my-booking-page {
 }
 .my-booking-header .header-content h1 {
     color: #404040;
+    font-weight: 500;
+    margin-top: auto;
 }
 
 body .my-booking-view-invoice-page {
