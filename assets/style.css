@@ -2381,8 +2381,8 @@ body .my-booking-view-invoice-page {
 }
 .booking-details-page-content .detail-image-picker-container .detail-image-picker-container-div .detail-image-picker-container-details-container{
     padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
+    display: flex; 
+    gap: 27px;
 }
 .booking-details-page-content .detail-image-picker-container .detail-image-picker-container-div .detail-image-picker-container-details-container img{
     height: 114px;
@@ -2395,6 +2395,7 @@ body .my-booking-view-invoice-page {
 }
 .detail-image-picker-container-details-contents .bold-horizontal-separator {
     height: 11px;
-    width: 188px;
+    max-width: 188px;
+    width: 100%;
     background-color: #EBEBEB;
 }
