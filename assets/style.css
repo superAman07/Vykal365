@@ -1520,7 +1520,8 @@ body.my-booking-page {
     display: flex;
     background-color: #FFF9F6;
     justify-content: space-around;   
-    padding: 0 1rem;
+    padding: 0px 1rem;
+    margin-top: -21px;
     position: relative;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px; 
