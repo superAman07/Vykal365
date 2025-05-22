@@ -1446,8 +1446,7 @@ body.my-booking-page {
 
 .my-booking-page .my-bookings-container {
     max-width: 430px;
-    margin: 0 auto;
-    background-color: #ffefe8;
+    margin: 0 auto; 
     min-height: calc(100vh - 70px); 
     display: flex;
     flex-direction: column;
@@ -2308,6 +2307,20 @@ body .my-booking-view-invoice-page {
   font-weight: 400;
   display: block;
   margin-top: 2px;
+}
+
+.booking-details-page-content .section-title {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #747474;
+    line-height: 100%;
+    letter-spacing: 0%;
+    align-items: start;
+}
+
+.booking-details-page-content .section-title-container{
+    width: 343px;
 }
 
 .booking-details-page-content .booking-details-page-content-paid {
