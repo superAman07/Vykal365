@@ -2636,3 +2636,128 @@ body .my-booking-view-invoice-page {
     margin: 2px 0 4px 0;
     width: 100%;
 }
+
+/* Styling for notes, download button, and rating section on invoice view only */
+.my-booking-view-invoice-page .bill-details-your-notes-container {
+  width: 100%;
+  max-width: 368px;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-booking-view-invoice-page .your-notes-box {
+  width: 100%;
+  max-width: 368px;
+  height: 72px;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 12px 18px 0 18px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.my-booking-view-invoice-page .your-notes-label,
+.my-booking-view-invoice-page .your-notes-value {
+  font-size: 12px;
+  font-weight: 500;
+  color: #747474;
+}
+.my-booking-view-invoice-page .notes-hr-line {
+  width: 100%;
+  max-width: 330px;
+  height: 0.5px;
+  background-color: #E3E3E3;
+  margin: 5px 0px;  
+  align-self: flex-start;
+}
+@media (max-width: 400px) {
+  .my-booking-view-invoice-page .your-notes-box {
+    max-width: 98vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .my-booking-view-invoice-page .notes-hr-line {
+    max-width: 100%;
+  }
+}
+
+.my-booking-view-invoice-page .btn-download-invoice {
+  width: 194px;
+  height: 35.27px;
+  border: 0.77px solid #3671C7;
+  border-radius: 30px;
+  background: #fff;
+  color: #3671C7;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 18px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.my-booking-view-invoice-page .btn-download-invoice:hover {
+  background: #3671C7;
+  color: #fff;
+}
+
+.my-booking-view-invoice-page .rate-experience-section {
+  width: 100%;
+  max-width: 368px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.my-booking-view-invoice-page .rate-experience-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6A6A6A;
+  margin-bottom: 8px;
+  border-bottom: 1px dashed #e1e1e1;
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.my-booking-view-invoice-page .rate-experience-stars {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px 0 0 0;
+  font-size: 28px;
+  color: #a0a0a0;
+}
+
+.my-booking-view-invoice-page .rate-experience-feedback-box {
+  width: 100%;
+  max-width: 368px;
+  height: 110px;
+  background: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  margin-top: 18px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 18px;
+}
+
+.my-booking-view-invoice-page .btn-submit-feedback {
+  width: 80%;
+  height: 40px;
+  border-radius: 12px;
+  background: #cfcfcf;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: not-allowed;
+  opacity: 1;
+}
