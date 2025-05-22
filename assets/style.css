@@ -1704,7 +1704,7 @@ body.my-booking-page {
 .booking-progress-bar .progress-line-fg {
     position: absolute;
     top: 7px;
-    left: 13%;
+    left: 14%;
     height: 2px;
     background-color: #54c95b;
     border-radius: 1px;
@@ -1713,7 +1713,7 @@ body.my-booking-page {
 .booking-progress-bar .progress-line-fg.progress-width-0   { width:   0%; }
 .booking-progress-bar .progress-line-fg.progress-width-25  { width:  25%; }
 .booking-progress-bar .progress-line-fg.progress-width-50  { width:  50%; }
-.booking-progress-bar .progress-line-fg.progress-width-75  { width:  75%; }
+.booking-progress-bar .progress-line-fg.progress-width-75  { width:  72%; }
 .booking-progress-bar .progress-line-fg.progress-width-100 { width: 100%; }
 
 .booking-progress-bar .progress-step {
