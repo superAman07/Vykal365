@@ -2369,13 +2369,32 @@ body .my-booking-view-invoice-page {
     border-radius: 10px;
     margin-top: auto;
 }
-.booking-details-page-content .detail-image-picker-container .detail-image-picker-container-title{
+.booking-details-page-content .detail-image-picker-container .detail-image-picker-container-div{
     padding: 15px 18px 0px;
 }
-.booking-details-page-content .detail-image-picker-container .detail-image-picker-container-title h2{
+.booking-details-page-content .detail-image-picker-container .detail-image-picker-container-div .detail-image-picker-container-title h2{
     font-weight: 600;
     font-size: 12px; 
     line-height: 100%;
     letter-spacing: 0%;
     color: #6A6A6A;
+}
+.booking-details-page-content .detail-image-picker-container .detail-image-picker-container-div .detail-image-picker-container-details-container{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.booking-details-page-content .detail-image-picker-container .detail-image-picker-container-div .detail-image-picker-container-details-container img{
+    height: 114px;
+    width: 115px;
+} 
+
+.detail-image-picker-container-details-container .detail-image-picker-container-details-contents .detail-item .detail-value{
+    font-weight: 500;
+    font-size: 12px;  
+}
+.detail-image-picker-container-details-contents .bold-horizontal-separator {
+    height: 11px;
+    width: 188px;
+    background-color: #EBEBEB;
 }
