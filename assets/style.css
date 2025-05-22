@@ -2701,6 +2701,10 @@ body .my-booking-view-invoice-page {
   margin-bottom: 18px;
   transition: background 0.2s, color 0.2s;
 }
+.my-booking-view-invoice-page .btn-download-invoice:hover {
+  background: #3671C7;
+  color: #fff;
+}
  
 .my-booking-view-invoice-page .rate-experience-box {
     max-width: 340px;
@@ -2740,4 +2744,31 @@ body .my-booking-view-invoice-page {
     height: 49.83px;
     border-radius: 12.46px; 
     margin-top: auto;
+}
+
+.my-booking-view-invoice-page .rate-experience-stars .bi-star-fill {
+  color: #A6A6A6;
+  font-size: 28px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.my-booking-view-invoice-page .rate-experience-stars .bi-star-fill.filled {
+  color: #FFC700;
+}
+.my-booking-view-invoice-page .btn-submit-feedback {
+  width: 294px;
+  height: 49.83px;
+  border-radius: 12.46px;
+  background: #cfcfcf;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: not-allowed;
+  opacity: 1;
+  transition: background 0.2s;
+}
+.my-booking-view-invoice-page .btn-submit-feedback.active {
+  background: #54CA5C;
+  cursor: pointer;
 }

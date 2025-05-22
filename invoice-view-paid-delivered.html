@@ -185,26 +185,37 @@
           </div>
         </div>
       </div>
-      <div class="bill-details-your-notes-container my-booking-view-invoice-page">
+      <div
+        class="bill-details-your-notes-container my-booking-view-invoice-page"
+      >
         <div class="your-notes-box mb-4">
           <div class="your-notes-label">Your Notes</div>
           <div class="notes-hr-line"></div>
           <div class="your-notes-value">Test</div>
         </div>
-        <button type="button" class="btn-download-invoice mb-4">DOWNLOAD INVOICE</button>
+        <button type="button" class="btn-download-invoice mb-4">
+          DOWNLOAD INVOICE
+        </button>
         <div class="rate-experience-box">
           <div class="rate-experience-section mb-4">
             <div class="rate-experience-label">Rate Your Experience</div>
             <div class="dotted-line-separator"></div>
-            <div class="rate-experience-stars">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
+            <div class="rate-experience-stars" id="ratingStars">
+              <i class="bi bi-star-fill" data-value="1"></i>
+              <i class="bi bi-star-fill" data-value="2"></i>
+              <i class="bi bi-star-fill" data-value="3"></i>
+              <i class="bi bi-star-fill" data-value="4"></i>
+              <i class="bi bi-star-fill" data-value="5"></i>
             </div>
             <div class="rate-experience-feedback-box mt-3">
-              <button type="button" class="btn-submit-feedback" disabled>Submit</button>
+              <button
+                type="button"
+                class="btn-submit-feedback"
+                id="submitFeedbackBtn"
+                disabled
+              >
+                Submit
+              </button>
             </div>
           </div>
         </div>
@@ -233,5 +244,21 @@
         </div>
       </div>
     </div>
+    <script>
+      const stars = document.querySelectorAll("#ratingStars .bi-star-fill");
+      const submitBtn = document.getElementById("submitFeedbackBtn");
+      let selectedRating = 0;
+
+      stars.forEach((star, idx) => {
+        star.addEventListener("click", () => {
+          selectedRating = idx + 1;
+          stars.forEach((s, i) => {
+            s.classList.toggle("filled", i < selectedRating);
+          });
+          submitBtn.disabled = false;
+          submitBtn.classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>
