@@ -1711,10 +1711,35 @@ body.my-booking-page {
     border-radius: 1px;
     z-index: 2;
 }
+.booking-progress-bar .progress-line-fg-cancelled {
+    position: absolute;
+    top: 7px;
+    left: 14%;
+    height: 2px;
+    background-color: #da0101;
+    border-radius: 1px;
+    z-index: 2;
+}
+.booking-progress-bar .step-circle-red {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #DA0101;
+    border: 2px solid #fff;
+    margin-bottom: 0.3rem;
+    box-sizing: border-box;
+}
+.booking-progress-bar .step-label-red {
+    color: #DA0101;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1.2;
+}
 .booking-progress-bar .progress-line-fg.progress-width-0   { width:   0%; }
 .booking-progress-bar .progress-line-fg.progress-width-25  { width:  25%; }
 .booking-progress-bar .progress-line-fg.progress-width-50  { width:  50%; }
 .booking-progress-bar .progress-line-fg.progress-width-75  { width:  72%; }
+.booking-progress-bar .progress-line-fg-cancelled.progress-width-75  { width:  72%; }
 .booking-progress-bar .progress-line-fg.progress-width-100 { width: 100%; }
 
 .booking-progress-bar .progress-step {
