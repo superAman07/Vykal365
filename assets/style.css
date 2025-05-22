@@ -2532,3 +2532,107 @@ body .my-booking-view-invoice-page {
     border: none;
     display: block;
 }
+.my-booking-view-invoice-page .delivered-bill-details-container {
+    max-width: 369px;
+    width: 100%;
+    height: 143px; 
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.delivered-bill-details-container .delivered-bill-details-container-div .delivered-bill-details-container-title{
+    padding-left: 30px;
+}
+.delivered-bill-details-container .delivered-bill-details-container-div .delivered-bill-details-container-title h1{
+    font-weight: 500;
+    font-size: 14px;
+    color: #747474;
+}
+.delivered-bill-details-container,
+.delivered-bill-details-container .delivered-bill-details-container-div,
+.delivered-bill-details-container .delivered-bill-details-container-div .delivered-bill-details-background-details-container {
+    box-sizing: border-box;
+}
+
+.delivered-bill-details-container .delivered-bill-details-container-div .delivered-bill-details-background-details-container {
+    width: 100%;
+    max-width: 369px; 
+    box-sizing: border-box;
+    height: 113px;
+    background: url('bill-detail-background.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: top left;
+    background-repeat: no-repeat;
+     display: flex;                 
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;                   
+    position: relative;
+    overflow: hidden;
+} 
+@media (max-width: 400px) {
+  .delivered-bill-details-container .delivered-bill-details-container-div .delivered-bill-details-background-details-container {
+    max-width: 98vw;
+    height: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+.my-booking-view-invoice-page .delivered-bill-details-background-details-container .bill-details-list {
+    width: 100%;
+    height: 100%;
+    padding: 14px 28px 14px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+    box-sizing: border-box;
+}
+.my-booking-view-invoice-page .delivered-bill-details-background-details-container .bill-details-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #757575;
+    margin-bottom: 0;
+    width: 100%;
+}
+.my-booking-view-invoice-page .delivered-bill-details-background-details-container .bill-details-label {
+    color: #757575;
+    font-weight: 500;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.my-booking-view-invoice-page .delivered-bill-details-background-details-container .bill-details-value {
+    color: #292929;
+    font-weight: 500;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.my-booking-view-invoice-page .delivered-bill-details-background-details-container .bill-details-row.bill-details-total .bill-details-label {
+    color: #008001;
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 14px;
+}
+
+.my-booking-view-invoice-page .delivered-bill-details-background-details-container .bill-details-row.bill-details-total .bill-details-value {
+    color: #008001;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 12px;
+}
+
+.my-booking-view-invoice-page .delivered-bill-details-background-details-container .bill-details-separator {
+    border-top: 1.5px dashed #bdbdbd;
+    margin: 2px 0 4px 0;
+    width: 100%;
+}
