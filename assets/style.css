@@ -2133,6 +2133,7 @@ body .my-booking-view-invoice-page {
   background-color: var(--theme-color); 
   width: 100%;  
   max-width: 369px;
+  margin-top: -20px;
   border-radius: 14px; 
   margin-left: auto;  
   margin-right: auto;
