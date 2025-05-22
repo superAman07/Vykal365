@@ -2287,6 +2287,7 @@ body .my-booking-view-invoice-page {
   display: flex;
   flex-direction: column;
   justify-content: center; 
+  gap: 8px;
 }
 
 .booking-details-box .detail-item {
