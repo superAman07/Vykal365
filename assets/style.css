@@ -2360,3 +2360,22 @@ body .my-booking-view-invoice-page {
     color: #008001;
     font-weight: 500;
 }
+
+.booking-details-page-content .detail-image-picker-container{
+    max-width: 368px;
+    height: 179px;
+    width: 100%;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+    margin-top: auto;
+}
+.booking-details-page-content .detail-image-picker-container .detail-image-picker-container-title{
+    padding: 15px 18px 0px;
+}
+.booking-details-page-content .detail-image-picker-container .detail-image-picker-container-title h2{
+    font-weight: 600;
+    font-size: 12px; 
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #6A6A6A;
+}
