@@ -2476,3 +2476,59 @@ body .my-booking-view-invoice-page {
     flex: none;       
     display: block;
 }
+
+.my-booking-view-invoice-page .delivered-service-images-container {
+    max-width: 368px;
+    height: 179px;
+    width: 100%;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delivered-service-images-container .delivered-service-images-container-title h2{
+    font-weight: 600;
+    font-size: 12px; 
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #6A6A6A;
+}
+.delivered-service-images-container .delivered-service-images-container-div {
+    padding: 15px 18px 0px;
+}
+
+.delivered-service-images-container .delivered-service-images-container-images{
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    overflow-x: auto;
+    padding: 0 0 10px 0;
+    margin-top: 14px;
+    -ms-overflow-style: none; 
+}
+.delivered-service-images-container .delivered-service-images-container-images::-webkit-scrollbar {
+    display: none; 
+}
+.delivered-service-images-container .delivered-service-images-container-images img{
+    height: 114px;
+    width: 115px;
+    border-radius: 8px;
+}
+.delivered-service-images-container .delivered-service-images-container-images .service-images-slider {
+    display: flex;
+    gap: 8.5px;
+    width: 100%;
+}
+.delivered-service-images-container .delivered-service-images-container-images .service-images-slider .slider-img {
+    width: 115px;
+    height: 114px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: #f5f5f5;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    border: none;
+    display: block;
+}
