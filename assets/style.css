@@ -2261,7 +2261,7 @@ body .my-booking-view-invoice-page {
   font-family: "Inter", Helvetica, sans-serif;
   width: 343px;
   height: 180px; 
-  margin: 0 auto 18px auto; 
+  margin: 1px auto 0px auto; 
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
