@@ -2405,8 +2405,9 @@ body .my-booking-view-invoice-page {
     height: 156px;
     margin-top: 20px;
     margin-left: auto;
-    margin-right: auto; 
-    border: 1px dotted red;
+    margin-right: auto;  
+    flex-direction: column; 
+    display: flex;
 }
 .my-bookings-container .delivered-job-card-container .detail-job-card-container-title {
     padding-left: 5px;
@@ -2423,4 +2424,55 @@ body .my-booking-view-invoice-page {
     margin-left: auto;
     margin-right: auto;
     margin-top: -5px;
+}
+.delivered-job-card-container .details-job-card .detail-item .detail-label {
+    font-weight: 500;
+    font-size: 12px;  
+    color: #747474;
+}
+.delivered-job-card-container .details-job-card .detail-item .detail-value {
+    font-weight: 500;
+    font-size: 12px;  
+    color: #292929;
+}
+.delivered-job-card-container .details-job-card .detail-item .detail-value-1 {
+    font-weight: 700;
+    font-size: 14px;  
+    color: #292929;
+}
+.delivered-job-card-container .details-job-card .detail-item .detail-value-2 {
+    font-weight: 500;
+    font-size: 12px;  
+    color: #565656;
+}
+.delivered-job-card-container .details-job-card {
+    width: 343px;
+    height: 180px;
+    margin: 1px auto 0px auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+.delivered-job-card-container .details-job-card .detail-item {
+    display: flex; 
+    align-items: flex-start;
+    font-size: 15px;
+    margin-bottom: 0.2rem;
+}
+.delivered-job-card-container .details-job-card .detail-label {
+    font-weight: 500;
+    font-size: 12px;
+    color: #747474;
+    min-width: 130px;   
+}
+
+.delivered-job-card-container .details-job-card .detail-value,
+.delivered-job-card-container .details-job-card .detail-value-1,
+.delivered-job-card-container .details-job-card .detail-value-2 {
+    text-align: left;
+    margin-left: 24px;   
+    flex: none;       
+    display: block;
 }
