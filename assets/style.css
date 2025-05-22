@@ -1540,6 +1540,7 @@ body.my-booking-page {
     padding: 0.75rem 0.5rem;
     cursor: pointer;
     text-align: center;
+    text-decoration: none;
     flex-grow: 1;
     border-bottom: 3px solid transparent;
 }
