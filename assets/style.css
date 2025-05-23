@@ -2886,11 +2886,26 @@ body .my-booking-view-invoice-page {
     margin-top: 47px;
     margin-bottom: auto; 
 }
-.bike-service-header-content-bike-service .bike-wrench-icon-top-header img{
+.bike-wrench-icon-top-header {
     width: 60px;
     height: 60px;
-    background-color: #ffffff;
     border-radius: 50%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bike-service-header-content-bike-service .bike-wrench-icon-top-header img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bike-wrench-icon-top-header img.selected-bike {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 .bike-service-header-bg .bike-service-header-content-bike-service h1 {
     color: #ffff;
