@@ -3359,3 +3359,19 @@ body .my-booking-view-invoice-page {
     padding: 16px;
     box-sizing: border-box;
 }
+.bike-service-page .app-container .periodic-details-container {
+   width: 100%; 
+}
+.periodic-details-container .prime-bike-service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -91px;
+}
+.periodic-details-container .prime-bike-service-container img {
+    max-width: 389px;
+    height: 234px;
+    width: 100%;
+}
