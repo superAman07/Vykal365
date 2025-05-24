@@ -2913,6 +2913,8 @@ body .my-booking-view-invoice-page {
     width: 45px;
     height: 45px;
     object-fit: contain;
+    border-radius: 30px;
+    border: 2px solid #FF5505;
 }
 .bike-service-header-bg .bike-service-header-content-bike-service h1 {
     color: #ffff;
