@@ -3325,7 +3325,6 @@ body .my-booking-view-invoice-page {
         max-width: 340px;
     }
 
-    /* Maintain proper spacing for card elements */
     .package-details {
         gap: 10px;
     }
