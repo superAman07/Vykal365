@@ -2898,13 +2898,18 @@ body .my-booking-view-invoice-page {
 }
 
 .bike-service-header-content-bike-service .bike-wrench-icon-top-header img{
-    width: 100%;
-    height: 100%;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
-.bike-wrench-icon-top-header img.selected-bike {
-    width: 24px;
-    height: 24px;
+.bike-wrench-icon-top-header.selected {
+    width: 45px;
+    height: 45px;
+}
+
+.bike-wrench-icon-top-header.selected img {
+    width: 45px;
+    height: 45px;
     object-fit: contain;
 }
 .bike-service-header-bg .bike-service-header-content-bike-service h1 {
