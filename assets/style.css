@@ -3373,11 +3373,17 @@ body .my-booking-view-invoice-page {
    width: 100%; 
 }
 .periodic-details-container .prime-bike-service-container {
+    position: relative;
+    width: 100%;
+    max-width: 389px;
     display: flex;
     justify-content: center;
+    max-height: 234px;
     align-items: center;
-    position: relative;
+    height: 100%;
     z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: -100px;
 }
 .periodic-details-container .prime-bike-service-container img {
@@ -3385,8 +3391,7 @@ body .my-booking-view-invoice-page {
     height: 234px;
     width: 100%;
 }
-
-/* Package details page specific styles */
+ 
 .periodic-details-container .prime-service-banner {
     position: relative;
     width: 100%;
@@ -3444,10 +3449,44 @@ body .my-booking-view-invoice-page {
     z-index: 0;
 }
 
-/* Responsive styles */
 @media (max-width: 380px) {
     .periodic-details-container .prime-service-banner {
-        max-width: calc(100% - 32px);
-        margin: 16px;
+        max-width: calc(100% - 32px); 
+    }  
+}
+
+.service-images-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.service-images-row {
+    width: 355px;
+    height: 86.82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.service-images-row .service-thumb {
+    width: 111.9px;
+    height: 86.82px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 390px) {
+    .service-images-row {
+        width: 100%;
+        max-width: 345px;
+        gap: 2px;
+        padding: 0;  
+    }
+    .service-images-row .service-thumb {
+        width: calc((100% - 16px) / 3); /* Distribute width equally with gap */
+        height: 86.82px;
     }
 }
