@@ -2940,8 +2940,7 @@ body .my-booking-view-invoice-page {
     height: 4px;
     max-width: 368px;
     min-width: 350px;
-    width: 100%;
-    /* padding-left: 2rem; */
+    width: calc(100% - 24px); 
     background-color: #A8CCFF;
     border-radius:14px;
     position: absolute;
@@ -2957,7 +2956,7 @@ body .my-booking-view-invoice-page {
     margin-right: auto;
     margin-top: 16px;
 }
-@media (width: 360px) {
+@media (max-width: 380px) {
     .expert-bike-service-image {
         width: 90%;  
         height: auto;  
@@ -2967,7 +2966,7 @@ body .my-booking-view-invoice-page {
         height: 4px;
         max-width: 318px;
         min-width: 250px;
-        width: 100%; 
+        width: calc(100% - 32px); 
         z-index: 2;
     }
 }
@@ -3133,16 +3132,13 @@ body .my-booking-view-invoice-page {
   padding: 16px;
   margin-bottom: 16px;
   height: 218px;
-  width: 369px;
+  max-width: 369px;
+  width: 100%;
 }
 
 .bike-service-container .service-packages-section .service-package.recommended {
   border: 0.7px solid #DADADA;
   box-shadow: 0px 4px 11.6px 0px #0000001A;
-}
-.package-label.recommended {
-  background: #54CA5C;
-  color: #FFFFFF;
 }
 .service-packages-section .service-package .package-title {
     font-size: 12px;
@@ -3156,13 +3152,39 @@ body .my-booking-view-invoice-page {
     justify-content: center;
     align-items: center;
 }
+.service-packages-section .standard-service-package {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  height: 218px;
+  max-width: 369px;
+  width: 100%;
+  border: 0.7px solid #DADADA;
+  box-shadow: 0px 4px 11.6px 0px #0000001A;
+}
 
 .package-label.standard {
-  background: #FFB020;
-  color: #FFFFFF;
+  background: #F0FF68;
+  color: #292929;
+  width: 141px;
+  height: 19px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .service-package .package-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.standard-service-package .package-details {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -3195,6 +3217,14 @@ body .my-booking-view-invoice-page {
   height: 10px;
   margin-top: 7px; 
 }
+.standard-service-package .package-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 336px;
+  height: 10px;
+  margin-top: 7px;
+}
 
 .package-footer .amount-text {
   font-size: 12px;
@@ -3208,6 +3238,12 @@ body .my-booking-view-invoice-page {
 }
 
 .service-package .btn-view-details {
+  color: #FF8952;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.standard-service-package .btn-view-details {
   color: #FF8952;
   font-size: 12px;
   font-weight: 500;
@@ -3258,6 +3294,52 @@ body .my-booking-view-invoice-page {
         padding: 3px 6px;
     }
 }
+@media (max-width: 380px) {
+    .bike-service-container {
+        padding: 0 12px;
+    }
+    .service-packages-section {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+        padding: 0 8px;
+        box-sizing: border-box;
+    }
+
+    .service-packages-section .package-type {
+        width: 100%;
+        max-width: 219px; 
+    }
+
+    .service-package,
+    .standard-service-package {
+        width: 100%;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+    }
+
+    .package-badge {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    /* Maintain proper spacing for card elements */
+    .package-details {
+        gap: 10px;
+    }
+
+    .package-footer {
+        width: 100%;
+        max-width: 289px;
+    }
+
+    .divider-of-width-333 {
+        width: calc(100% - 20px);
+        max-width: 310px;
+    }
+}
 
 .recommended-packages-container {
     width: 100%;
@@ -3268,4 +3350,13 @@ body .my-booking-view-invoice-page {
     flex-direction: column;
     align-items: center;
     margin-top: -50px;
+}
+.service-package.recommended,
+.standard-service-package {
+    width: 100%;
+    max-width: 369px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    box-sizing: border-box;
 }
