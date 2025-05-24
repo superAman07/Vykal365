@@ -2998,6 +2998,7 @@ body .my-booking-view-invoice-page {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 .bike-service-icons-section .icon-image {
   width: 53px;
