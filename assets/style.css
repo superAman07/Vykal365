@@ -3110,3 +3110,162 @@ body .my-booking-view-invoice-page {
     font-weight: 500;
     cursor: pointer;
 }
+
+.service-packages-section .package-type {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #676767;
+  margin: 20px 0px; 
+  border: 0.5px solid #9A9A9A;
+  background: #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 219px;
+  height: 31px;
+}
+.bike-service-container .service-packages-section .service-package {
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  height: 218px;
+  width: 369px;
+}
+
+.bike-service-container .service-packages-section .service-package.recommended {
+  border: 0.7px solid #DADADA;
+  box-shadow: 0px 4px 11.6px 0px #0000001A;
+}
+.package-label.recommended {
+  background: #54CA5C;
+  color: #FFFFFF;
+}
+.service-packages-section .service-package .package-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #292929;
+    width: 112px;
+    height: 19px;
+    background-color: #FFC068;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.package-label.standard {
+  background: #FFB020;
+  color: #FFFFFF;
+}
+
+.service-package .package-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.package-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.package-details li {
+    font-size: 12px;
+    color: #8C8C8C;
+    font-weight: 400;
+}
+
+.package-details .package-image {
+  width: 116px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-package .package-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 336px;
+  height: 10px;
+  margin-top: 7px; 
+}
+
+.package-footer .amount-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #9D9D9D;
+}
+.package-footer .amount {
+  font-size: 14px;
+  font-weight: 700;
+  color: #292929;
+}
+
+.service-package .btn-view-details {
+  color: #FF8952;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.divider-of-width-333 {
+    width: 100%;
+    max-width: 333px;
+    height: 0;
+    margin: 19px auto 0px auto;
+    border: none;
+    border-top: 1px dashed #AAAAAA ;
+    background-image: linear-gradient(to right, #AAAAAA 20%, transparent 0%);
+    background-position: top;
+    background-size: 8px 1px; 
+    background-repeat: repeat-x;
+}
+.package-badge {
+    position: relative;
+    background: #54CA5C;
+    width: 369px;
+    color: white;
+    padding: 6px 12px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 12px;
+    height: 70px;
+    top: 59px;
+    font-weight: 500;
+    z-index: 0;
+}
+
+.service-package {
+    position: relative;  
+    margin-top: 16px;  
+}
+ 
+@media (max-width: 375px) {
+    .package-badge {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .package-badge {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+}
+
+.recommended-packages-container {
+    width: 100%;
+    max-width: 369px; 
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
