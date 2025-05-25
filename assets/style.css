@@ -3684,6 +3684,7 @@ body .my-booking-view-invoice-page {
     border: 1px solid #FFC2C2;
     border-radius: 15px; 
     padding: 0 24px;
+    text-decoration: none;
 }
 .bike-service-page .cart-content .btn-add-to-cart:hover {
     background: #f85e05;
