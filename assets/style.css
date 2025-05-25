@@ -3778,3 +3778,44 @@ body .my-booking-view-invoice-page {
         margin-right: auto;
     }
 }
+.my-cart-main-content-body {
+    width: 100%;
+}
+.card-my-cart .my-cart-main-content-body .prime-service-my-cart {
+    max-width: 368px;
+    width: 100%;
+    height: 97px;
+    border-radius: 10px;
+    border: 1px solid #E1E1E1;
+    padding: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.my-cart-main-content-body .prime-service-my-cart img {
+    width: 107px;
+    height: 60px; 
+}
+.prime-service-my-cart-content .prime-service-my-cart-content-upper-line {
+    display: flex;
+    justify-content: space-between;
+}
+.prime-service-my-cart-content .prime-service-my-cart-content-upper-line img{
+    width: 18px;
+    height: 18px
+}
+.prime-service-my-cart-content .prime-service-my-cart-content-upper-line .prime-service-my-cart-title {
+    background-color: #FFC068;
+    width: 112px;
+    height: 19px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prime-service-my-cart-content {
+    width: 195px;
+    height: 57px;
+}
