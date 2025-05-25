@@ -4238,3 +4238,113 @@ body .my-booking-view-invoice-page {
     width: 100%;
   }
 }
+
+.add-notes-images-container {
+    max-width: 368px;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.notes-section, 
+.images-section {
+    margin-bottom: 16px;
+}
+
+.notes-box-header,
+.images-box-header {
+    margin-bottom: 12px;
+}
+
+.notes-box-title,
+.images-box-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6A6A6A;
+    margin-bottom: 4px;
+}
+
+.notes-box-subtitle,
+.images-box-subtitle {
+    font-size: 10px;
+    color: #9D9D9D;
+    margin: 0;
+}
+
+.notes-input-box {
+    width: 100%;
+    height: 109px;
+    background: #F8F8F8;
+    border: 1px solid #E1E1E1;
+    border-radius: 8px;
+}
+
+.images-upload-box {
+    width: 100%;
+    height: 109px;
+    background: #F8F8F8;
+    border: 1px solid #E1E1E1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.images-upload-box img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.images-upload-text {
+    font-size: 12px;
+    color: #9D9D9D;
+    text-align: center;
+}
+
+@media (max-width: 380px) {
+    .add-notes-images-container {
+        max-width: 340px;
+        padding: 12px;
+    }
+    
+    .notes-input-box,
+    .images-upload-box {
+        height: 96px;
+    }
+}
+
+@media (max-width: 320px) {
+    .add-notes-images-container {
+        max-width: 300px;
+        padding: 10px;
+    }
+    
+    .notes-input-box,
+    .images-upload-box {
+        height: 90px;
+    }
+    
+    .images-upload-text {
+        font-size: 11px;
+    }
+}
+.add-notes-images-container .notes-section .notes-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3px;
+}
+.add-notes-images-container .images-section .images-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3px;
+}
+
