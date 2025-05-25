@@ -2850,7 +2850,7 @@ body .my-booking-view-invoice-page {
 
 .bike-service-page {
     background-color: var(--bg-light-grey);  
-    padding-bottom: 70px;  
+    /* padding-bottom: 70px;   */
     overflow-y: auto;
 }
 .bike-service-page .app-container {
