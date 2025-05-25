@@ -3819,3 +3819,17 @@ body .my-booking-view-invoice-page {
     width: 195px;
     height: 57px;
 }
+.prime-service-my-cart-content-lower-line {
+    display: grid;
+    align-items: center; 
+}
+.prime-service-my-cart-content-lower-line-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: #565656;
+}
+.prime-service-my-cart-content-lower-line-sub-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: #9D9D9D;
+}
