@@ -3565,3 +3565,80 @@ body .my-booking-view-invoice-page {
     text-align: center;
     color: #02BC49;
 }
+.whats-included-container {
+    width: 369px;
+    height: 369px;
+    margin: 24px auto;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
+    border: 0.7px solid #DADADA;
+}
+
+.whats-included-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #6A6A6A;
+    margin-bottom: 8px;
+}
+
+.whats-included-divider {
+    width: 334px;
+    height: 1px;
+    margin: 5px auto 15px;
+    border: 0.7px solid #DADADA;
+}
+
+.service-items-container {
+    width: 323px;
+    height: 285px;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.service-items-column {
+    width: 41%;
+}
+
+.service-check-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 12px;
+}
+
+.check-icon {
+    width: 13px;
+    height: 13px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 9px;
+}
+
+.service-text {
+    font-size: 9px;
+    color: #606060;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@media (max-width: 380px) {
+    .whats-included-container {
+        width: calc(100% - 32px);
+        height: auto;
+    }
+
+    .whats-included-divider {
+        width: 100%;
+        max-width: 334px;
+    }
+
+    .service-items-container {
+        width: 100%;
+        max-width: 323px;
+    }
+}
