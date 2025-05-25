@@ -4349,3 +4349,52 @@ body .my-booking-view-invoice-page {
     padding: 0px 3px;
 }
 
+.my-cart-app-container .cart-content {
+    position: fixed;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 0 16px;
+    z-index: 100;
+    background: transparent;
+}
+
+.my-cart-app-container .cart-content .btn-add-to-cart .price {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.my-cart-app-container .cart-content .btn-add-to-cart .add-to-cart {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.my-cart-app-container .cart-content .btn-add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    height: 60px;
+    width: 100%;
+    background: #FF5F00;
+    color: #FFFFFF;
+    border: 1px solid #FFC2C2;
+    border-radius: 15px; 
+    padding: 0 24px;
+    text-decoration: none;
+}
+.my-cart-app-container .cart-content .btn-add-to-cart:hover {
+    background: #f85e05;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(255, 95, 0, 0.2);
+}
