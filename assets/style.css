@@ -3459,7 +3459,7 @@ body .my-booking-view-invoice-page {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 23px;
 }
 
 .service-images-row {
@@ -3486,7 +3486,61 @@ body .my-booking-view-invoice-page {
         padding: 0;  
     }
     .service-images-row .service-thumb {
-        width: calc((100% - 16px) / 3); /* Distribute width equally with gap */
+        width: calc((100% - 16px) / 3);  
         height: 86.82px;
+    }
+}
+
+.service-benefits-container {
+    width: 100%;
+    max-width: 402px;
+    margin: 34px auto 10px;
+    display: flex;
+    padding: 0 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-benefits-row {
+    width: 357px;
+    height: 103px;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefit-item {
+    width: 69px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.benefit-item img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.benefit-item .benefit-text {
+    color: #292929;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+    width: 100%;
+}
+
+@media (max-width: 380px) {
+    .service-benefits-row {
+        width: 100%;
+        max-width: 345px;
     }
 }
