@@ -4045,3 +4045,154 @@ body .my-booking-view-invoice-page {
         gap: 6px;
     }
 }
+
+.my-cart-main-content-body-add-ons {
+    margin-top: 20px;
+}
+.my-cart-main-content-body-add-ons .add-ons-my-cart-3 {
+    max-width: 368px;
+    max-height: 308px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #E1E1E1;
+    padding: 16px;
+}
+.add-ons-my-cart-title-3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6A6A6A;
+    margin-bottom: 0px;
+}
+.add-ons-my-cart-3 .my-cart-hr-line {
+    margin: 5px 0px;
+    border: 0.5px solid #E3E3E3;
+}
+.add-ons-wrapper {
+    position: relative; 
+}
+
+.add-ons-container {
+    overflow: hidden;
+}
+
+.add-ons-slide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.add-on-card {
+    width: 161.28px;
+    height: 238.17px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+}
+
+.add-on-image {
+    width: 144px;
+    height: 142px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.add-on-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 380px) {
+    .add-ons-slide {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    
+    .add-on-card {
+        width: calc(100% - 4px);
+        height: auto;
+    }
+    
+    .add-on-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+}
+
+.add-on-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-on-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF5F00;
+    margin-bottom: 4px;
+}
+
+.add-on-description {
+    font-size: 12px;
+    color: #6A6A6A;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.add-on-price-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.add-on-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #292929;
+}
+
+.add-on-remove, .add-on-add {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+.add-on-remove {
+    color: #FF0000;
+    background: transparent;
+    border: 1px solid #FF0000;
+}
+
+.add-on-add {
+    color: #008000;
+    background: transparent;
+    border: 1px solid #008000;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 16px;
+}
+
+.slider-dots .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #F0CFC0;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #FF5505;
+}
