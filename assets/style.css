@@ -4005,3 +4005,45 @@ body .my-booking-view-invoice-page {
     font-weight: 600;
     color: #6A6A6A;
 }
+@media (max-width: 380px) {
+    .date-time-selector {
+        width: 100%;
+        max-width: 340px;
+        padding: 14px 16px;
+        margin: 0 auto;
+    }
+
+    .time-slots-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+
+    .time-slot {
+        width: 100%;
+        min-width: auto;
+        font-size: 10px;
+    }
+
+    .dates-container {
+        width: 100%;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .date-card {
+        min-width: 68px;
+        width: 68px;
+    }
+}
+
+@media (max-width: 340px) {
+    .date-time-selector {
+        padding: 12px;
+    }
+
+    .time-slots-container {
+        gap: 6px;
+    }
+}
