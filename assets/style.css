@@ -3642,3 +3642,47 @@ body .my-booking-view-invoice-page {
         max-width: 323px;
     }
 }
+
+.bike-service-page .cart-content {
+    max-width: 354px;
+    width: 100%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bike-service-page .cart-content .btn-add-to-cart .price {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.bike-service-page .cart-content .btn-add-to-cart .add-to-cart {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bike-service-page .cart-content .btn-add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    height: 60px;
+    width: 100%;
+    background: #FF5F00;
+    color: #FFFFFF;
+    border: 1px solid #FFC2C2;
+    border-radius: 15px; 
+    padding: 0 24px;
+}
+.bike-service-page .cart-content .btn-add-to-cart:hover {
+    background: #f85e05;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(255, 95, 0, 0.2);
+}
