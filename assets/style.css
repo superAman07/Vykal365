@@ -4089,8 +4089,7 @@ body .my-booking-view-invoice-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
-    padding: 12px 0;
+    gap: 12px; 
     box-sizing: border-box;
 }
 
