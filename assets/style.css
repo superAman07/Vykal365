@@ -4057,6 +4057,8 @@ body .my-booking-view-invoice-page {
     border-radius: 10px;
     border: 1px solid #E1E1E1;
     padding: 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 .add-ons-my-cart-title-3 {
     font-size: 12px;
@@ -4070,10 +4072,26 @@ body .my-booking-view-invoice-page {
 }
 .add-ons-wrapper {
     position: relative; 
+    overflow: hidden; 
 }
 
 .add-ons-container {
-    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;   
+}
+.add-ons-slider {
+  display: flex;
+  transition: transform 0.3s ease; 
+}
+.slide {
+    flex: 0 0 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    box-sizing: border-box;
 }
 
 .add-ons-slide {
@@ -4092,19 +4110,35 @@ body .my-booking-view-invoice-page {
     padding: 8px;
     border: 1px solid #E1E1E1;
     border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .add-on-image {
-    width: 144px;
+    position: relative;
+    width: 100%;
     height: 142px;
-    border-radius: 8px;
     overflow: hidden;
+    border-radius: 7.5px;
 }
 
 .add-on-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.add-on-image .add-on-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FF5F00;
+    color: #FFFFFF;
+    padding: 8px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
 }
 @media (max-width: 380px) {
     .add-ons-slide {
@@ -4138,7 +4172,8 @@ body .my-booking-view-invoice-page {
 }
 
 .add-on-description {
-    font-size: 12px;
+    font-size: 8px;
+    font-weight: 400;
     color: #6A6A6A;
     margin-bottom: 8px;
     line-height: 1.4;
@@ -4152,30 +4187,26 @@ body .my-booking-view-invoice-page {
 }
 
 .add-on-price {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
-    color: #292929;
+    color: #6A6A6A;
 }
 
-.add-on-remove, .add-on-add {
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 500;
+.add-on-remove, .add-on-add {  
+    font-size: 10px;
+    font-weight: 400;
     cursor: pointer;
     border: none;
 }
 
 .add-on-remove {
-    color: #FF0000;
+    color: #D80000;
     background: transparent;
-    border: 1px solid #FF0000;
 }
 
 .add-on-add {
     color: #008000;
-    background: transparent;
-    border: 1px solid #008000;
+    background: transparent; 
 }
 
 .slider-dots {
@@ -4193,6 +4224,14 @@ body .my-booking-view-invoice-page {
     cursor: pointer;
 }
 
-.dot.active {
-    background-color: #FF5505;
+.slider-dots .dot.active {
+  background-color: #FF5F00;
+}
+@media (max-width: 380px) {
+  .my-cart-main-content-body-add-ons .add-ons-my-cart-3 {
+    max-width: calc(100% - 32px);
+  }
+  .add-ons-wrapper {
+    width: 100%;
+  }
 }
