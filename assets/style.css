@@ -3524,14 +3524,14 @@ body .my-booking-view-invoice-page {
 }
 
 .benefit-item img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 
 .benefit-item .benefit-text {
-    color: #292929;
-    font-size: 12px;
+    color: #585858;
+    font-size: 9px;
     font-weight: 400;
     text-align: center;
     line-height: 1.2;
@@ -3543,4 +3543,25 @@ body .my-booking-view-invoice-page {
         width: 100%;
         max-width: 345px;
     }
+}
+.expert-care-banner-container {
+    display: flex;
+    height: 26px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 4px;
+    background-color: #EFFFEA;
+}
+.expert-care-banner-container img {
+    height: 15px;
+    width: 15px;
+}
+.expert-care-banner-container .expert-care-text {
+    font-size: 10px;
+    font-family: "Inter", Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #02BC49;
 }
