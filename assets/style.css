@@ -4583,7 +4583,7 @@ body .my-booking-view-invoice-page {
 }
 
 .banner-title-tyre-replacement {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 600;
     margin: 0;
     width: 100%;
@@ -4879,8 +4879,18 @@ body .my-booking-view-invoice-page {
     border: 0.7px solid #DADADA;
 }
 @media (max-width: 380px) {
-    .bike-wash-and-cleaning-container-tyre-replacement {
+    .bike-wash-and-cleaning-container-tyre-replacement ,
+    .whats-included-container-tyre-replacement {
         width: calc(100% - 32px);
         height: 121px;
+    }
+    .part-placement-plan-container-tyre-replacement ,
+    .whats-included-container-battery-replacement {
+        width: calc(100% - 32px);
+        height: 173px;
+    }
+    .whats-included-container-running-repairs{
+        width: calc(100% - 32px);
+        height: 190px;
     }
 }
