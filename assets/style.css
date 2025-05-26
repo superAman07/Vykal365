@@ -453,7 +453,9 @@ body {
     display: block;
     border-radius: 12px; 
 }
- 
+.text-ki-decoration-none {
+    text-decoration: none !important;  
+}
 
 .home-page .promo-card.blue {
     background: #E9F5FF;  
