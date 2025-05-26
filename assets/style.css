@@ -4649,3 +4649,21 @@ body .my-booking-view-invoice-page {
         padding: 12px;
     }
 }
+.banner-content-part-placement {
+    position: relative;
+    z-index: 2;
+    color: white;
+    width: 80%;
+}
+.part-placement-plan-icon-door-step {
+    width: 27px !important;
+    height: 30px !important;
+}
+.part-placement-plan-icon-genuine-parts {
+    width: 44px !important;
+    height: 30px !important;
+}
+.part-placement-plan-icon-one-month-warranty {
+    width: 24.38px !important;
+    height: 28.12px !important;
+}
