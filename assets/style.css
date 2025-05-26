@@ -3434,7 +3434,7 @@ body .my-booking-view-invoice-page {
 }
 
 .periodic-details-container .banner-title {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
     margin: 0;
 }
@@ -3452,7 +3452,7 @@ body .my-booking-view-invoice-page {
 
 @media (max-width: 380px) {
     .periodic-details-container .prime-service-banner {
-        max-width: calc(100% - 32px); 
+        max-width: calc(100% - 12px); 
     }  
 }
 
@@ -4941,4 +4941,20 @@ body .my-booking-view-invoice-page {
 .oil-change-premium-oil-image {
     width: 23.18px !important;
     height: 30px !important;
+}
+.banner-tag-standard-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    height: 31px;
+    background: #000000CC;
+    color: white;
+    border: 0.5px solid #9A9A9A; 
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 105px;
+    position: relative;
+    z-index: 2;
 }
