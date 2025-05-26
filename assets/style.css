@@ -4777,3 +4777,13 @@ body .my-booking-view-invoice-page {
     z-index: 2;
     color: white; 
 }
+.whats-included-container-battery-replacement {
+    width: 369px;
+    height: 174px;
+    margin: 20px auto;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
+    border: 0.7px solid #DADADA;
+}
