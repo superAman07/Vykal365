@@ -3605,7 +3605,7 @@ body .my-booking-view-invoice-page {
 
 .service-check-item {
     display: flex;
-    align-items: center;
+    align-items: unset;
     gap: 9px;
     margin-bottom: 12px;
 }
@@ -4666,4 +4666,14 @@ body .my-booking-view-invoice-page {
 .part-placement-plan-icon-one-month-warranty {
     width: 24.38px !important;
     height: 28.12px !important;
+}
+.part-placement-plan-container-tyre-replacement {
+    width: 369px;
+    height: 173px;
+    margin: 20px auto;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
+    border: 0.7px solid #DADADA;
 }
