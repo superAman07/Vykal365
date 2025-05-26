@@ -4739,3 +4739,20 @@ body .my-booking-view-invoice-page {
     font-weight: 600;
     margin: 0; 
 }
+.battery-jumpstart-benefits-row {
+    width: 357px;
+    height: 103px;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (max-width: 380px) {
+    .battery-jumpstart-benefits-row {
+        width: 100%;
+        max-width: 345px;
+    }
+}
