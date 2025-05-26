@@ -4398,3 +4398,127 @@ body .my-booking-view-invoice-page {
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(255, 95, 0, 0.2);
 }
+
+.tyres-and-wheels-packages-container {
+    width: 100%;
+    max-width: 369px; 
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+} 
+
+.service-packages-section .package-type-tnw {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #676767;
+    margin: 20px 0px; 
+    border: 0.5px solid #9A9A9A;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 31px;
+}
+.service-package-tyre-and-wheels.recommended {
+  border: 0.7px solid #DADADA;
+  box-shadow: 0px 4px 11.6px 0px #0000001A;
+}
+
+.service-package-tyre-and-wheels {
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  height: 231px;
+  max-width: 369px;
+  width: 100%;
+}
+.tyre-and-wheels-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #292929;
+    width: 145px;
+    height: 19px;
+    background-color: #FFC068;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.tyre-and-wheels-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.tyre-and-wheels-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tyre-and-wheels-details li {
+    font-size: 12px;
+    color: #8C8C8C;
+    font-weight: 400;
+}
+.tyre-and-wheels-details .tyres-and-wheels-image {
+  width: 116px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.btn-view-details-tyre-and-wheels{
+    color: #FF8952;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.tyres-and-wheels-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 336px;
+    height: 10px;
+    margin-top: 7px;
+}
+.tyres-and-wheels-amount-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #9D9D9D;
+}
+.tyres-and-wheels-amount {
+  font-size: 14px;
+  font-weight: 700;
+  color: #292929;
+}
+.tyres-and-wheels-label.standard {
+    background: #F0FF68;
+    color: #292929;
+    width: 141px;
+    height: 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.tyre-and-wheels-service-package {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+    height: 256px;
+    max-width: 369px;
+    width: 100%;
+    border: 0.7px solid #DADADA;
+    box-shadow: 0px 4px 11.6px 0px #0000001A;
+}
