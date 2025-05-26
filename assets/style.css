@@ -4569,3 +4569,33 @@ body .my-booking-view-invoice-page {
         box-sizing: border-box;
     }
 }
+.banner-content-tyre-replacement {
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin-top: -20px;
+    width: 65%;
+}
+.banner-subtitle-tyre-replacement {
+    font-size: 15px;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+.banner-title-tyre-replacement {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+    width: 100%;
+}
+
+.whats-included-container-tyre-replacement {
+    width: 369px;
+    height: 133px;
+    margin: 20px auto;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
+    border: 0.7px solid #DADADA;
+}
