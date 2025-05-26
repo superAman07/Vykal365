@@ -4409,7 +4409,7 @@ body .my-booking-view-invoice-page {
     align-items: center; 
 } 
 
-.service-packages-section .package-type-tnw {
+.tyre-and-wheel-packages-section .package-type-tnw {
     font-family: "Inter", Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 500;
@@ -4436,8 +4436,9 @@ body .my-booking-view-invoice-page {
   padding: 16px;
   margin-bottom: 16px;
   height: 231px;
-  max-width: 369px;
-  width: 100%;
+  width: 369px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .tyre-and-wheels-title {
     font-size: 12px;
@@ -4457,16 +4458,22 @@ body .my-booking-view-invoice-page {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 .tyre-and-wheels-details ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex: 1;
+    max-width: 185px;
 }
 .tyre-and-wheels-details li {
     font-size: 12px;
     color: #8C8C8C;
     font-weight: 400;
+    margin-bottom: 8px;
+    line-height: 1;
+    word-wrap: break-word;
 }
 .tyre-and-wheels-details .tyres-and-wheels-image {
   width: 116px;
@@ -4484,9 +4491,10 @@ body .my-booking-view-invoice-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 336px;
+    width: 100%;
     height: 10px;
     margin-top: 7px;
+    padding: 0;
 }
 .tyres-and-wheels-amount-text {
   font-size: 12px;
@@ -4516,9 +4524,48 @@ body .my-booking-view-invoice-page {
     border-radius: 10px;
     padding: 16px;
     margin-bottom: 16px;
-    height: 256px;
-    max-width: 369px;
-    width: 100%;
+    height: auto;
+    width: 369px; 
     border: 0.7px solid #DADADA;
     box-shadow: 0px 4px 11.6px 0px #0000001A;
+    margin-left: auto;
+    margin-right: auto;
+}
+.divider-of-width-333-tyre-and-wheels {
+    width: 100%;
+    max-width: 333px;
+    height: 0;
+    margin: 10px auto 0px auto;
+    border: none;
+    border-top: 1px dashed #AAAAAA;
+    background-image: linear-gradient(to right, #AAAAAA 20%, transparent 0%);
+    background-position: top;
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+}
+
+@media (max-width: 380px) {
+    .tyre-and-wheels-service-package {
+        width: calc(100% - 1px);  
+        min-width: 280px;  
+        max-width: 369px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px;  
+    }
+
+    .service-package-tyre-and-wheels {
+        width: calc(100% - 1px);  
+        min-width: 280px;  
+        max-width: 369px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px;  
+    }
+    .tyre-and-wheel-packages-section {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto; 
+        box-sizing: border-box;
+    }
 }
