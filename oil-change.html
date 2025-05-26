@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/style.css" />
-    <title>Bike Services</title>
+    <title>Oil Change</title>
   </head>
   <body class="bike-service-page">
     <div class="app-container position-relative">
@@ -25,7 +25,7 @@
         <div class="bike-service-header-content-bike-service">
           <div class="d-flex align-items-center">
             <a
-              href="home.html"
+              href="bike-services-6.html"
               class="btn btn-link text-white me-2 fs-4 back-button-circled"
               title="Go to Home"
             >
@@ -35,11 +35,11 @@
                 class="back-arrow-icon"
               />
             </a>
-            <h1 class="h5">Bike Services</h1>
+            <h1 class="h5">Oil Change</h1>
           </div>
-          <div class="bike-wrench-icon-top-header">
+          <div class="bike-wrench-icon-top-header selected">
             <img
-              src="assets/bike-wrinch.png"
+              src="assets/royal-enfield-thunderbirdx-bike-service.png"
               alt="Bike Service"
               class="bike-service-icon"
             />
@@ -49,61 +49,37 @@
       <div class="bike-service-overlap">
         <div class="bike-service-container position-relative">
           <div class="top-blue-line"></div>
-          <img
-            src="assets/expert-bike-services.png"
-            alt="Expert Bike Services"
-            class="expert-bike-service-image"
-          />
+          <div class="service-packages-section">
+            <div class="package-type-oil-change">Oil Change Packages</div>
+             <div class="recommended-packages-container">
+               <div class="package-badge">RECOMMENDED</div>
+   
+               <div class="service-package recommended"> 
+                 <div class="package-title-oil-change">OIL CHANGE</div>
+                 <div class="package-details">
+                   <ul>
+                     <li>Available at Door Step</li>
+                     <li>Draining of old Oil</li>
+                     <li>Oil Filter Checking/ Replacement</li>
+                     <li>Adding New Oil</li>
+                   </ul>
+                   <img
+                     src="assets/oil-change-main-image.png"
+                     alt="Oil Change"
+                     class="package-image"
+                   />
+                 </div>
+                 <a href="/package-details.html" class="btn-view-details">View Details</a>
+                 <div class="divider-of-width-333"></div>
+                 <div class="package-footer">
+                   <span class="amount-text">Amount</span>
+                   <span class="amount">₹ 1,999</span>
+                 </div>
+               </div>
+             </div>
+          </div>
         </div>
-      </div>
-      <div class="bike-service-icons-section">
-        <a href="periodic-services.html" class="icon-box">
-          <img
-            src="assets/periodic-services.png"
-            alt="Periodic Services"
-            class="icon-image"
-          />
-          <p class="icon-text">Periodic Services</p>
-        </a>
-        <a href="tyres-and-wheels-care.html" class="icon-box">
-          <img
-            src="assets/type-wheels-care.png"
-            alt="Tyres & Wheel Care"
-            class="icon-image"
-          />
-          <p class="icon-text">Tyres & Wheel Care</p>
-        </a>
-        <a href="repairs-and-maintainence.html" class="icon-box">
-          <img
-            src="assets/repair-and-maintainence.png"
-            alt="Repairs & Maintenance"
-            class="icon-image"
-          />
-          <p class="icon-text">Repairs & Maintenance</p>
-        </a>
-        <a href="battery-services.html" class="icon-box">
-          <img
-            src="assets/battery-services.png"
-            alt="Battery Services"
-            class="icon-image"
-          />
-          <p class="icon-text">Battery Services</p>
-        </a>
-        <a href="bike-wash.html" class="icon-box">
-          <img src="assets/bike-wash.png" alt="Bike Wash" class="icon-image" />
-          <p class="icon-text">Bike Wash</p>
-        </a>
-        <a href="oil-change.html" class="icon-box">
-          <img
-            src="assets/oil-change.png"
-            alt="Oil Change"
-            class="icon-image"
-          />
-          <p class="icon-text">Oil Change</p>
-        </a>
-      </div>
-
-      <!-- Bottom Navigation -->
+      </div> 
       <div class="bottom-nav">
         <div class="row text-center g-0 w-100">
           <div class="col">
@@ -190,7 +166,7 @@
       const vehicleOptions = document.querySelectorAll(".vehicle-option");
 
       const ICONS = {
-        DEFAULT: "assets/bike-wrinch.png",
+        DEFAULT: "assets/royal-enfield-thunderbirdx-bike-service.png",
         SELECTED: "assets/royal-enfield-thunderbirdx-bike-service.png",
       };
 
@@ -232,17 +208,10 @@
 
           if (bikeWrenchIcon) {
             bikeWrenchIcon.src = ICONS.SELECTED;
-            bikeWrenchIcon.parentElement.classList.add("selected");
           }
           setTimeout(closeModal, 300);
         });
       });
-      window.onload = function () {
-        if (bikeWrenchIcon) {
-          bikeWrenchIcon.src = ICONS.DEFAULT;
-          bikeWrenchIcon.parentElement.classList.remove("selected");
-        }
-      };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
