@@ -4723,3 +4723,19 @@ body .my-booking-view-invoice-page {
     align-items: center;
     text-transform: uppercase;
 }
+.banner-content-battery-jumpstart {
+    position: relative;
+    z-index: 2;
+    color: white;
+    width: 100%;
+}
+.banner-title-battery-jumpstart-1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 76px 0 0; 
+}
+.banner-title-battery-jumpstart-2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0; 
+}
