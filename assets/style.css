@@ -4922,3 +4922,23 @@ body .my-booking-view-invoice-page {
     justify-content: center;
     align-items: center;
 }
+.banner-tag-oil-change-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99px;
+    height: 31px;
+    background: #000000CC;
+    color: white;
+    border: 0.5px solid #9A9A9A; 
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 105px;
+    position: relative;
+    z-index: 2;
+}
+.oil-change-premium-oil-image {
+    width: 23.18px !important;
+    height: 30px !important;
+}
