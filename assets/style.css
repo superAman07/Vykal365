@@ -5146,7 +5146,7 @@ body .my-booking-view-invoice-page {
     align-items: center;
     text-transform: uppercase;
 }
-.banner-tag-standard-car-service {
+.banner-tag-advanced-ac-car-service {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5176,5 +5176,38 @@ body .my-booking-view-invoice-page {
     .whats-included-advanced-ac-car-service {
         width: calc(100% - 32px);
         height: 188px;
+    }
+}
+.banner-tag-regular-ac-car-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 166px;
+    height: 31px;
+    background: #000000CC;
+    color: white;
+    border: 0.5px solid #9A9A9A; 
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 105px;
+    position: relative;
+    z-index: 2;
+}
+
+.whats-included-regular-ac-car-service {
+    width: 369px;
+    height: 150px;
+    margin: 20px auto;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
+    border: 0.7px solid #DADADA;
+}
+@media (max-width: 380px) {
+    .whats-included-regular-ac-car-service {
+        width: calc(100% - 32px);
+        height: 150px;
     }
 }
