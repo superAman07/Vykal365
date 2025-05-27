@@ -5271,3 +5271,55 @@ body .my-booking-view-invoice-page {
         height: 133px;
     }
 }
+.car-spa-and-detailing-in-car-services.recommended {
+  border: 0.7px solid #DADADA;
+  box-shadow: 0px 4px 11.6px 0px #0000001A;
+}
+
+.car-spa-and-detailing-in-car-services {
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  height: auto;
+  width: 369px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 380px) {
+    .car-spa-and-detailing-in-car-services {
+        width: calc(100% - 1px);  
+        min-width: 280px;  
+        max-width: 369px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px;  
+    }
+}
+.car-spa-complete-car-spa-services-label {
+    background: #D8B8FF;
+    color: #292929;
+    width: 148px;
+    height: 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.car-spa-teflon-coating-services-label {
+    background: #ABFFE4;
+    color: #292929;
+    width: 131px;
+    height: 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
