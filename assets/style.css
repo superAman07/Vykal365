@@ -5877,3 +5877,67 @@ body .my-booking-view-invoice-page {
     position: relative;
     z-index: 2;
 }
+.ev-tips-banner-essential-car-care {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #676767;
+    margin: 20px 0px; 
+    border: 0.5px solid #9A9A9A;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 187px;
+    height: 31px;
+}
+
+.ev-tips-section {
+  padding: 58px 16px; 
+}
+.ev-tips-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.ev-tips-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; 
+  -ms-overflow-style: none;  
+}
+
+.ev-tips-track::-webkit-scrollbar {
+  display: none;  
+}
+
+.ev-tip-card {
+  flex: 0 0 260.47px;
+  scroll-snap-align: start;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ev-tip-image {
+  width: 260.47px;
+  height: 325.59px;
+  object-fit: cover;
+}
+
+@media (max-width: 380px) {
+  .ev-tips-track {
+    gap: 12px;
+  }
+  
+  .ev-tip-card {
+    flex: 0 0 calc(100% - 32px);
+  }
+  
+  .ev-tip-image {
+    width: 100%;
+    height: 325.59px;
+  }
+}
