@@ -5448,3 +5448,39 @@ body .my-booking-view-invoice-page {
     align-items: center;
     text-transform: uppercase;
 }
+.h5 {
+    font-size: 18px;
+}
+.banner-tag-car-battery-jumpstart-car-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 186px;
+    height: 31px;
+    background: #000000CC;
+    color: white;
+    border: 0.5px solid #9A9A9A; 
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 105px;
+    position: relative;
+    z-index: 2;
+}
+.service-car-battery-jumpstart-benefits-row {
+    width: 357px;
+    height: 103px;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (max-width: 380px) {
+    .service-car-battery-jumpstart-benefits-row {
+        width: 100%;
+        max-width: 345px;
+    }
+}
