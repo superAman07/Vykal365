@@ -5237,3 +5237,37 @@ body .my-booking-view-invoice-page {
     align-items: center;
     text-transform: uppercase;
 }
+
+.banner-tag-tyre-replacement-car-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 31px;
+    background: #000000CC;
+    color: white;
+    border: 0.5px solid #9A9A9A; 
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 105px;
+    position: relative;
+    z-index: 2;
+}
+
+.whats-included-car-tyre-and-replacement-service {
+    width: 369px;
+    height: 133px;
+    margin: 20px auto;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
+    border: 0.7px solid #DADADA;
+}
+@media (max-width: 380px) {
+    .whats-included-car-tyre-and-replacement-service {
+        width: calc(100% - 32px);
+        height: 133px;
+    }
+}
