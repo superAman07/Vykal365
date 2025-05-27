@@ -5848,3 +5848,16 @@ body .my-booking-view-invoice-page {
         height: 180px;
     }
 }
+.car-wash-services-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #292929;
+    width: 222px;
+    height: 19px;
+    background-color: #FFC068;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
