@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Car Services</title>
+  </head>
+  <body class="bike-service-page">
+    <div class="app-container position-relative">
+      <div class="bike-service-header-bg">
+        <img
+          src="assets/referalbgpatternblue.png"
+          alt="Pattern"
+          class="background-pattern"
+        />
+        <div class="bike-service-header-content-bike-service">
+          <div class="d-flex align-items-center">
+            <a
+              href="home.html"
+              class="btn btn-link text-white me-2 fs-4 back-button-circled"
+              title="Go to Home"
+            >
+              <img
+                src="assets/arrow-curved-left.svg"
+                alt="Back"
+                class="back-arrow-icon"
+              />
+            </a>
+            <h1 class="h5">Car Services</h1>
+          </div>
+          <div class="bike-wrench-icon-top-header">
+            <img
+              src="assets/carservices.png"
+              alt="Car Service"
+              class="car-service-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bike-service-overlap">
+        <div class="bike-service-container position-relative">
+          <div class="top-blue-line"></div>
+          <img
+            src="assets/car-banner-in-car-services.png"
+            alt="Car Services"
+            class="expert-bike-service-image"
+          />
+        </div>
+      </div>
+      <div class="bike-service-icons-section">
+        <a href="periodic-services.html" class="icon-box">
+          <img
+            src="assets/periodic-services.png"
+            alt="Periodic Services"
+            class="icon-image"
+          />
+          <p class="icon-text">Periodic Services</p>
+        </a>
+        <a href="tyres-and-wheels-care.html" class="icon-box">
+          <img
+            src="assets/ac-service-and-repair-icon-in-car-services.png"
+            alt="AC Service & Repair"
+            class="icon-image"
+          />
+          <p class="icon-text">AC Service & Repair</p>
+        </a>
+        <a href="tyres-and-wheels-care.html" class="icon-box">
+          <img
+            src="assets/type-wheels-care.png"
+            alt="Tyres & Wheel Care"
+            class="icon-image"
+          />
+          <p class="icon-text">Tyres & Wheel Care</p>
+        </a>
+        <a href="repairs-and-maintainence.html" class="icon-box">
+          <img
+            src="assets/car-spa-and-detailing-in-car-services.png"
+            alt="Car Spa & Detailing"
+            class="icon-image"
+          />
+          <p class="icon-text">Car Spa & Detailing</p>
+        </a>
+        <a href="battery-services.html" class="icon-box">
+          <img
+            src="assets/battery-services.png"
+            alt="Battery Services"
+            class="icon-image"
+          />
+          <p class="icon-text">Battery Services</p>
+        </a>
+        <a href="bike-wash.html" class="icon-box">
+          <img src="assets/repair-and-maintainence-car-service.png" alt="Repair & Maintenance" class="icon-image" />
+          <p class="icon-text">Repair & Maintenance</p>
+        </a>
+        <a href="oil-change.html" class="icon-box">
+          <img
+            src="assets/denting-and-paint-work.png"
+            alt="Denting & Paint Works"
+            class="icon-image"
+          />
+          <p class="icon-text">Denting & Paint Works</p>
+        </a>
+        <a href="oil-change.html" class="icon-box">
+          <img
+            src="assets/car-inspections-service.png"
+            alt="Car Inspections"
+            class="icon-image"
+          />
+          <p class="icon-text">Car Inspections</p>
+        </a>
+        <a href="oil-change.html" class="icon-box">
+          <img
+            src="assets/oil-change-car-service.png"
+            alt="Oil Change"
+            class="icon-image"
+          />
+          <p class="icon-text">Oil Change</p>
+        </a>
+        <a href="oil-change.html" class="icon-box">
+          <img
+            src="assets/car-wash.png"
+            alt="Car Wash"
+            class="icon-image"
+          />
+          <p class="icon-text">Car Wash</p>
+        </a>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <div class="bottom-nav">
+        <div class="row text-center g-0 w-100">
+          <div class="col">
+            <a href="bookings.html" class="nav-item">
+              <i class="bi bi-calendar2-check"></i>
+              <span>My Bookings</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="home.html" class="nav-item">
+              <i class="bi bi-house-door-fill"></i>
+              <span>Home</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="nav-item">
+              <i class="bi bi-person"></i>
+              <span>Account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bike model yaha se start -->
+    <div class="invoice-modal-overlay" id="invoiceModalOverlay"></div>
+    <div class="invoice-modal" id="invoiceModal">
+      <div class="invoice-modal-header">
+        <h5 class="invoice-modal-title">Select Vehicle</h5>
+        <button
+          type="button"
+          class="invoice-modal-close"
+          id="closeInvoiceModal"
+          aria-label="Close"
+        >
+          <img src="assets/cross-invoice.png" alt="Close" />
+        </button>
+      </div>
+      <div class="invoice-modal-body select-vehicle-body">
+        <!-- Vehicle Option 1 - Selected -->
+        <div class="vehicle-option selected">
+          <div class="vehicle-image">
+            <img
+              src="assets/royal-enfield-thunderbirdx-bike-service.png"
+              alt="Royal Enfield"
+            />
+          </div>
+          <div class="vehicle-details">
+            <h6>ROYAL ENFIELD THUNDERBIRDX</h6>
+            <p class="vehicle-info">KL65N5556 | Petrol</p>
+          </div>
+        </div>
+
+        <!-- Vehicle Option 2 -->
+        <div class="vehicle-option">
+          <div class="vehicle-image">
+            <img
+              src="assets/royal-enfield-thunderbirdx-bike-service.png"
+              alt="Royal Enfield"
+            />
+          </div>
+          <div class="vehicle-details">
+            <h6>ROYAL ENFIELD THUNDERBIRDX</h6>
+            <p class="vehicle-info">KL65N5556 | Petrol</p>
+          </div>
+        </div>
+      </div>
+      <div class="invoice-modal-footer">
+        <button type="button" class="btn-add-new-vehicle">
+          Add New Vehicle
+        </button>
+      </div>
+    </div>
+    <!-- Invoice Modal Ends here -->
+
+    <script>
+      const bikeWrenchIcon = document.querySelector(
+        ".bike-wrench-icon-top-header img"
+      );
+      const invoiceModal = document.getElementById("invoiceModal");
+      const invoiceModalOverlay = document.getElementById(
+        "invoiceModalOverlay"
+      );
+      const closeInvoiceModalBtn = document.getElementById("closeInvoiceModal");
+      const vehicleOptions = document.querySelectorAll(".vehicle-option");
+
+      const ICONS = {
+        DEFAULT: "assets/carservices.png",
+        SELECTED: "assets/royal-enfield-thunderbirdx-bike-service.png",
+      };
+
+      window.onload = function () {
+        if (bikeWrenchIcon) {
+          bikeWrenchIcon.src = ICONS.DEFAULT;
+        }
+      };
+
+      function openModal() {
+        if (invoiceModal && invoiceModalOverlay) {
+          invoiceModal.style.display = "flex";
+          invoiceModalOverlay.style.display = "block";
+        }
+      }
+
+      function closeModal() {
+        if (invoiceModal && invoiceModalOverlay) {
+          invoiceModal.style.display = "none";
+          invoiceModalOverlay.style.display = "none";
+        }
+      }
+
+      if (bikeWrenchIcon) {
+        bikeWrenchIcon.addEventListener("click", openModal);
+      }
+
+      if (closeInvoiceModalBtn) {
+        closeInvoiceModalBtn.addEventListener("click", closeModal);
+      }
+      if (invoiceModalOverlay) {
+        invoiceModalOverlay.addEventListener("click", closeModal);
+      }
+
+      vehicleOptions.forEach((option) => {
+        option.addEventListener("click", () => {
+          vehicleOptions.forEach((opt) => opt.classList.remove("selected"));
+          option.classList.add("selected");
+
+          if (bikeWrenchIcon) {
+            bikeWrenchIcon.src = ICONS.SELECTED;
+            bikeWrenchIcon.parentElement.classList.add("selected");
+          }
+          setTimeout(closeModal, 300);
+        });
+      });
+      window.onload = function () {
+        if (bikeWrenchIcon) {
+          bikeWrenchIcon.src = ICONS.DEFAULT;
+          bikeWrenchIcon.parentElement.classList.remove("selected");
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

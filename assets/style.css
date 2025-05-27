@@ -3011,11 +3011,12 @@ body .my-booking-view-invoice-page {
   margin-bottom: 8px;
 }
 .bike-service-icons-section .icon-text {
-  width: 100px;
+  width: 125px;
   height: auto;
   font-size: 12px;
   font-weight: 500;
-  color: #292929;
+  color: #585858;
+  margin-top: revert;
   text-align: center;
   line-height: 1;
 }
@@ -4959,4 +4960,9 @@ body .my-booking-view-invoice-page {
     margin-bottom: 105px;
     position: relative;
     z-index: 2;
+}
+
+.car-service-icon {
+    width: 40px !important;
+    height: 39.28px !important;
 }
