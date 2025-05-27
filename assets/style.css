@@ -5628,3 +5628,55 @@ body .my-booking-view-invoice-page {
         height: 180px;
     }
 }
+.car-denting-and-paint-services-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #292929;
+    width: 110px;
+    height: 19px;
+    background-color: #FFC068;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.car-denting-and-paint-front-bumper-services-label {
+    background: #F0FF68;
+    color: #292929;
+    width: 154px;
+    height: 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.car-denting-and-paint-full-body-dent-and-paint-services-label {
+    background: #D8B8FF;
+    color: #292929;
+    width: 208px;
+    height: 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.car-denting-and-paint-rear-bumper-services-label {
+    background: #ABFFE4;
+    color: #292929;
+    width: 145px;
+    height: 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
