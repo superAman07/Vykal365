@@ -5788,3 +5788,31 @@ body .my-booking-view-invoice-page {
     position: relative;
     z-index: 2;
 }
+.package-type-car-oil-change-services {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #676767;
+    margin: 20px 0px; 
+    border: 0.5px solid #9A9A9A;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 173px;
+    height: 31px;
+}
+.car-oil-change-services-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #292929;
+    width: 95px;
+    height: 19px;
+    background-color: #FFC068;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
