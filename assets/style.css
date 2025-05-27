@@ -5211,3 +5211,29 @@ body .my-booking-view-invoice-page {
         height: 150px;
     }
 }
+.car-tyres-and-wheels-services-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #292929;
+    width: 145px;
+    height: 19px;
+    background-color: #FFC068;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.periodic-car-tyres-and-wheels-services-label {
+    background: #F0FF68;
+    color: #292929;
+    width: 138px;
+    height: 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
