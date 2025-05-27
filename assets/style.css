@@ -5941,3 +5941,18 @@ body .my-booking-view-invoice-page {
     height: 325.59px;
   }
 }
+.package-type-ev-car-services-banner {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #676767;
+    margin: 20px 0px; 
+    border: 0.5px solid #9A9A9A;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 209px;
+    height: 31px;
+}
