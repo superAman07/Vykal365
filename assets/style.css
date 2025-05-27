@@ -5567,3 +5567,28 @@ body .my-booking-view-invoice-page {
     align-items: center;
     text-transform: uppercase;
 }
+
+.banner-tag-car-part-replacement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 183px;
+    height: 31px;
+    background: #000000CC;
+    color: white;
+    border: 0.5px solid #9A9A9A; 
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 105px;
+    position: relative;
+    z-index: 2;
+}
+.car-part-replacement-available-at-door-icon {
+    width: 27px !important;
+    height: 30px !important;
+}
+.car-part-replacement-genuine-parts-icon {
+    width: 44px !important;
+    height: 30px !important;
+}
