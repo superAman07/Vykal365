@@ -5105,3 +5105,44 @@ body .my-booking-view-invoice-page {
     color: white;
     width: 90%;
 }
+.package-type-car-ac-services {
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #676767;
+    margin: 20px 0px; 
+    border: 0.5px solid #9A9A9A;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    height: 31px;
+}
+.car-ac-services-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #292929;
+    width: 163px;
+    height: 19px;
+    background-color: #FFC068;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.periodic-car-ac-services-label.regular {
+    background: #F0FF68;
+    color: #292929;
+    width: 152px;
+    height: 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
