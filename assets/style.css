@@ -5712,3 +5712,19 @@ body .my-booking-view-invoice-page {
     position: relative;
     z-index: 2;
 }
+.banner-tag-car-full-body-dent-and-paint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 213px;
+    height: 31px;
+    background: #000000CC;
+    color: white;
+    border: 0.5px solid #9A9A9A; 
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 105px;
+    position: relative;
+    z-index: 2;
+}
