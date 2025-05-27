@@ -5434,3 +5434,17 @@ body .my-booking-view-invoice-page {
     align-items: center;
     text-transform: uppercase;
 }
+
+.periodic-car-battery-services-label.regular {
+    background: #F0FF68;
+    color: #292929;
+    width: 169px;
+    height: 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
