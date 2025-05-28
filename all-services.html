@@ -51,42 +51,42 @@
           <div class="top-blue-line"></div>
           <div class="all-service-main-container d-flex">
             <div class="services-sidebar">
-              <div class="sidebar-item active">
+              <div class="sidebar-item active" data-service="bike">
                 <div class="sidebar-icon">
                   <img src="assets/bikeservices.png" alt="Bike" />
                 </div>
                 <div class="sidebar-text">Bike Services</div>
                 <div class="active-indicator"></div>
               </div>
-              <div class="sidebar-item">
+              <div class="sidebar-item" data-service="car">
                 <div class="sidebar-icon">
                   <img src="assets/carservices.png" alt="Bike" />
                 </div>
                 <div class="sidebar-text">Car Services</div>
                 <div class="active-indicator"></div>
               </div>
-              <div class="sidebar-item">
+              <div class="sidebar-item" data-service="evcar">
                 <div class="sidebar-icon">
                   <img src="assets/evcarservices.png" alt="Bike" />
                 </div>
                 <div class="sidebar-text">EV Car Services</div>
                 <div class="active-indicator"></div>
               </div>
-              <div class="sidebar-item">
+              <div class="sidebar-item" data-service="evbike">
                 <div class="sidebar-icon">
                   <img src="assets/evbikeservices.png" alt="Bike" />
                 </div>
                 <div class="sidebar-text">EV Bike Services</div>
                 <div class="active-indicator"></div>
               </div>
-              <div class="sidebar-item">
+              <div class="sidebar-item" data-service="towing">
                 <div class="sidebar-icon">
                   <img src="assets/towingservices.png" alt="Bike" />
                 </div>
                 <div class="sidebar-text">Towing Services</div>
                 <div class="active-indicator"></div>
               </div>
-              <div class="sidebar-item">
+              <div class="sidebar-item" data-service="repair">
                 <div class="sidebar-icon">
                   <img
                     src="assets/repair-and-maintainence-icon.png"
@@ -97,90 +97,8 @@
                 <div class="active-indicator"></div>
               </div>
             </div>
-            <!--  1 Bike services -->
             <div class="services-content">
-              <div class="service-banner">
-                <div class="service-banner-content">
-                  <div class="service-banner-main-image-container">
-                    <img
-                      src="assets/expert-bike-services.png"
-                      alt="Bike Services"
-                    />
-                  </div>
-                </div>
-              </div>
-              <!-- Services grid -->
-              <div class="service-cards-container">
-                <div class="service-cards-container-row">
-                  <div class="service-cards-container-cols">
-                    <a href="periodic-services.html" class="service-card">
-                      <div class="service-card-icon">
-                        <img
-                          src="assets/periodic-services.png"
-                          alt="Periodic Services"
-                        />
-                      </div>
-                      <div class="service-card-title">Periodic Services</div>
-                    </a>
-                  </div>
-                  <div class="service-cards-container-cols">
-                    <a href="tyres-and-wheels-care.html" class="service-card">
-                      <div class="service-card-icon">
-                        <img
-                          src="assets/type-wheels-care.png"
-                          alt="Tyres & Wheel care"
-                        />
-                      </div>
-                      <div class="service-card-title">Tyres & Wheel care</div>
-                    </a>
-                  </div>
-                  <div class="service-cards-container-cols">
-                    <a href="repairs-and-maintainence.html" class="service-card">
-                      <div class="service-card-icon">
-                        <img
-                          src="assets/repair-and-maintainence.png"
-                          alt="Repairs & Maintenance"
-                        />
-                      </div>
-                      <div class="service-card-title">Repairs & Maintenance</div>
-                    </a>
-                  </div>
-                  <div class="service-cards-container-cols">
-                    <a href="battery-services.html" class="service-card">
-                      <div class="service-card-icon">
-                        <img
-                          src="assets/battery-services.png"
-                          alt="Battery Services"
-                        />
-                      </div>
-                      <div class="service-card-title">Battery Services</div>
-                    </a>
-                  </div>
-                  <div class="service-cards-container-cols">
-                    <a href="bike-wash.html" class="service-card">
-                      <div class="service-card-icon">
-                        <img
-                          src="assets/bike-wash.png"
-                          alt="Bike Wash"
-                        />
-                      </div>
-                      <div class="service-card-title">Bike Wash</div>
-                    </a>
-                  </div>
-                  <div class="service-cards-container-cols">
-                    <a href="oil-change.html" class="service-card">
-                      <div class="service-card-icon">
-                        <img
-                          src="assets/oil-change.png"
-                          alt="Oil Change"
-                        />
-                      </div>
-                      <div class="service-card-title">Oil Change</div>
-                    </a>
-                  </div>
-                  <!-- Add more service cards as needed -->
-                </div>
-              </div>
+              <!-- js content injecting -->
             </div>
           </div>
         </div>
@@ -210,12 +128,135 @@
       </div>
     </div>
     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const servicesContent = document.querySelector(".services-content");
+          servicesContent.innerHTML = serviceContents.bike;
+      });
       const sidebarItems = document.querySelectorAll(".sidebar-item");
+      const servicesContent = document.querySelector(".services-content");
+
+      const serviceContents = {
+        bike: `
+        <div class="service-banner">
+            <div class="service-banner-content">
+                <div class="service-banner-main-image-container">
+                    <img src="assets/expert-bike-services.png" alt="Bike Services" />
+                </div>
+            </div>
+        </div>
+        <div class="service-cards-container">
+            <div class="service-cards-container-row">
+                <div class="service-cards-container-cols">
+                    <a href="periodic-services.html" class="service-card">
+                        <div class="service-card-icon">
+                            <img src="assets/periodic-services.png" alt="Periodic Services" />
+                        </div>
+                        <div class="service-card-title">Periodic Services</div>
+                    </a>
+                </div>
+                <div class="service-cards-container-cols">
+                    <a href="tyres-and-wheels-care.html" class="service-card">
+                      <div class="service-card-icon">
+                        <img
+                          src="assets/type-wheels-care.png"
+                          alt="Tyres & Wheel care"
+                        />
+                      </div>
+                      <div class="service-card-title">Tyres & Wheel care</div>
+                    </a>
+                  </div>
+                  <div class="service-cards-container-cols">
+                    <a
+                      href="repairs-and-maintainence.html"
+                      class="service-card"
+                    >
+                      <div class="service-card-icon">
+                        <img
+                          src="assets/repair-and-maintainence.png"
+                          alt="Repairs & Maintenance"
+                        />
+                      </div>
+                      <div class="service-card-title">
+                        Repairs & Maintenance
+                      </div>
+                    </a>
+                  </div>
+                  <div class="service-cards-container-cols">
+                    <a href="battery-services.html" class="service-card">
+                      <div class="service-card-icon">
+                        <img
+                          src="assets/battery-services.png"
+                          alt="Battery Services"
+                        />
+                      </div>
+                      <div class="service-card-title">Battery Services</div>
+                    </a>
+                  </div>
+                  <div class="service-cards-container-cols">
+                    <a href="bike-wash.html" class="service-card">
+                      <div class="service-card-icon">
+                        <img src="assets/bike-wash.png" alt="Bike Wash" />
+                      </div>
+                      <div class="service-card-title">Bike Wash</div>
+                    </a>
+                  </div>
+                  <div class="service-cards-container-cols">
+                    <a href="oil-change.html" class="service-card">
+                      <div class="service-card-icon">
+                        <img src="assets/oil-change.png" alt="Oil Change" />
+                      </div>
+                      <div class="service-card-title">Oil Change</div>
+                    </a>
+                  </div> 
+            </div>
+        </div>`,
+
+        car: `
+        <div class="service-banner">
+            <div class="service-banner-content">
+                <div class="service-banner-main-image-container">
+                    <img src="assets/car-banner-in-car-services.png" alt="Car Services" />
+                </div>
+            </div>
+        </div>
+        <div class="service-cards-container">
+            <div class="service-cards-container-row">
+                <div class="service-cards-container-cols">
+                    <a href="periodic-car-services.html" class="service-card">
+                        <div class="service-card-icon">
+                            <img src="assets/periodic-services.png" alt="Periodic Services" />
+                        </div>
+                        <div class="service-card-title">Periodic Services</div>
+                    </a>
+                </div>
+                <!-- Add other car service cards here -->
+            </div>
+        </div>`,
+        // Add similar content for other services
+      };
+
+      // Add data attributes to sidebar items in HTML
+      sidebarItems.forEach((item, index) => {
+        const serviceTypes = [
+          "bike",
+          "car",
+          "evcar",
+          "evbike",
+          "towing",
+          "repair",
+        ];
+        item.setAttribute("data-service", serviceTypes[index]);
+      });
 
       sidebarItems.forEach((item) => {
         item.addEventListener("click", () => {
           sidebarItems.forEach((i) => i.classList.remove("active"));
           item.classList.add("active");
+          const serviceType = item.getAttribute("data-service");
+
+          if (serviceContents[serviceType]) {
+            servicesContent.innerHTML = serviceContents[serviceType];
+          }
         });
       });
     </script>
