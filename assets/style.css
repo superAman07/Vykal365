@@ -744,11 +744,10 @@ body {
     object-fit: cover;
 }
 
-
-/* --- Referral Page Specific Styles --- */
+ 
 .referral-page {
-    background-color: var(--bg-light-grey); /* Or #f0f2f5 if you prefer a slightly off-white */
-    padding-bottom: 70px; /* For bottom nav */
+    background-color: var(--bg-light-grey);  
+    padding-bottom: 70px;  
     overflow-y: auto;
 }
 
@@ -761,7 +760,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
-    padding-bottom: 70px; /* For bottom nav */
+    padding-bottom: 70px;  
 }
 
 .referral-header-bg {
@@ -6468,17 +6467,15 @@ body .my-booking-view-invoice-page {
 .my-acc-content {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - var(--header-h) - var(--nav-h));
-    padding: 24px 36px;
-    overflow-y: auto;
-    height: auto;
-    min-height: 100%;
+    min-height: calc(100vh - var(--header-h) - var(--nav-h));
+    padding: 10px 36px 0px;
+    overflow-y: auto; 
 }
 .my-acc-profile-info {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px 0;
+    padding: 19px 0 5px 0;
 }
 
 .my-acc-profile-texts {
@@ -6582,37 +6579,38 @@ body .my-booking-view-invoice-page {
 .text-danger {
     color: #dc3545;
 }
-
-/* App info / Footer */
+ 
 .my-acc-app-info {
-    padding: 30px 0;
+    width: 100%;
+    padding: 0;
     margin-top: 30px;
-    text-align: center;
-    background: linear-gradient(to bottom, white 0%, white 40%, #2E4374 40%, #2E4374 100%);
-    border-radius: 0 0 16px 16px;
+    position: relative;
+    height: 290px;  
+    overflow: hidden;
 }
-
-.my-acc-app-logo {
-    margin-bottom: 15px;
+.my-acc-footer-image {
+    width: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+}
+.card-my-account {
+    background: #fff;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    padding: 24px 0px 0px 0px;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+}
+.app-container-my-account {
+    max-width: 430px;
+    margin: 0 auto;
+    background-color: var(--bg-light-grey);  
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.footer-logo {
-    width: 100px;
-    margin-bottom: 10px;
-}
-
-.my-acc-version {
-    color: #757575;
-    font-size: 12px;
-    margin-bottom: 30px;
-}
-
-.my-acc-tagline {
-    color: white;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.4;
+    overflow-x: hidden;
+    overflow-y: auto; 
 }
