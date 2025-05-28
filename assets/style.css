@@ -6003,3 +6003,9 @@ body .my-booking-view-invoice-page {
         height: 303px;
     }
 }
+.ev-bike-service-details {
+    margin-bottom: 20px !important;
+}
+.ev-car-service-details {
+    margin-bottom: 15px !important;
+}
