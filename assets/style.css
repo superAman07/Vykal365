@@ -6829,3 +6829,23 @@ body .my-booking-view-invoice-page {
     padding: 10px 20px 0px;
     overflow-y: auto; 
 }
+
+.terms-and-conditions-contents {
+    padding: 16px;
+}
+
+.terms-and-conditions-contents h6 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #323232;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.terms-and-conditions-contents p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #606060;
+    text-align: left;
+    line-height: 1.5;
+}
