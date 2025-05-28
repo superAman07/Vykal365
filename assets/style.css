@@ -6286,3 +6286,70 @@ body .my-booking-view-invoice-page {
         height: 130px;
     }
 }
+
+.all-services-towing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: space-between;
+    padding: 16px;
+    min-height: calc(100vh - 250px); 
+    width: 100%;
+    overflow: hidden;
+}
+
+.all-services-towing-image {
+    width: 280px;
+    height: 280px; 
+    margin: 40px auto;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.all-services-towing-title {
+    color: #1E54A1;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.all-services-towing-text {
+    color: #757575;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
+}
+.all-services-towing-texts-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    text-align: left;  
+    margin-top: auto;
+}
+@media (max-width: 380px) {
+    .all-services-towing-container {
+        padding: 12px;
+    }
+
+    .all-services-towing-image {
+        width: 240px;
+        height: 240px;
+        margin: 30px auto;
+    }
+
+    .all-services-towing-texts-container {
+        padding: 0 12px;
+    }
+
+    .all-services-towing-title {
+        font-size: 20px;
+    }
+
+    .all-services-towing-text {
+        font-size: 13px;
+    }
+}
