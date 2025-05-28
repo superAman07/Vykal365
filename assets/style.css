@@ -6070,6 +6070,8 @@ body .my-booking-view-invoice-page {
     width: 100%;
     display: grid;
 }
+
+/* all services */
 .services-sidebar {
     width: 92px;
     min-width: 92px;
