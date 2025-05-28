@@ -6112,8 +6112,8 @@ body .my-booking-view-invoice-page {
 }
 
 .sidebar-icon img {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 38px;
     object-fit: contain;
 }
 
@@ -6159,10 +6159,6 @@ body .my-booking-view-invoice-page {
     height: 100%;
 }
 
-.service-cards-container {
-    max-width: 100%;
-}
-
 .service-card {
     background: #fff;
     border-radius: 12px;
@@ -6175,6 +6171,7 @@ body .my-booking-view-invoice-page {
     justify-content: center;
     text-align: center;
     transition: transform 0.2s;
+    text-decoration: none;
 }
 
 .service-card:hover {
@@ -6198,9 +6195,9 @@ body .my-booking-view-invoice-page {
 }
 
 .service-card-title {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    color: #333;
+    color: #585858;
 }
 
 .all-service-main-container {
@@ -6235,3 +6232,48 @@ body .my-booking-view-invoice-page {
         padding: 12px 4px; 
     }
 }
+.service-banner {
+    background-color: #FFF5F2;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.service-banner-content { 
+    position: relative;
+}
+.service-banner-main-image-container img{
+    width: 273px;
+    height: 125px; 
+    border-radius: 7px;
+
+}
+.service-cards-container {
+    padding-right: 8px;
+}
+.service-cards-container-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 11px;
+    padding: 10px;
+}
+.service-cards-container-cols {
+    width: 131.25px;
+    height: 130px;
+}
+
+.service-card:hover {
+    transform: translateY(-2px);
+}
+
+.service-card-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 10px;
+}
+
+.service-card-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+ 

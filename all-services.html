@@ -96,23 +96,89 @@
                 <div class="sidebar-text">Repairs & Maintenance</div>
                 <div class="active-indicator"></div>
               </div>
-              <!-- Add other sidebar items here -->
             </div>
+            <!--  1 Bike services -->
             <div class="services-content">
+              <div class="service-banner">
+                <div class="service-banner-content">
+                  <div class="service-banner-main-image-container">
+                    <img
+                      src="assets/expert-bike-services.png"
+                      alt="Bike Services"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Services grid -->
               <div class="service-cards-container">
-                <div class="row g-3">
-                  <div class="col-6">
-                    <div class="service-card">
+                <div class="service-cards-container-row">
+                  <div class="service-cards-container-cols">
+                    <a href="periodic-services.html" class="service-card">
                       <div class="service-card-icon">
                         <img
-                          src="assets/periodic-service-icon.svg"
+                          src="assets/periodic-services.png"
                           alt="Periodic Services"
                         />
                       </div>
                       <div class="service-card-title">Periodic Services</div>
-                    </div>
+                    </a>
                   </div>
-                  <!-- Add other service cards here -->
+                  <div class="service-cards-container-cols">
+                    <a href="tyres-and-wheels-care.html" class="service-card">
+                      <div class="service-card-icon">
+                        <img
+                          src="assets/type-wheels-care.png"
+                          alt="Tyres & Wheel care"
+                        />
+                      </div>
+                      <div class="service-card-title">Tyres & Wheel care</div>
+                    </a>
+                  </div>
+                  <div class="service-cards-container-cols">
+                    <a href="repairs-and-maintainence.html" class="service-card">
+                      <div class="service-card-icon">
+                        <img
+                          src="assets/repair-and-maintainence.png"
+                          alt="Repairs & Maintenance"
+                        />
+                      </div>
+                      <div class="service-card-title">Repairs & Maintenance</div>
+                    </a>
+                  </div>
+                  <div class="service-cards-container-cols">
+                    <a href="battery-services.html" class="service-card">
+                      <div class="service-card-icon">
+                        <img
+                          src="assets/battery-services.png"
+                          alt="Battery Services"
+                        />
+                      </div>
+                      <div class="service-card-title">Battery Services</div>
+                    </a>
+                  </div>
+                  <div class="service-cards-container-cols">
+                    <a href="bike-wash.html" class="service-card">
+                      <div class="service-card-icon">
+                        <img
+                          src="assets/bike-wash.png"
+                          alt="Bike Wash"
+                        />
+                      </div>
+                      <div class="service-card-title">Bike Wash</div>
+                    </a>
+                  </div>
+                  <div class="service-cards-container-cols">
+                    <a href="oil-change.html" class="service-card">
+                      <div class="service-card-icon">
+                        <img
+                          src="assets/oil-change.png"
+                          alt="Oil Change"
+                        />
+                      </div>
+                      <div class="service-card-title">Oil Change</div>
+                    </a>
+                  </div>
+                  <!-- Add more service cards as needed -->
                 </div>
               </div>
             </div>
@@ -147,7 +213,7 @@
       const sidebarItems = document.querySelectorAll(".sidebar-item");
 
       sidebarItems.forEach((item) => {
-        item.addEventListener("click", () => { 
+        item.addEventListener("click", () => {
           sidebarItems.forEach((i) => i.classList.remove("active"));
           item.classList.add("active");
         });
