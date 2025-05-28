@@ -6248,11 +6248,14 @@ body .my-booking-view-invoice-page {
 
 }
 .service-cards-container {
-    padding-right: 8px;
+    display: flex;
+    margin-right: 3px;
+    justify-content: center;
+    margin-left: -3px;
 }
 .service-cards-container-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 11px;
     padding: 10px;
 }
@@ -6277,3 +6280,9 @@ body .my-booking-view-invoice-page {
     object-fit: contain;
 }
  
+@media (max-width: 380px) {
+    .service-cards-container-cols {
+        width: 125px;
+        height: 130px;
+    }
+}
