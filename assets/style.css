@@ -6819,14 +6819,7 @@ body .my-booking-view-invoice-page {
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - var(--header-h) - var(--nav-h));
-    padding: 10px 16px 0px;
-    overflow-y: auto; 
-}
-.contact-us-content {
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh - var(--header-h) - var(--nav-h));
-    padding: 10px 20px 0px;
+    padding: 10px 7px 0px;
     overflow-y: auto; 
 }
 
