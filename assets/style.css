@@ -5988,3 +5988,18 @@ body .my-booking-view-invoice-page {
         height: 275px;
     }
 }
+.ev-bike-essential-services-bottom-tip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ev-bike-essential-services-bottom-tip img{
+    width: 368px;
+    height: 353px; 
+}
+@media (max-width: 380px) {
+    .ev-bike-essential-services-bottom-tip img{
+        width: calc(100% - 1px);
+        height: 303px;
+    }
+}
