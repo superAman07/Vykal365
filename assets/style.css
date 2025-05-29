@@ -7535,13 +7535,20 @@ body .my-booking-view-invoice-page {
     padding: 0 16px;
     font-size: 14px;
     color: #565656; 
+    transition: all 0.3s ease;
 } 
+.search-input:focus {
+    outline: none;
+    border-color: #FF5505;
+    box-shadow: 0 0 0 2px rgba(255, 85, 5, 0.1);
+}
 
 .select-your-vehicle-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     padding-bottom: 80px;
+    margin-top: 24px;
 }
 
 .select-your-vehicle-card {
@@ -7579,20 +7586,62 @@ body .my-booking-view-invoice-page {
     position: fixed;
     bottom: 80px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(1);
     width: 354px;
     height: 60px;
     background: #ADADAD;
     border: none;
     border-radius: 12px;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     cursor: not-allowed;
     transition: background-color 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-next.active {
     background: #FF5505;
     cursor: pointer;
+    transform: translateX(-50%) scale(1.02);
+}
+.btn-next.active:hover {
+    transform: translateX(-50%) scale(1.01);
+    background: #e64d04;
+}
+
+.btn-next.active:active {
+    transform: translateX(-50%) scale(0.98);
+}
+@media (max-width: 380px) {
+    .select-your-vehicle-grid {
+        grid-template-columns: 1fr 1fr; /* Change to single column */
+        gap: 8px;
+        padding: 0 4px;
+    }
+
+    .select-your-vehicle-card {
+        width: 149px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .select-your-vehicle-card img {
+        width: 100%;
+        height: auto;
+        max-width: 90px;
+    }
+
+    .btn-next {
+        width: calc(100% - 2px);  
+        max-width: 320px;
+        margin: 0 auto;
+        bottom: 73px;
+    }
+
+    .search-input {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
 }
