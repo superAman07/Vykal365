@@ -7398,3 +7398,89 @@ body .my-booking-view-invoice-page {
     border-radius: 11px;
     padding: 4px;
 }
+.fuel-type-section {
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.fuel-type-section h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #2D2D2D;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.fuel-type-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -ms-overflow-style: none;  
+    width: 100%;
+}
+.fuel-type-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.fuel-type-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+.fuel-type-item.selected {
+    opacity: 1;
+    background: rgba(255, 85, 5, 0.05);
+}
+
+.fuel-type-icon {
+    width: 56px;
+    height: 56px;
+    padding: 12px;
+    background: #FFF1EE;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.fuel-type-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.fuel-type-label {
+    font-size: 14px;
+    color: #565656;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.fuel-type-item.selected .fuel-type-icon {
+    background: #FFF1EE;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(255, 95, 0, 0.2);
+}
+
+.fuel-type-item.selected .fuel-type-label {
+    color: #565656;
+    font-weight: 500;
+}
+
+.fuel-type-item:hover {
+    opacity: 0.8;
+}
+
+.fuel-type-item.selected:hover {
+    opacity: 1;
+}
