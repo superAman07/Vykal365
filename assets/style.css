@@ -7246,6 +7246,7 @@ body .my-booking-view-invoice-page {
     gap: 12px;
     cursor: pointer;
     margin-top: auto;
+    text-decoration: none;
 }
 
 .vehicle-item-my-vehicles img {
@@ -7512,5 +7513,86 @@ body .my-booking-view-invoice-page {
     font-weight: 500;
     display: block;
     margin: 0 auto 32px;
+    cursor: pointer;
+}
+
+.select-vehicle-container {
+    padding: 20px;
+    position: relative;
+    min-height: calc(100vh - 200px);
+}
+
+.search-box {
+    margin-bottom: 24px; 
+}
+
+.search-input {
+    width: 100%;
+    height: 48px;
+    background: #F8F8F8;
+    border: 1px solid #DCDCDC;
+    border-radius: 12px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #565656; 
+} 
+
+.select-your-vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding-bottom: 80px;
+}
+
+.select-your-vehicle-card {
+    width: 169px;
+    height: 112px;
+    border: 1px solid #FFC9AF;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.select-your-vehicle-card img {
+    width: 120px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.select-your-vehicle-card .select-your-vehicle-name {
+    font-size: 12px;
+    color: #565656;
+    text-align: center;
+}
+
+.select-your-vehicle-card.selected {
+    border: 1px dashed #FF5505;
+    background: rgba(255, 85, 5, 0.03);
+}
+
+.btn-next {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 354px;
+    height: 60px;
+    background: #ADADAD;
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: not-allowed;
+    transition: background-color 0.3s ease;
+}
+
+.btn-next.active {
+    background: #FF5505;
     cursor: pointer;
 }
