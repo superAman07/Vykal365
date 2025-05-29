@@ -8008,3 +8008,12 @@ body .my-booking-view-invoice-page {
         opacity: 1;
     }
 }
+
+@media (max-width: 380px) {
+    .status-banner {
+        width: calc(100% - 20px);
+    }
+    .status-banner-cancelled {
+        width: calc(100% - 22px);
+    }
+}
