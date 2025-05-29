@@ -54,83 +54,161 @@ body {
   height: 65px;    
   display: block;   
 }
-
-
-.mobile-container {
-  max-width: 430px;  
-  width: 100%;
-  margin: 0 auto;  
-  background-color: #fff;  
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;  
-  padding-top: 2.5rem;  
-  padding-bottom: 1.5rem;  
-  overflow-y: auto; 
-}
-
-.dot { width:8px; height:8px; border-radius:50%; }
-.bg-warning-custom { background-color: #f97316 !important; }
-.text-warning-custom { color: #f97316 !important; font-weight: lighter; }
-.tagline-text { font-size: 16px; }
-.car-img-container { 
-    width:285px; 
-    height:285px; 
-    margin-top: 40px;
-} 
-.texts-after-image {
-    margin-top: 40px;
-}
-.texts-after-image .title-after-image{
-    margin-top: 40px;
-}
-.dots-after-texts {
-    margin-top: 20px;
-}
-.car-img-main { object-fit: contain; z-index: 1; }
-.bg-dot-inactive-custom { background-color: #dee2e6 !important; }  
-.input-group-area .input-group-text {
-    padding-top: 0.65rem;  
-    padding-bottom: 0.65rem;  
-}
-.bottom-input-and-button-group{ 
-    width: 361px; 
-}
-.input-group{  
+ .onboarding-container {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #FFFFFF;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vykal-logo {
+    width: 231px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.tagline-container {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 60px;
-    border-radius: 15px;
+    margin-bottom: 32px;
+    gap: 16px;
 }
-.mobile-container .input-group-area {
-    max-width: 361px;
+
+.tagline-item {
+    color: #757575;
+    font-size: 14px;
+}
+
+.tagline-separator {
+    color: #FF5505;
+}
+
+.tagline-item.active {
+    color: #FF5505;
+    font-weight: 500;
+}
+
+.onboarding-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-image-container {
+    width: 285px;
+    height: 285px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.car-image {
     width: 100%;
-    max-height: 60px;
     height: 100%;
-    border-radius: 15px;
+    object-fit: contain;
 }
-.input-group-text {
-    border: 1px solid #CFCFCF;
-    border-radius: 15px;
+
+.onboarding-text {
+    text-align: center;
+    margin-bottom: 24px;
 }
-.input-group-area .input-group-text .form-control {
+
+.onboarding-text h2 {
+    font-size: 24px;
+    color: #2D2D2D;
+    margin-bottom: 8px;
+}
+
+.onboarding-text p {
+    font-size: 14px;
+    color: #757575;
+}
+
+.dots-container {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #E0E0E0;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #FF5505;
+}
+
+.phone-input-container {
     width: 100%;
-    height: 100%; 
+}
+
+.phone-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.country-code {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 12px;
+    border-right: 1px solid #E0E0E0;
+}
+
+.flag-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.phone-input {
+    flex: 1;
     border: none;
-    background-color: transparent;
+    padding: 0 12px;
+    font-size: 16px;
+    outline: none;
 }
-.input-group-area .input-group-text .form-control:focus {
-  border-color: transparent; 
-  box-shadow: none;
+
+.error-message {
+    color: #FF3B30;
+    font-size: 12px;
+    margin-bottom: 16px;
+    display: none;
 }
-.input-group-button {
-    height: 60px;
+
+.otp-button {
+    width: 100%;
+    padding: 16px;
+    background: #FF5505;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
 }
-.input-group-button-text{
-    font-size: 20px;
+
+.otp-button:hover {
+    background: #E64A00;
 }
 
 

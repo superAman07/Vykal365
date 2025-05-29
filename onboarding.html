@@ -7,50 +7,48 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="vh-100">
+<body>
 
-  <div class="mobile-container">
-    <div class="d-flex align-items-center mb-4 mt-4">  
-      <img src="assets/vykal-logo.png" alt="Logo" width="231.26" height="60" class="mt-4">   
+  <div class="onboarding-container">
+    <div class="logo-container">
+      <img src="assets/vykal-logo.png" alt="Vykal 365" class="vykal-logo">
     </div>
 
-    <div class="d-flex text-muted tagline-text mb-2 mt-2">
-      <span id="tag1">Quick</span>
-      <span class="mx-4 text-warning-custom">|</span>
-      <span id="tag2">Affordable</span>
-      <span class="mx-4 text-warning-custom">|</span>
-      <span id="tag3">Trusted</span>
+    <div class="tagline-container">
+      <span class="tagline-item" id="tag1">Quick</span>
+      <span class="tagline-separator">|</span>
+      <span class="tagline-item" id="tag2">Affordable</span>
+      <span class="tagline-separator">|</span>
+      <span class="tagline-item" id="tag3">Trusted</span>
     </div>
 
-    <div class="position-relative car-img-container">
-      <img id="car-img" src="" alt="Car" class="position-absolute top-50 start-50 translate-middle car-img-main w-100 h-100">
-    </div>
-
-    <div class="text-center texts-after-image">
-      <h2 class="title-after-image" id="title">Convenience</h2>
-      <p class="small text-muted" id="subtitle">Simplified Vehicle Maintenance</p>
-    </div>
-
-    <div class="d-flex gap-1 dots-after-texts mb-4">
-      <div id="dot1" class="dot bg-warning-custom"></div>
-      <div id="dot2" class="dot bg-dot-inactive-custom"></div>
-      <div id="dot3" class="dot bg-dot-inactive-custom"></div>
-    </div>
-
-    <div class="bottom-input-and-button-group mt-auto pb-4"> 
-      <div class="mb-3 input-group"> 
-        <div class="input-group-area">
-          <span class="input-group-text">
-            <img src="assets/india-flag.png" alt="IN" width="30" height="30" class="me-2"> <span>+91</span>
-            <input id="phone" type="tel" class="form-control" placeholder="98765 43210">
-          </span>
-        </div>
-        <div id="phone-error" class="text-danger small mt-1 d-none"></div> 
-      </div> 
-
-      <div class="input-group-button"> 
-        <button type="button" id="get-otp" class="btn input-group-button-text bg-warning-custom text-white w-100 fw-medium">Get OTP</button>
+    <div class="onboarding-content">
+      <div class="car-image-container">
+        <img id="car-img" src="" alt="Car Service" class="car-image">
       </div>
+
+      <div class="onboarding-text">
+        <h2 id="title">Convenience</h2>
+        <p id="subtitle">Simplified Vehicle Maintenance</p>
+      </div>
+
+      <div class="dots-container">
+        <div id="dot1" class="dot"></div>
+        <div id="dot2" class="dot"></div>
+        <div id="dot3" class="dot"></div>
+      </div>
+    </div>
+
+    <div class="phone-input-container">
+      <div class="phone-input-wrapper">
+        <div class="country-code">
+          <img src="assets/india-flag.png" alt="IN" class="flag-icon">
+          <span>+91</span>
+        </div>
+        <input id="phone" type="tel" placeholder="98765 43210" class="phone-input">
+      </div>
+      <div id="phone-error" class="error-message"></div>
+      <button type="button" id="get-otp" class="otp-button">Get OTP</button>
     </div>
   </div>
 
