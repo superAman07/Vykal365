@@ -7192,8 +7192,7 @@ body .my-booking-view-invoice-page {
     max-width: 354px;
   }
 }
-
-/* Add to your existing CSS */
+ 
 .vehicle-selection-popup {
     position: fixed;
     bottom: 0;
@@ -7615,7 +7614,7 @@ body .my-booking-view-invoice-page {
 }
 @media (max-width: 380px) {
     .select-your-vehicle-grid {
-        grid-template-columns: 1fr 1fr; /* Change to single column */
+        grid-template-columns: 1fr 1fr;  
         gap: 8px;
         padding: 0 4px;
     }
@@ -7834,6 +7833,178 @@ body .my-booking-view-invoice-page {
         opacity: 0;
     }
     to {
+        opacity: 1;
+    }
+}
+
+.share-details-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+.share-details-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 380px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px;
+    display: none;
+    z-index: 1001;
+    animation: modalPop 0.3s ease;
+}
+
+.share-details-card {
+    width: 100%;
+}
+
+.vehicle-info-header {
+    margin-bottom: 16px;
+}
+
+.prime-service-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #FFF4E5;
+    color: #FF5505;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.vehicle-details-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.vehicle-thumb {
+    width: 60px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.vehicle-text h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #2D2D2D;
+}
+
+.vehicle-text p {
+    font-size: 12px;
+    color: #979797;
+    margin: 4px 0 0;
+}
+
+.booking-info-blue-card {
+    background: #3E78CC;
+    border-radius: 12px;
+    padding: 20px;
+    color: #FFFFFF;
+    position: relative;  
+    overflow: hidden; 
+}
+.booking-info-blue-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(booking-confirm-pattern-bg-image.png);
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: multiply;
+    opacity: 0.15;
+    z-index: 0;
+}
+.booking-info-blue-card > * {
+    position: relative;
+    z-index: 1;
+}
+.booking-info-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.info-icon {
+    width: 56px;
+    height: 56px;
+}
+
+.info-text h5 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.info-text p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 4px 0 0;
+}
+
+.location-info {
+    padding: 16px 0;
+    border-top: 1px dashed rgba(255,255,255,0.2);
+    border-bottom: 1px dashed rgba(255,255,255,0.2);
+}
+
+.location-label {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 4px;
+}
+
+.location-value {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.amount-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.amount {
+    font-weight: 500;
+}
+
+.support-info {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.support-info small {
+    display: block;
+    margin-top: 8px;
+    opacity: 0.7;
+    font-size: 10px;
+}
+
+@keyframes modalPop {
+    from {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
         opacity: 1;
     }
 }

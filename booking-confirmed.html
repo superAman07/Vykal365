@@ -1,59 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking Confirm - Vykal 365</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body class="booking-confirm-body">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body class="booking-confirm-body">
     <div class="booking-confirm-container">
-        <div class="confirmation-content">
-            <div class="success-icon-wrapper">
-                <img src="assets/booking-confirm-green-tick-icon.png" alt="Success" class="success-icon">
-            </div>
-            
-            <div class="confirmation-text">
-                <h1>Booking Confirmed</h1>
-                <p>Thank You</p>
-            </div>
+      <div class="confirmation-content">
+        <div class="success-icon-wrapper">
+          <img
+            src="assets/booking-confirm-green-tick-icon.png"
+            alt="Success"
+            class="success-icon"
+          />
+        </div>
 
-            <div class="booking-details-card">
-                <div class="booking-detail-item">
-                    <img src="assets/booking-confirmed-booking-id-icon.png" alt="Booking ID" class="detail-icon">
-                    <div class="detail-text">
-                        <span class="label">Booking ID</span>
-                        <span class="value">#BAN25020720104</span>
-                    </div>
+        <div class="confirmation-text">
+          <h1>Booking Confirmed</h1>
+          <p>Thank You</p>
+        </div>
+
+        <div class="booking-details-card">
+          <div class="booking-detail-item">
+            <img
+              src="assets/booking-confirmed-booking-id-icon.png"
+              alt="Booking ID"
+              class="detail-icon"
+            />
+            <div class="detail-text">
+              <span class="label">Booking ID</span>
+              <span class="value">#BAN25020720104</span>
+            </div>
+          </div>
+
+          <div class="booking-detail-item">
+            <img
+              src="assets/booking-confirm-pickup-date-and-time-icon.png"
+              alt="Pickup Time"
+              class="detail-icon"
+            />
+            <div class="detail-text">
+              <span class="label">Pickup Date & Time</span>
+              <span class="value">15 March 2025</span>
+              <span class="value time">08:00 AM - 09:00 AM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button class="share-details-btn">
+            <img
+              src="assets/booking-confirm-share-details-icon.png"
+              class="share-details-icon-booing-confirmed"
+              alt="Share"
+            />
+            Share Details
+          </button>
+          <button class="go-bookings-btn">
+            <img
+              src="assets/booking-confirm-go-to-bookings.png"
+              class="share-details-icon-booing-confirmed"
+              alt="Bookings"
+            />
+            Go to Bookings
+          </button>
+        </div>
+
+        <div class="performance-banner">
+          <img
+            src="assets/booking-confirmed-bottom-banner.png"
+            alt="Performance Tips"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      const shareDetailsBtn = document.querySelector(".share-details-btn");
+      const goBookingsBtn = document.querySelector(".go-bookings-btn");
+
+      const modalHtml = `
+<div class="share-details-modal-overlay" id="shareModalOverlay"></div>
+<div class="share-details-modal" id="shareDetailsModal">
+    <div class="share-details-card">
+        <div class="vehicle-info-header">
+            <div class="prime-service-tag">PRIME SERVICE</div>
+            <div class="vehicle-details-row">
+                <img src="assets/royal-enfield-thunderbirdx-bike-service.png" alt="Vehicle" class="vehicle-thumb">
+                <div class="vehicle-text">
+                    <h4>ROYAL ENFIELD THUNDERBIRDX</h4>
+                    <p>KL65N5556 | Petrol</p>
                 </div>
-                
-                <div class="booking-detail-item">
-                    <img src="assets/booking-confirm-pickup-date-and-time-icon.png" alt="Pickup Time" class="detail-icon">
-                    <div class="detail-text">
-                        <span class="label">Pickup Date & Time</span>
-                        <span class="value">15 March 2025</span>
-                        <span class="value time">08:00 AM - 09:00 AM</span>
-                    </div>
+            </div>
+        </div>
+        
+        <div class="booking-info-blue-card">
+            <div class="booking-info-row">
+                <img src="assets/booking-confirmed-booking-id-icon.png" alt="" class="info-icon">
+                <div class="info-text">
+                    <h5>Booking ID</h5>
+                    <p>#BAN25020720104</p>
                 </div>
             </div>
 
-            <div class="action-buttons">
-                <button class="share-details-btn">
-                    <img src="assets/booking-confirm-share-details-icon.png" class="share-details-icon-booing-confirmed" alt="Share">
-                    Share Details
-                </button>
-                <button class="go-bookings-btn">
-                    <img src="assets/booking-confirm-go-to-bookings.png" class="share-details-icon-booing-confirmed" alt="Bookings">
-                    Go to Bookings
-                </button>
+            <div class="booking-info-row">
+                <img src="assets/booking-confirm-pickup-date-and-time-icon.png" alt="" class="info-icon">
+                <div class="info-text">
+                    <h5>Pickup Date & Time</h5>
+                    <p>15 March 2025</p>
+                    <p>08:00 AM - 09:00 AM</p>
+                </div>
             </div>
 
-            <div class="performance-banner">
-                <img src="assets/booking-confirmed-bottom-banner.png" alt="Performance Tips">
+            <div class="location-info">
+                <p class="location-label">Location</p>
+                <p class="location-value">1st Main Rd, near Cauvery Public School, CQAL Layout, Sahakar Nagar, Bengaluru, Karnataka 560092</p>
+            </div>
+
+            <div class="amount-info">
+                <p>Amount Payable :</p>
+                <p class="amount">₹1,500</p>
+            </div>
+
+            <div class="support-info">
+                <p>Need help? Contact Support at +91 97865 43210</p>
+                <small>Share this confirmation with the service provider at shop / facility for reference</small>
             </div>
         </div>
     </div>
-</body>
+</div>`;
+
+      // Add modal to body
+      document.body.insertAdjacentHTML("beforeend", modalHtml);
+
+      // Get modal elements
+      const shareModal = document.getElementById("shareDetailsModal");
+      const shareModalOverlay = document.getElementById("shareModalOverlay");
+
+      // Handle share details click
+      shareDetailsBtn.addEventListener("click", () => {
+        shareModal.style.display = "block";
+        shareModalOverlay.style.display = "block";
+      });
+
+      // Close modal when clicking overlay
+      shareModalOverlay.addEventListener("click", () => {
+        shareModal.style.display = "none";
+        shareModalOverlay.style.display = "none";
+      });
+
+      // Handle go to bookings click
+      goBookingsBtn.addEventListener("click", () => {
+        window.location.href = "bookings.html";
+      });
+    </script>
+  </body>
 </html>
