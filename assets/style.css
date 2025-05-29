@@ -7192,3 +7192,88 @@ body .my-booking-view-invoice-page {
     max-width: 354px;
   }
 }
+
+/* Add to your existing CSS */
+.vehicle-selection-popup {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+    max-width: 430px;
+    width: 100%;
+    height: 469px;
+    background: rgba(255, 255, 255);
+    border-radius: 30px 30px 0 0;
+    z-index: 1000;
+    display: none;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-selection-popup .close-btn {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.vehicle-selection-popup .close-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.vehicle-selection-popup .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #292929;
+    margin-bottom: 40px;
+}
+
+.vehicle-grid-my-vehicles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 0 16px;
+}
+
+.vehicle-item-my-vehicles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.vehicle-item-my-vehicles img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.vehicle-item-my-vehicles span {
+    font-size: 14px;
+    color: #565656;
+}
+
+.popup-overlay-my-vehicles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+.vehicle-item-my-vehicles-bike {
+    width: 145px !important;
+    height: 106px !important;
+}
+.vehicle-item-my-vehicles-car {
+    width: 145px !important;
+    height: 85px !important;
+}
