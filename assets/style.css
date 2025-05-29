@@ -7276,3 +7276,125 @@ body .my-booking-view-invoice-page {
     width: 145px !important;
     height: 85px !important;
 }
+
+.my-vehicle-edit-main-image-with-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    text-align: center;
+}
+.my-vehicle-edit-main-image-with-name-container h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: #565656;
+    margin-top: 16px;
+    text-align: center;
+}
+.my-vehicle-edit-main-image {
+    width: 101px;
+    height: 101px;
+    border-radius: 50%;
+    display: flex;
+    border: 4.49px solid #FF5505;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.my-vehicle-edit-main-image img {
+    width: auto;
+    height: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.vehicle-details-separator {
+    margin: 24px 0;
+    border: none;
+    height: 1px;
+    background: #E8E8E8;
+}
+
+.vehicle-number-section {
+    padding: 0 20px;
+}
+
+.vehicle-number-section h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D2D2D;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.vehicle-number-subtitle {
+    font-size: 14px;
+    color: #979797;
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.vehicle-number-input-container {
+    display: flex;
+    align-items: stretch; 
+    background: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    width: 318px; 
+    position: relative;
+    background-image: linear-gradient(#fff, #fff), 
+                      linear-gradient(93deg, #002E70 2.68%, #FF5505 78.78%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    padding: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.region-code {
+    background: #00235B;
+    border-radius: 8px;
+    color: #FFFFFF;
+    padding: 5px 3px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: inherit;
+    height: 50px;
+    width: 63px;
+    flex-direction: column;
+    margin: 0;
+}
+.region-stars { 
+    width: 16px;
+    height: 16px;
+}
+
+.vehicle-number-input {
+    border: none;
+    outline: none;
+    font-size: 28px;
+    color: #C3C3C3;
+    width: 100%;
+    padding: 4px 33px;
+    font-weight: 700;
+    background: transparent;
+    letter-spacing: 1px;
+}
+
+.vehicle-number-input::placeholder {
+    color: #CCCCCC;
+    letter-spacing: 1px;
+}
+.vehicle-number-input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    border-radius: 11px;
+    padding: 4px;
+}
