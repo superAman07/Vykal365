@@ -3148,8 +3148,7 @@ body .my-booking-view-invoice-page {
 }
 @media (max-width: 380px) {
     .expert-bike-service-image {
-        width: 90%;  
-        height: auto;  
+        width: 100% !important;    
         padding: 0 4px;
     }
     .top-blue-line {
