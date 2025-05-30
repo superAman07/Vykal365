@@ -6410,20 +6410,36 @@ body .my-booking-view-invoice-page {
         padding: 12px 4px; 
     }
 }
-.service-banner {
-    background-color: #FFF5F2;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    overflow: hidden;
+.service-banner { 
+    width: 100%;
+    margin-bottom: 20px; 
 }
 .service-banner-content { 
     position: relative;
+    width: 100%;
 }
-.service-banner-main-image-container img{
-    width: 273px;
-    height: 125px; 
-    border-radius: 7px;
+.service-banner-main-image-container {
+    width: 100%;
+}
 
+.service-banner-main-image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+@media (max-width: 380px) {
+    .service-banner-main-image-container {
+        padding: 0 12px;
+    }
+    .service-banner-main-image-container {
+        width: 100%;
+    }
+    .service-banner-main-image-container img {
+        width: 100%;
+        border-radius: 7px;
+    }
 }
 .service-cards-container {
     display: flex;
