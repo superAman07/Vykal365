@@ -88,7 +88,7 @@ body {
 
 .tagline-item {
     color: #757575;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .tagline-separator {
@@ -511,10 +511,10 @@ body {
 }
 
 .home-page .service-label {
-    font-size: 0.7rem; 
+    font-size: 12px; 
     text-align: center;
-    color: var(--text-dark);
-    font-weight: 400;
+    color: #797979;
+    font-weight: 500;
 }
 
 .home-page .promo-card {
@@ -532,6 +532,23 @@ body {
     object-fit: cover;  
     display: block;
     border-radius: 12px; 
+    border: 0.5px solid #FFD4BF;
+}
+.home-page .promo-card-full-image-blue-border {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;  
+    display: block;
+    border-radius: 12px; 
+    border: 0.5px solid #D7E7FF;
+}
+.home-page .promo-card-full-image-no-border {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;  
+    display: block;
+    border-radius: 12px; 
+    border: 0.5px solid #D7E7FF;
 }
 .text-ki-decoration-none {
     text-decoration: none !important;  
@@ -601,11 +618,22 @@ body {
 }
 .badge-text-content {
   white-space: nowrap;
+  font-size: 14px;
+  font-weight: 700;
+}
+.badge-text-content-stay-informed {
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+}
+.advantage-font-styling{
+    font-weight: 500;
 }
 
 .article-cards-container {
     display: flex;
     overflow-x: auto;
+    gap: 9px;
 }
 
 .article-cards-container::-webkit-scrollbar {
