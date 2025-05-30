@@ -1047,8 +1047,8 @@ body {
 
 
 .step-icon {
-    width: 28px;  
-    height: 28px;  
+    width: 45px;  
+    height: 45px;  
     object-fit: contain;
 }
 
@@ -7370,7 +7370,7 @@ body .my-booking-view-invoice-page {
   font-weight: 500;
   cursor: pointer;
   position: fixed; 
-  bottom: 80px;  
+  bottom: 105px;  
   left: 50%;  
   transform: translateX(-50%);  
   z-index: 10;  
