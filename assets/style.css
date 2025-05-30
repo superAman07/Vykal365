@@ -7762,7 +7762,7 @@ body .my-booking-view-invoice-page {
 
 .btn-next {
     position: fixed;
-    bottom: 105px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%) scale(1);
     width: 354px;
@@ -7814,7 +7814,7 @@ body .my-booking-view-invoice-page {
         width: calc(100% - 2px);  
         max-width: 320px;
         margin: 0 auto;
-        bottom: 105px;
+        bottom: 15px;
     }
 
     .search-input {
