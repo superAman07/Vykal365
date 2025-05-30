@@ -1194,7 +1194,7 @@ body {
  
 
 /* Ensure bottom nav on referral page is styled like home page */
-.referral-page .bottom-nav {
+/* .referral-page .bottom-nav {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -1224,7 +1224,7 @@ body {
 .referral-page .nav-item i {
     font-size: 1.25rem;
     margin-bottom: 2px;
-}
+} */
 
 
 /*  */
@@ -1263,7 +1263,7 @@ body {
     font-size: 1.25rem;  
     margin-bottom: 2px;  
 } */
- .home-page .bottom-nav {
+.bottom-nav {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -1278,7 +1278,7 @@ body {
     box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
 }
 
-.home-page .nav-item {
+.nav-item {
     color: #929292;
     text-decoration: none;
     font-size: 12px;
@@ -1288,7 +1288,7 @@ body {
     justify-content: center; 
     height: 100%;
 }
-.home-page .bottom-nav .row {
+.bottom-nav .row {
     padding: 0 52px;  
     height: 100%;
     align-items: center;
@@ -1299,7 +1299,7 @@ body {
     height: 38px;
     margin-bottom: 8px;
 }
-.home-page .nav-item span {
+.nav-item span {
     font-size: 12px;
     font-weight: 400;
 }
