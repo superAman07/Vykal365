@@ -7939,6 +7939,60 @@ body .my-booking-view-invoice-page {
     background-color: var(--color);
     clip-path: var(--shape);
 }
+/* ends here */
+.vehicle-card-confirmed {
+    width: 368px;
+    height: 97px;
+    background: #FFFFFF;
+    border-radius: 12px; 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08);
+    border: 0.7px solid #DADADA;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.vehicle-image-confirmed {
+    height: 60px;
+    width: 107px;
+    margin-left: 6px;
+}
+.vehicle-info-confirmed {
+  display: grid;
+  gap: 0px;
+  align-items: center;
+}
+.vehicle-info-confirmed .service-tag{
+  font-size: 12px;
+  font-weight: 700;
+  color: #292929;
+  width: 112px;
+  height: 19px;
+  background-color: #FFC068;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  border-radius: 30px;
+}
+.vehicle-info-confirmed .vehicle-name{
+  font-size: 12px;
+  font-weight: 500;
+  color: #565656;   
+}
+.vehicle-info-confirmed .vehicle-details{
+  font-size: 12px;
+  font-weight: 500;
+  color: #9D9D9D;   
+}
+.vehicle-info-confirmed .vehicle-details span{
+  font-size: 14px;
+  padding: 0 15px;
+  font-weight: 200;
+  color: #D5D5D5;   
+}
 
 .confirmation-text {
     margin-bottom: 32px;
@@ -8141,11 +8195,11 @@ body .my-booking-view-invoice-page {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 100%;
     max-width: 380px;
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 20px;
+    padding: 5px;
     display: none;
     z-index: 1001;
     animation: modalPop 0.3s ease;
@@ -8197,10 +8251,13 @@ body .my-booking-view-invoice-page {
 .booking-info-blue-card {
     background: #3E78CC;
     border-radius: 12px;
-    padding: 20px;
+    padding: 20px 40px;
     color: #FFFFFF;
     position: relative;  
     overflow: hidden; 
+    width: 369px;
+    height: 268px;
+    margin-bottom: 20px;
 }
 .booking-info-blue-card::before {
     content: '';
@@ -8223,7 +8280,7 @@ body .my-booking-view-invoice-page {
 .booking-info-row {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
+    gap: 30px;
     margin-bottom: 16px;
 }
 
@@ -8244,6 +8301,13 @@ body .my-booking-view-invoice-page {
     font-weight: 500;
     margin: 4px 0 0;
 }
+.location-section {
+    width: 198px;
+    height: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    right: -40px;
+}
 
 .location-info {
     padding: 16px 0;
@@ -8253,13 +8317,66 @@ body .my-booking-view-invoice-page {
 
 .location-label {
     font-size: 14px;
-    opacity: 0.9;
-    margin-bottom: 4px;
+    font-weight: 400; 
 }
 
 .location-value {
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 10px;
+    font-weight: 700;
+}
+.horizontal-line-separator-confirmed-booking{
+    height: 1.1px;
+    background: #C6DDFF;
+    margin: 0 4px;
+}
+
+.amount-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 10px;
+}
+
+.amount-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #929292;
+}
+
+.amount-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: #464646;
+}
+.support-row {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    display: grid;
+}
+
+.support-contact {
+    margin-bottom: 8px;
+    margin-left: auto;
+    font-size: 12px;
+    margin-right: auto;
+    font-weight: 400;
+    color: #919191;
+}
+.support-contact span{
+    margin-bottom: 8px;
+    margin-left: auto;
+    font-size: 12px;
+    margin-right: auto;
+    font-weight: 700;
+    color: #628FD1;
+}
+
+.support-note {
+    font-size: 10px;
+    font-weight: 400;
+    color: #767676;
+    margin: 0px auto 2px auto;
 }
 
 .amount-info {
@@ -8303,5 +8420,115 @@ body .my-booking-view-invoice-page {
     }
     .status-banner-cancelled {
         width: calc(100% - 22px);
+    }
+}
+@media (max-width: 380px) {
+    .share-details-modal {
+        width: calc(100% - 22px); 
+        max-width: 340px;
+        padding: 12px; 
+    }
+
+    .vehicle-card-confirmed {
+        padding: 12px;
+        height: 80px;
+        width: calc(100% - 2px);
+        gap: 10px;
+    }
+
+    .vehicle-image-confirmed {
+        width: 85px;
+        height: 50px;
+        margin-left: 4px;
+    }
+    .vehicle-info-confirmed {
+        gap: 2px; /* Reduced gap */
+    }
+
+    .vehicle-info-confirmed .service-tag {
+        font-size: 9px;
+        padding: 2px 6px;
+        width: 85px;  
+        min-width: 80px;
+        height: 16px; 
+        margin-bottom: 2px;
+    }
+
+    .vehicle-info-confirmed .vehicle-name {
+        font-size: 11px;
+        margin-bottom: 0px;
+        line-height: 1.2;
+    }
+
+    .vehicle-info-confirmed .vehicle-details {
+        font-size: 11px;
+    }
+
+    .booking-info-blue-card {
+        padding: 12px;
+        width: 100%;
+        height: auto;
+    }
+
+    .booking-info-row {
+        gap: 18px;
+        margin-bottom: 12px;
+    }
+
+    .info-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .info-label {
+        font-size: 11px;
+    }
+
+    .info-value {
+        font-size: 13px;
+    }
+
+    .location-section {
+        margin: 8px 0;
+    }
+
+    .location-label {
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+
+    .location-value {
+        font-size: 11px;
+        line-height: 1.2;
+    }
+
+    .amount-row {
+        margin: 12px 8px;
+    }
+
+    .amount-label {
+        font-size: 11px;
+    }
+
+    .amount-value {
+        font-size: 14px;
+    }
+
+    .support-row {
+        margin-top: 12px;
+    }
+
+    .support-contact {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+
+    .support-note {
+        font-size: 9px;
+        line-height: 1.2;
+    }
+
+    .horizontal-line-separator-confirmed-booking {
+        margin: 0 2px;
     }
 }
