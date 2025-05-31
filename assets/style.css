@@ -1679,6 +1679,16 @@ body.my-booking-page {
     padding: 0;
     border: none;
 }
+.invoice-view-paid-1999-key {
+    color: #008001 !important;
+    font-size: 12px;
+    font-weight: 500;
+}
+.invoice-view-paid-1999-value {
+    color: #008001 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
 
 .my-booking-header .back-button img {
     width: 20px; 
