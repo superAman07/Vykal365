@@ -162,6 +162,59 @@
       goBookingsBtn.addEventListener("click", () => {
         window.location.href = "bookings.html";
       });
+      function createConfetti() {
+    const colors = ['#FF5505', '#FFD8C6', '#3E78CC', '#00B655', '#FFC068'];
+    const shapes = [
+        'polygon(50% 0%, 0% 100%, 100% 100%)', // Triangle
+        'polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)', // Octagon
+        'circle(50% at 50% 50%)', // Circle
+        'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', // Square
+        'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)' // Hexagon
+    ];
+    
+    const confettiCount = 40; // Reduced count for better visibility
+    
+    for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        const isDnaSpiral = Math.random() > 0.7; // 40% chance for DNA spiral
+        
+        confetti.className = `confetti ${isDnaSpiral ? 'dna-spiral' : ''}`;
+        
+        // Position more concentrated in the center
+        const spread = isDnaSpiral ? 120 : 80;
+        confetti.style.left = `calc(50% + ${(Math.random() - 0.5) * spread}vw)`;
+       
+        // Random color
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.setProperty('--color', color);
+        
+        if (!isDnaSpiral) {
+            const shape = shapes[Math.floor(Math.random() * shapes.length)];
+            confetti.style.setProperty('--shape', shape);
+            const size = Math.random() * 6 + 8; // 8-14px
+            confetti.style.width = `${size}px`;
+            confetti.style.height = `${size}px`;
+        }
+        
+        // Slower animation
+        const duration = Math.random() * 2 + 1; // 4-6s duration
+        confetti.style.setProperty('--duration', `${duration}s`);
+        confetti.style.animationDelay = `${Math.random() * 2}s`;
+        
+        document.body.appendChild(confetti);
+        
+        setTimeout(() => {
+            confetti.remove();
+        }, duration * 700 + 900);
+    }
+}
+
+// Create multiple batches with longer intervals
+window.addEventListener('load', () => {
+    createConfetti();
+    setTimeout(createConfetti, 700);
+    setTimeout(createConfetti, 900);
+});
     </script>
   </body>
 </html>
