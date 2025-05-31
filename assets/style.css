@@ -7865,11 +7865,21 @@ body .my-booking-view-invoice-page {
     opacity: 0;
     transform: scale(0.5);
     animation: popIn 0.5s ease forwards 0.3s;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: #b6ffb9;  
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .success-icon {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     animation: spin 1s ease-out;
 }
 
@@ -7880,15 +7890,16 @@ body .my-booking-view-invoice-page {
 }
 
 .confirmation-text h1 {
-    color: #00235B;
-    font-size: 24px;
-    font-weight: 500;
+    color: #00B655;
+    font-size: 25px;
+    font-weight: 700;
     margin-bottom: 8px;
 }
 
 .confirmation-text p {
-    color: #979797;
-    font-size: 16px;
+    color: #999999;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .booking-details-card {
@@ -7953,34 +7964,59 @@ body .my-booking-view-invoice-page {
 
 .action-buttons {
     display: flex;
-    gap: 12px;
-    margin-bottom: 24px;
-    opacity: 0;
-    animation: fadeIn 0.5s ease forwards 1.2s;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    gap: 24px;
+    position: relative;
+    margin: 24px 0;
 }
+.action-buttons::before,
+.action-buttons::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #FFD8C6;
+}
+.action-buttons::before {
+    top: 0;
+}
+
+.action-buttons::after {
+    bottom: 0;
+}
+.action-buttons .share-details-btn {
+    position: relative;
+}
+.action-buttons .share-details-btn::after {
+    content: '';
+    position: absolute;
+    right: -12px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 43px;  
+    background: #EAEAEA;
+}
+
 .share-details-icon-booing-confirmed {
     width: 35px;
     height: 35px;
 }
 .action-buttons button {
-    flex: 1;
+    background: transparent;
+    border: none;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 8px;
-    padding: 12px;
-    border: 1px solid #E8E8E8;
-    border-radius: 12px;
-    background: #FFFFFF;
-    color: #2D2D2D;
     font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    font-weight: 400;
+    color: #646464;
+    white-space: nowrap;
 }
 
-.action-buttons button:hover {
-    background: #F8F8F8;
-}
 
 .performance-banner {
     opacity: 0;
