@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body class="booking-confirm-body">
+    <div class="ccf-container"></div>
     <div class="booking-confirm-container">
       <div class="confirmation-content">
         <div class="success-icon-wrapper">
@@ -143,82 +144,92 @@
     </div>
 </div>`;
 
-      // Add modal to body
       document.body.insertAdjacentHTML("beforeend", modalHtml);
-
-      // Get modal elements
       const shareModal = document.getElementById("shareDetailsModal");
       const shareModalOverlay = document.getElementById("shareModalOverlay");
 
-      // Handle share details click
       shareDetailsBtn.addEventListener("click", () => {
         shareModal.style.display = "block";
         shareModalOverlay.style.display = "block";
       });
-
-      // Close modal when clicking overlay
       shareModalOverlay.addEventListener("click", () => {
         shareModal.style.display = "none";
         shareModalOverlay.style.display = "none";
       });
-
-      // Handle go to bookings click
       goBookingsBtn.addEventListener("click", () => {
         window.location.href = "bookings.html";
       });
-      function createConfetti() {
-    const colors = ['#FF5505', '#FFD8C6', '#3E78CC', '#00B655', '#FFC068'];
-    const shapes = [
-        'polygon(50% 0%, 0% 100%, 100% 100%)', // Triangle
-        'polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)', // Octagon
-        'circle(50% at 50% 50%)', // Circle
-        'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', // Square
-        'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)' // Hexagon
-    ];
-    
-    const confettiCount = 40; // Reduced count for better visibility
-    
-    for (let i = 0; i < confettiCount; i++) {
-        const confetti = document.createElement('div');
-        const isDnaSpiral = Math.random() > 0.7; // 40% chance for DNA spiral
-        
-        confetti.className = `confetti ${isDnaSpiral ? 'dna-spiral' : ''}`;
-        
-        // Position more concentrated in the center
-        const spread = isDnaSpiral ? 120 : 80;
-        confetti.style.left = `calc(50% + ${(Math.random() - 0.5) * spread}vw)`;
-       
-        // Random color
-        const color = colors[Math.floor(Math.random() * colors.length)];
-        confetti.style.setProperty('--color', color);
-        
-        if (!isDnaSpiral) {
-            const shape = shapes[Math.floor(Math.random() * shapes.length)];
-            confetti.style.setProperty('--shape', shape);
-            const size = Math.random() * 6 + 8; // 8-14px
-            confetti.style.width = `${size}px`;
-            confetti.style.height = `${size}px`;
-        }
-        
-        // Slower animation
-        const duration = Math.random() * 2 + 1; // 4-6s duration
-        confetti.style.setProperty('--duration', `${duration}s`);
-        confetti.style.animationDelay = `${Math.random() * 2}s`;
-        
-        document.body.appendChild(confetti);
-        
-        setTimeout(() => {
-            confetti.remove();
-        }, duration * 700 + 900);
-    }
-}
+      // yehi se hai vo animation part
 
-// Create multiple batches with longer intervals
-window.addEventListener('load', () => {
-    createConfetti();
-    setTimeout(createConfetti, 700);
-    setTimeout(createConfetti, 900);
-});
+      document.addEventListener("DOMContentLoaded", function () {
+        const container = document.querySelector(".ccf-container");
+        if (!container) return;
+
+        const shapeTypes = ["square", "rect", "fatrect", "circle", "ribbon","square", "rect", "fatrect", "circle", "ribbon"];
+        const colorClasses = [
+          "ccf-color-pink",
+          "ccf-color-purple",
+          "ccf-color-yellow",
+          "ccf-color-teal",
+          "ccf-color-green",
+          "ccf-color-red",
+          "ccf-color-indigo",
+          "ccf-color-orange",
+        ];
+
+        const ribbonImages = [
+          "assets/confirmed-party-1.png",
+          "assets/confirmed-party-2.png",
+          "assets/confirmed-party.png",
+        ];
+
+        const TOTAL_PIECES = 40;
+        for (let i = 0; i < TOTAL_PIECES; i++) {
+          const shape =
+            shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
+
+          let el;
+          if (shape === "ribbon") {
+            el = document.createElement("img");
+
+            const idx = Math.floor(Math.random() * ribbonImages.length);
+            el.src = ribbonImages[idx];
+            el.classList.add("ccf-piece", "ccf-ribbon");
+          } else {
+            el = document.createElement("div");
+            el.classList.add("ccf-piece");
+
+            if (shape === "square") el.classList.add("ccf-square");
+            if (shape === "rect") el.classList.add("ccf-rect");
+            if (shape === "fatrect") el.classList.add("ccf-fatrect");
+            if (shape === "circle") el.classList.add("ccf-circle");
+
+            const color =
+              colorClasses[Math.floor(Math.random() * colorClasses.length)];
+            el.classList.add(color);
+          }
+          let spreadAngle = Math.random() * 360 * (Math.PI / 180);  
+          let spreadDistance = Math.random() * 350 - 400;  
+
+          let spreadX = Math.cos(spreadAngle) * spreadDistance;
+          let spreadY = (Math.sin(spreadAngle) * spreadDistance) / 3;  
+
+          el.style.setProperty("--spread-x", `${spreadX}px`);
+          el.style.setProperty("--spread-y", `${spreadY}px`);
+
+          const durationSec = 2.5 + Math.random() * 0.8;  
+          const delaySec = Math.random() * 0.5;  
+
+          el.style.left = `${50}%`;  
+          el.style.animationDuration = `${durationSec.toFixed(2)}s`;
+          el.style.animationDelay = `${delaySec.toFixed(2)}s`;
+
+          el.addEventListener("animationend", () => {
+            el.remove();
+          });
+          container.appendChild(el);
+        }
+      });
     </script>
   </body>
 </html>

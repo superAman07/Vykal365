@@ -7863,14 +7863,16 @@ body .my-booking-view-invoice-page {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .booking-confirm-container {
     max-width: 380px;
     width: 100%;
     padding: 24px;
-    opacity: 0;
+    opacity: 0; 
     transform: translateY(20px);
     animation: fadeInUp 0.6s ease forwards;
+    overflow-x: hidden;
 }
 
 .confirmation-content {
@@ -7898,63 +7900,6 @@ body .my-booking-view-invoice-page {
     width: 75px;
     height: 75px;
     animation: spin 1s ease-out;
-}
-/* Add these keyframes to your style.css */
-
-.confetti {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    background-color: var(--color);
-    clip-path: var(--shape); 
-    opacity: 0;
-    z-index: 1;
-    top: 0;
-    pointer-events: none;
-    animation: confetti-fall var(--duration) ease-in-out forwards;
-}
-.confetti.dna-spiral {
-    width: 15px;
-    height: 40px;
-    clip-path: path('M4 0C7 6 1 12 4 18C7 24 1 30 4 36');
-    animation: dna-fall var(--duration) ease-in-out forwards;
-}
-
-@keyframes confetti-fall {
-    0% {
-        transform: translateY(-50px) rotate(0deg);
-        opacity: 0;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(150px) rotate(360deg);
-        opacity: 0;
-    }
-}
-@keyframes dna-fall {
-    0% {
-        transform: translateY(-50px) rotate(0deg) scale(1);
-        opacity: 0;
-    }
-    50% {
-        transform: translateY(50px) rotate(180deg) scale(1.4);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(150px) rotate(360deg) scale(1);
-        opacity: 0;
-    }
-}
-
-.confetti::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color);
-    clip-path: var(--shape);
 }
 /* ends here */
 .vehicle-card-confirmed {
@@ -8549,3 +8494,82 @@ body .my-booking-view-invoice-page {
         margin: 0 2px;
     }
 }
+/* confirmed booking animation starts from here */
+.ccf-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;  
+  overflow: hidden;
+  pointer-events: none; 
+  z-index: 1000;
+}
+@keyframes ccf-fall {
+  0% {
+        transform: translate(-50%, -50px) rotate(0deg) scale(0.8);
+        opacity: 1;
+        left: 50%;  
+    }
+    15% {
+        transform: translate(-50%, 0) rotate(45deg) scale(1);
+        opacity: 1;
+        left: 50%;  
+    }
+    40% {
+        transform: translate(var(--spread-x), var(--spread-y)) rotate(180deg) scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(calc(var(--spread-x) * 1.2), 50vh) rotate(360deg) scale(0.8);
+        opacity: 0;
+    }
+}
+
+.ccf-piece {
+  position: fixed;
+  z-index: 1;
+  top: -120px;
+  will-change: transform, opacity;
+  animation-name: ccf-fall;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  --spread-x: 0px;
+}
+
+.ccf-square {
+  width: 12px;
+  height: 12px;
+}
+.ccf-rect {
+  width: 5px;
+  height: 24px;
+}
+.ccf-fatrect {
+  width: 16px;
+  height: 16px; 
+}
+.ccf-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+
+.ccf-ribbon {
+  width: 35px;
+  height: auto;
+}
+
+.ccf-color-pink    { background-color: #ff3cac; }
+.ccf-color-purple  { background-color: #7b2ff7; }
+.ccf-color-yellow  { background-color: #ffe700; }
+.ccf-color-teal    { background-color: #00ffd9; }
+.ccf-color-green   { background-color: #4fff4f; }
+.ccf-color-red     { background-color: #ff0054; }
+.ccf-color-indigo  { background-color: #8a2be2; }
+.ccf-color-orange  { background-color: #ff8800; }
