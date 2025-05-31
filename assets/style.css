@@ -1565,13 +1565,20 @@ body {
   text-align: center;
 }
 #bookings_empty .indicator {
-  width: 339px;
+  width: 369px;
   height: 4px;
   background: #FFAC8C;
   border-radius: 2px; 
   margin: -1px auto;
   z-index: 10;
 }
+
+@media (max-width: 380px) {
+    #bookings_empty .indicator {
+        width: 329px;
+    }
+}
+
 #bookings_empty .card {
   background: #fff;
   border-top-left-radius: 14px;
@@ -6673,7 +6680,7 @@ body .my-booking-view-invoice-page {
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - var(--header-h) - var(--nav-h));
-    padding: 10px 36px 0px;
+    padding: 10px 17px 0px;
     overflow-y: auto; 
 }
 .my-acc-profile-info {
@@ -6767,8 +6774,8 @@ body .my-booking-view-invoice-page {
 }
 
 .menu-icon img {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }
 
@@ -6980,7 +6987,7 @@ body .my-booking-view-invoice-page {
   width: 100%;
   height: 1px;
   background: #E1E1E1;
-  margin: 16px 0;
+  margin: 7px 0;
 }
 
 .contact-map {
