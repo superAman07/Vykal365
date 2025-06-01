@@ -746,7 +746,7 @@ body {
     letter-spacing: 0%;
 }
 .article-card-text {
-    font-size: 8px;
+    font-size: 10px;
     color: #6c757d;
     margin-bottom: 1.25rem;
     flex-grow: 1;
@@ -1426,8 +1426,8 @@ body {
 .card-blog .card-body .badge.category {
   background: #ffdbcb;
   color: #ff5505;
-  font-size: 8px;
-  width: 132px;
+  font-size: 10px;
+  width: 159px;
   height: 21px;
   font-weight: 700;
   padding: .35rem .75rem;
@@ -4378,7 +4378,7 @@ body .my-booking-view-invoice-page {
 }
 
 .add-on-description {
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 400;
     color: #6A6A6A;
     margin-bottom: 8px;
