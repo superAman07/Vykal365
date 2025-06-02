@@ -49,12 +49,7 @@ body {
   animation: moveLogoUp 0.8s ease-out forwards;
   animation-delay: 0.2s;
 } 
-
-/* #splash-logo img {  
-  width: 230px;  
-  height: 65px;    
-  display: block;   
-} */
+ 
 
 .splash-overlay {
     position: fixed;
@@ -194,19 +189,13 @@ body {
 @media screen and (max-width: 380px) {
     .onboarding-container {
         padding: 16px !important;
-    }
-    /* .onboarding-content{
-        margin-top: 6px !important;
-    } */
+    } 
     .car-image-container {
         width: 235px !important;
         height: 235px !important;
         margin-bottom: 16px !important;
     }
 
-    /* .logo-container {
-        margin-top: 40px !important;
-    } */
     .tagline-container {
         margin-bottom: 16px !important;
     }
@@ -223,8 +212,7 @@ body {
 .tagline-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* margin-bottom: 32px; */
+    justify-content: center; 
     gap: 16px;
 }
 
@@ -247,9 +235,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* margin-top: 33px; */
-    /* min-height: calc(100vh - 300px); */
+    justify-content: center; 
 }
 
 .car-image-container {
