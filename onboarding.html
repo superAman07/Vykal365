@@ -1,114 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Onboarding — Vykal 365</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-
-  <div class="onboarding-container">
-    <div class="logo-container">
-      <img src="assets/vykal-logo.png" alt="Vykal 365" class="vykal-logo">
-    </div>
-
-    <div class="tagline-container">
-      <span class="tagline-item" id="tag1">Quick</span>
-      <span class="tagline-separator">|</span>
-      <span class="tagline-item" id="tag2">Affordable</span>
-      <span class="tagline-separator">|</span>
-      <span class="tagline-item" id="tag3">Trusted</span>
-    </div>
-
-    <div class="onboarding-content">
-      <div class="car-image-container">
-        <img id="car-img" src="" alt="Car Service" class="car-image">
-      </div>
-
-      <div class="onboarding-text">
-        <h2 id="title">Convenience</h2>
-        <p id="subtitle">Simplified Vehicle Maintenance</p>
-      </div>
-
-      <div class="dots-container">
-        <div id="dot1" class="dot"></div>
-        <div id="dot2" class="dot"></div>
-        <div id="dot3" class="dot"></div>
-      </div>
-    </div>
-
-    <div class="phone-input-container">
-      <div class="phone-input-wrapper">
-        <div class="country-code">
-          <img src="assets/india-flag.png" alt="IN" class="flag-icon">
-          <span>+91</span>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Onboarding — Vykal 365</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="splash-overlay">
+      <div class="mobile-container-splash animate-splash">
+        <img
+          src="assets/tools-pattern.png"
+          alt="Pattern"
+          class="background-pattern position-absolute top-0 start-0 w-100 h-100"
+        />
+        <div id="splash-logo">
+          <img src="assets/vykal-logo.png" alt="Logo" class="vykal-logo" />
         </div>
-        <input id="phone" type="tel" placeholder="98765 43210" class="phone-input">
       </div>
-      <div id="phone-error" class="error-message"></div>
-      <button type="button" id="get-otp" class="otp-button">Get OTP</button>
     </div>
-  </div>
 
-  <script>
-    const data = [
-      { title: "Convenience", subtitle: "Simplified Vehicle Maintenance", img: "car-convenience.png" },
-      { title: "Quality Service", subtitle: "Experience the Expert Care", img: "car-quality.png" },
-      { title: "Vykal 365", subtitle: "Your Trusted Service Partner", img: "car-trusted.png" }
-    ];
-    let step = 1;
-    const imageChangeInterval = 3000; 
+    <div class="onboarding-container">
+      <!-- <div class="logo-container">
+      <img src="assets/vykal-logo.png" alt="Vykal 365" class="vykal-logo">
+    </div> -->
 
-    function render() {
-      document.getElementById('title').textContent = data[step-1].title;
-      document.getElementById('subtitle').textContent = data[step-1].subtitle;
-      document.getElementById('car-img').src = `assets/${data[step-1].img}`;
-      
-      [1,2,3].forEach(i => {
-        const tagEl = document.getElementById(`tag${i}`);
-        tagEl.classList.toggle('text-warning-custom', i === step);
-        tagEl.classList.toggle('fw-medium', i === step);
+      <div class="tagline-container">
+        <span class="tagline-item" id="tag1">Quick</span>
+        <span class="tagline-separator">|</span>
+        <span class="tagline-item" id="tag2">Affordable</span>
+        <span class="tagline-separator">|</span>
+        <span class="tagline-item" id="tag3">Trusted</span>
+      </div>
 
-        const dotEl = document.getElementById(`dot${i}`);
-        dotEl.classList.remove('bg-warning-custom', 'bg-dot-inactive-custom', 'bg-light', 'bg-secondary'); 
-        if (i === step) {
-          dotEl.classList.add('bg-warning-custom');
-        } else {
-          dotEl.classList.add('bg-dot-inactive-custom');
-        }
-      });
-    }
+      <div class="onboarding-content">
+        <div class="car-image-container">
+          <img id="car-img" src="" alt="Car Service" class="car-image" />
+        </div>
 
-    function autoChangeStep() {
-      step = step % 3 + 1;
-      render();
-    }
+        <div class="onboarding-text">
+          <h2 id="title">Convenience</h2>
+          <p id="subtitle">Simplified Vehicle Maintenance</p>
+        </div>
 
-    document.getElementById('get-otp').onclick = () => {
-      const phoneInput = document.getElementById('phone');
-      const phoneNumber = phoneInput.value.trim();
-      const phoneErrorEl = document.getElementById('phone-error');
+        <div class="dots-container">
+          <div id="dot1" class="dot"></div>
+          <div id="dot2" class="dot"></div>
+          <div id="dot3" class="dot"></div>
+        </div>
+      </div>
 
-      if (phoneNumber) {
-        localStorage.setItem('userPhoneNumber', phoneNumber);
-        if (phoneErrorEl) {  
-            phoneErrorEl.style.display = 'none'; 
-            phoneErrorEl.textContent = ''; 
-        }
-        window.location.href = 'otp.html';
-      } else { 
-        if (phoneErrorEl) {  
-            phoneErrorEl.textContent = 'Please enter your phone number.';  
-            phoneErrorEl.style.display = 'block'; 
-        }
-        phoneInput.focus();  
+      <div class="phone-input-container">
+        <div class="phone-input-wrapper">
+          <div class="country-code">
+            <img src="assets/india-flag.png" alt="IN" class="flag-icon" />
+            <span>+91</span>
+          </div>
+          <input
+            id="phone"
+            type="tel"
+            placeholder="98765 43210"
+            class="phone-input"
+          />
+        </div>
+        <div id="phone-error" class="error-message"></div>
+        <button type="button" id="get-otp" class="otp-button">Get OTP</button>
+      </div>
+    </div>
+
+    <script>
+      const data = [
+        {
+          title: "Convenience",
+          subtitle: "Simplified Vehicle Maintenance",
+          img: "car-convenience.png",
+        },
+        {
+          title: "Quality Service",
+          subtitle: "Experience the Expert Care",
+          img: "car-quality.png",
+        },
+        {
+          title: "Vykal 365",
+          subtitle: "Your Trusted Service Partner",
+          img: "car-trusted.png",
+        },
+      ];
+      let step = 1;
+      const imageChangeInterval = 3000;
+
+      function render() {
+        document.getElementById("title").textContent = data[step - 1].title;
+        document.getElementById("subtitle").textContent =
+          data[step - 1].subtitle;
+        document.getElementById("car-img").src = `assets/${data[step - 1].img}`;
+
+        [1, 2, 3].forEach((i) => {
+          const tagEl = document.getElementById(`tag${i}`);
+          tagEl.classList.toggle("text-warning-custom", i === step);
+          tagEl.classList.toggle("fw-medium", i === step);
+
+          const dotEl = document.getElementById(`dot${i}`);
+          dotEl.classList.remove(
+            "bg-warning-custom",
+            "bg-dot-inactive-custom",
+            "bg-light",
+            "bg-secondary"
+          );
+          if (i === step) {
+            dotEl.classList.add("bg-warning-custom");
+          } else {
+            dotEl.classList.add("bg-dot-inactive-custom");
+          }
+        });
       }
-    };
 
-    render();  
-    setInterval(autoChangeStep, imageChangeInterval);
-  </script>
-</body>
+      function autoChangeStep() {
+        step = (step % 3) + 1;
+        render();
+      }
+
+      document.getElementById("get-otp").onclick = () => {
+        const phoneInput = document.getElementById("phone");
+        const phoneNumber = phoneInput.value.trim();
+        const phoneErrorEl = document.getElementById("phone-error");
+
+        if (phoneNumber) {
+          localStorage.setItem("userPhoneNumber", phoneNumber);
+          if (phoneErrorEl) {
+            phoneErrorEl.style.display = "none";
+            phoneErrorEl.textContent = "";
+          }
+          window.location.href = "otp.html";
+        } else {
+          if (phoneErrorEl) {
+            phoneErrorEl.textContent = "Please enter your phone number.";
+            phoneErrorEl.style.display = "block";
+          }
+          phoneInput.focus();
+        }
+      };
+
+      render();
+      setInterval(autoChangeStep, imageChangeInterval);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const splashLogo = document.getElementById("splash-logo");
+        let isTransitioning = false;
+
+        splashLogo.addEventListener("animationend", function () {
+          if (!isTransitioning) {
+            isTransitioning = true;
+ 
+            this.style.position = "relative";
+            this.style.transform = "none";
+            this.id = ""; 
+            this.className = "logo-container";  
+            const onboardingContainer = document.querySelector(
+              ".onboarding-container"
+            );
+            if (onboardingContainer) {
+              onboardingContainer.insertBefore(
+                this,
+                onboardingContainer.firstChild
+              );
+            }
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
