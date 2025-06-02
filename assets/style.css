@@ -97,7 +97,9 @@ body {
     margin: 0 auto;
     padding: 24px;
     background: #FFFFFF;
-    min-height: 100vh;
+    height: 100dvh;
+    /* height: auto; */
+    min-height: calc(100vh - var(--nav-height, 70px));
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -131,7 +133,7 @@ body {
         transform: translateY(-7vh) scale(1);  
     }
     100% {
-        transform: translateY(calc(-50vh + 54px)) scale(0.83);  
+        transform: translateY(calc(-50vh + max(20px, min(77px, 10vh)))) scale(0.83);  
     }
 }
 
@@ -153,6 +155,7 @@ body {
     margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 26px;
     z-index: 1000; 
 }
 
@@ -167,12 +170,61 @@ body {
     height: 54px;
     object-fit: contain;
 }
+@media screen and (max-width: 380px) {
+    @keyframes moveLogoUp {
+        0% {
+            transform: translateY(-7vh) scale(1);
+        }
+        100% { 
+            transform: translateY(calc(-50vh + max(18px, min(70px, 10vh)))) scale(0.83);
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    @keyframes moveLogoUp {
+        0% {
+            transform: translateY(-7vh) scale(1);
+        }
+        100% { 
+            transform: translateY(calc(-50vh + max(16px, min(68px, 8.5vh)))) scale(0.83);
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .onboarding-container {
+        padding: 16px !important;
+    }
+    /* .onboarding-content{
+        margin-top: 6px !important;
+    } */
+    .car-image-container {
+        width: 235px !important;
+        height: 235px !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* .logo-container {
+        margin-top: 40px !important;
+    } */
+    .tagline-container {
+        margin-bottom: 16px !important;
+    }
+
+    .onboarding-text {
+        margin-bottom: 16px !important;
+    }
+
+    .dots-container {
+        margin-bottom: 24px !important;
+    }
+}
 
 .tagline-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
     gap: 16px;
 }
 
@@ -196,6 +248,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* margin-top: 33px; */
+    /* min-height: calc(100vh - 300px); */
 }
 
 .car-image-container {
@@ -230,7 +284,7 @@ body {
 .dots-container {
     display: flex;
     gap: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .dot {
@@ -288,6 +342,7 @@ body {
 }
 
 .otp-button {
+    position: relative;
     width: 100%;
     padding: 16px;
     background: #FF5505;
@@ -295,6 +350,7 @@ body {
     border: none;
     border-radius: 8px;
     font-size: 16px;
+    height: 60px;
     font-weight: 500;
     cursor: pointer;
 }
