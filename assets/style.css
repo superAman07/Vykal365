@@ -171,7 +171,7 @@ body {
             transform: translateY(-7vh) scale(1);
         }
         100% { 
-            transform: translateY(calc(-50vh + max(18px, min(70px, 10vh)))) scale(0.83);
+            transform: translateY(calc(-50vh + max(18px, min(69px, 11.5vh)))) scale(0.83);
         }
     }
 }
