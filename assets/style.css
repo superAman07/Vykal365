@@ -46,8 +46,8 @@ body {
   transform: translateY(-7vh);
   position: relative;
   z-index: 1000;   
-  animation: moveLogoUp 0.8s ease-out forwards;
-  animation-delay: 0.2s;
+  animation: moveLogoUp 300ms ease-in forwards;
+  animation-delay: 200ms;
 } 
  
 
@@ -62,9 +62,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: hideSplash 0.5s ease-in-out forwards;
+    animation: hideSplash 300ms ease-in forwards;
     /* animation-delay: 0.7s; */
-    animation-delay: 1s;
+    animation-delay: 400ms;
 }
 
 .animate-splash {
@@ -81,8 +81,8 @@ body {
     bottom: 0;
     background: white;
     opacity: 0;
-    animation: circularReveal 0.5s ease-in-out forwards;
-    animation-delay: 0.5s;
+    animation: circularReveal 800ms ease-in-out forwards;
+    animation-delay: 200ms;
     /* animation-delay: 1s; */
     transform-origin: top center;
 }
@@ -134,8 +134,8 @@ body {
 
 @keyframes circularReveal {
     0% {
-        -webkit-clip-path: circle(0% at 50% 0);
-        clip-path: circle(0% at 50% 0);
+        -webkit-clip-path: circle(15% at 50% -15%);
+        clip-path: circle(15% at 50% -15%);
         opacity: 1;
 
     }
