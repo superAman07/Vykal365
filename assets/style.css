@@ -46,8 +46,8 @@ body {
   transform: translateY(-7vh);
   position: relative;
   z-index: 1000;   
-  animation: moveLogoUp 300ms ease-in forwards;
-  animation-delay: 200ms;
+  animation: moveLogoUp 400ms ease-in forwards;
+  animation-delay: 250ms;
 } 
  
 
@@ -62,9 +62,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: hideSplash 300ms ease-in forwards;
+    animation: hideSplash 400ms ease-in forwards;
     /* animation-delay: 0.7s; */
-    animation-delay: 400ms;
+    animation-delay: 500ms;
 }
 
 .animate-splash {
@@ -81,8 +81,8 @@ body {
     bottom: 0;
     background: white;
     opacity: 0;
-    animation: circularReveal 800ms ease-in-out forwards;
-    animation-delay: 200ms;
+    animation: circularReveal 1000ms ease-in-out forwards;
+    animation-delay: 250ms;
     /* animation-delay: 1s; */
     transform-origin: top center;
 }
