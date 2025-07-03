@@ -1,136 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vehicle Service Booking</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-  </head>
-  <body class="home-page">
-    <div class="app-container">
-      <div class="home-top-orange-bg pt-5">
-        <div
-          class="home-header-content d-flex justify-content-between align-items-center"
-        >
-          <button type="button" class="location-btn">
-            <img src="assets/home-top-left-location-icon.png" alt="Location" class="me-2">
-            Add Location
-          </button>
-          <div class="d-flex align-items-center">
-            <a
-              href="my-vehicles.html"
-              type="button"
-              class="icon-btn me-2"
-              title="Add"
-            >
-              <img src="assets/home-top-right-plus-icon.png" alt="Add">
-            </a>
-            <a
-              href="notifications.html"
-              type="button"
-              class="icon-btn"
-              title="Notifications"
-            >
-                    <img src="assets/home-top-right-notification-icon.png" alt="Notifications" width="45" height="45">
-            </a>
-          </div>
-        </div>
 
-        <div class="promo-banner-scroll-container">
-          <div class="home-promo-banner-top">
-            <img
-              src="assets/flat10off.png"
-              alt="10% Off Icon"
-              class="promo-banner-icon"
-            />
-          </div>
-          <div class="home-promo-banner-top-1">
-            <img
-              src="assets/repair&maintenance.png"
-              alt="10% Off Icon"
-              class="promo-banner-icon"
-            />
-          </div>
-          <div class="home-promo-banner-top">
-            <img
-              src="assets/caracservices.png"
-              alt="10% Off Icon"
-              class="promo-banner-icon"
-            />
-          </div>
-          <div class="home-promo-banner-top-1">
-            <img
-              src="assets/carperiodicservice.png"
-              alt="10% Off Icon"
-              class="promo-banner-icon"
-            />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vehicle Service Booking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body class="home-page">
+  <div class="app-container">
+    <div class="home-top-orange-bg pt-5">
+      <div class="home-header-content d-flex justify-content-between align-items-center">
+        <button type="button" class="location-btn">
+          <img src="assets/home-top-left-location-icon.png" alt="Location" class="me-2">
+          Add Location
+        </button>
+        <div class="d-flex align-items-center">
+          <a href="my-vehicles.html" type="button" class="icon-btn me-2" title="Add">
+            <img src="assets/home-top-right-plus-icon.png" alt="Add">
+          </a>
+          <a href="notifications.html" type="button" class="icon-btn" title="Notifications">
+            <img src="assets/home-top-right-notification-icon.png" alt="Notifications" width="45" height="45">
+          </a>
         </div>
       </div>
 
+      <div class="promo-banner-scroll-container">
+        <div class="home-promo-banner-top">
+          <img src="assets/flat10off.png" alt="10% Off Icon" class="promo-banner-icon" />
+        </div>
+        <div class="home-promo-banner-top-1">
+          <img src="assets/repair&maintenance.png" alt="10% Off Icon" class="promo-banner-icon" />
+        </div>
+        <div class="home-promo-banner-top">
+          <img src="assets/caracservices.png" alt="10% Off Icon" class="promo-banner-icon" />
+        </div>
+        <div class="home-promo-banner-top-1">
+          <img src="assets/carperiodicservice.png" alt="10% Off Icon" class="promo-banner-icon" />
+        </div>
+      </div>
+    </div>
+
+    <div class="home-content-container">
       <div class="service-grid">
         <div class="row g-0">
-          <a
-            href="bike-services-6.html"
-            class="col-4 text-center text-ki-decoration-none"
-          >
+          <a href="bike-services-6.html" class="col-4 text-center text-ki-decoration-none">
             <div class="service-item">
               <img src="assets/bikeservices.png" alt="Bike Services" />
             </div>
             <div class="service-label">Bike Services</div>
           </a>
-          <a
-            href="car-services.html"
-            class="col-4 text-center text-ki-decoration-none"
-          >
+          <a href="car-services.html" class="col-4 text-center text-ki-decoration-none">
             <div class="service-item">
               <img src="assets/carservices.png" alt="Car Services" />
             </div>
             <div class="service-label">Car Services</div>
           </a>
-          <a
-            href="ev-car-services.html"
-            class="col-4 text-center text-ki-decoration-none"
-          >
+          <a href="ev-car-services.html" class="col-4 text-center text-ki-decoration-none">
             <div class="service-item">
               <img src="assets/evcarservices.png" alt="EV Car Services" />
             </div>
             <div class="service-label">EV Car Services</div>
           </a>
-          <a
-            href="ev-bike-services.html"
-            class="col-4 text-center text-ki-decoration-none"
-          >
+          <a href="ev-bike-services.html" class="col-4 text-center text-ki-decoration-none">
             <div class="service-item">
               <img src="assets/evbikeservices.png" alt="EV Bike Services" />
             </div>
             <div class="service-label">EV Bike Services</div>
           </a>
-          <a
-            href="towing-service.html"
-            class="col-4 text-center text-ki-decoration-none"
-          >
+          <a href="towing-service.html" class="col-4 text-center text-ki-decoration-none">
             <div class="service-item">
               <img src="assets/towingservices.png" alt="Towing Services" />
             </div>
             <div class="service-label">Towing Services</div>
           </a>
-          <a
-            href="all-services.html"
-            class="col-4 text-center text-ki-decoration-none"
-          >
+          <a href="all-services.html" class="col-4 text-center text-ki-decoration-none">
             <div class="service-item">
               <img src="assets/allservices.png" alt="All Services" />
             </div>
@@ -143,65 +91,38 @@
       <div class="promo-cards-scroll-container gx-3 px-3 py-3 mb-3">
         <div class="col-6 d-flex">
           <div class="promo-card orange h-100 w-100">
-            <img
-              src="assets/getfulloffonscooter.png"
-              alt="Get 100 Off Scooter"
-              class="promo-card-full-image"
-            />
+            <img src="assets/getfulloffonscooter.png" alt="Get 100 Off Scooter" class="promo-card-full-image" />
           </div>
         </div>
         <div class="col-6 d-flex">
           <div class="promo-card blue h-100 w-100">
-            <img
-              src="assets/freewipers.png"
-              alt="Free Wipers Promo"
-              class="promo-card-full-image-blue-border"
-            />
+            <img src="assets/freewipers.png" alt="Free Wipers Promo" class="promo-card-full-image-blue-border" />
           </div>
         </div>
         <div class="col-6 d-flex">
           <div class="promo-card blue h-100 w-100">
-            <img
-              src="assets/guaranteed-best-quality.png"
-              alt="Best Quality Guaranteed"
-              class="promo-card-full-image"
-            />
+            <img src="assets/guaranteed-best-quality.png" alt="Best Quality Guaranteed" class="promo-card-full-image" />
           </div>
         </div>
         <div class="col-6 d-flex">
           <div class="promo-card blue h-100 w-100">
-            <img
-              src="assets/usecodecoff.png"
-              alt="100 rup off on first Booking"
-              class="promo-card-full-image"
-            />
+            <img src="assets/usecodecoff.png" alt="100 rup off on first Booking" class="promo-card-full-image" />
           </div>
         </div>
         <div class="col-6 d-flex">
           <div class="promo-card blue h-100 w-100">
-            <img
-              src="assets/rely-on-us.png"
-              alt="Rely on us"
-              class="promo-card-full-image"
-            />
+            <img src="assets/rely-on-us.png" alt="Rely on us" class="promo-card-full-image" />
           </div>
         </div>
         <div class="col-6 d-flex">
           <div class="promo-card blue h-100 w-100">
-            <img
-              src="assets/service-you-can-trust.png"
-              alt="Service You Can Trust"
-              class="promo-card-full-image-no-border"
-            />
+            <img src="assets/service-you-can-trust.png" alt="Service You Can Trust"
+              class="promo-card-full-image-no-border" />
           </div>
         </div>
         <div class="col-6 d-flex">
           <div class="promo-card blue h-100 w-100">
-            <img
-              src="assets/car-ac-service.png"
-              alt="Car AC Service"
-              class="promo-card-full-image-blue-border"
-            />
+            <img src="assets/car-ac-service.png" alt="Car AC Service" class="promo-card-full-image-blue-border" />
           </div>
         </div>
       </div>
@@ -211,11 +132,7 @@
         <div class="advantage-header mb-3">
           <span class="badge badge-large">
             <span class="badge-icon-circle">
-              <img
-                src="assets/vykal365.png"
-                alt="Vykal 365 Icon"
-                class="promo-badge-icon"
-              />
+              <img src="assets/vykal365.png" alt="Vykal 365 Icon" class="promo-badge-icon" />
             </span>
             <span class="badge-text-content">
               Vykal 365 <span class="advantage-font-styling">Advantages</span>
@@ -255,10 +172,7 @@
           </div>
           <div class="col-4 text-center">
             <div class="service-item">
-              <img
-                src="assets/advantage-real-time-service.png"
-                alt="Advantage Real Time Service"
-              />
+              <img src="assets/advantage-real-time-service.png" alt="Advantage Real Time Service" />
             </div>
             <div class="service-label">Real Time Service Updates</div>
           </div>
@@ -269,11 +183,7 @@
           <div class="advantage-header mb-3">
             <span class="badge badge-large">
               <span class="badge-icon-circle">
-                <img
-                  src="assets/pencil-icon.png"
-                  alt="Stay Informed Icon"
-                  class="promo-badge-icon"
-                />
+                <img src="assets/pencil-icon.png" alt="Stay Informed Icon" class="promo-badge-icon" />
               </span>
               <span class="badge-text-content-stay-informed">
                 Stay Informed,
@@ -285,11 +195,8 @@
             <div class="card-large-article">
               <div class="article-card article-card-large">
                 <div class="article-card-image-container">
-                  <img
-                    src="assets/essential-bike-maintainence.png"
-                    alt="Bike Maintenance Tips"
-                    class="article-card-image"
-                  />
+                  <img src="assets/essential-bike-maintainence.png" alt="Bike Maintenance Tips"
+                    class="article-card-image" />
                 </div>
                 <div class="article-card-body">
                   <h5 class="article-card-title">
@@ -299,9 +206,7 @@
                     Keep your bike in top shape with these simple yet effective
                     maintenance tips.
                   </p>
-                  <a href="blog.html" class="article-card-link"
-                    >Read More <i class="bi bi-arrow-right"></i
-                  ></a>
+                  <a href="blog.html" class="article-card-link">Read More <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -309,11 +214,8 @@
             <div class="card-small-article">
               <div class="article-card article-card-small">
                 <div class="article-card-image-container">
-                  <img
-                    src="assets/car-open-bonnet-parrked-in-garage.png"
-                    alt="Car Servicing Guide"
-                    class="article-card-image-small"
-                  />
+                  <img src="assets/car-open-bonnet-parrked-in-garage.png" alt="Car Servicing Guide"
+                    class="article-card-image-small" />
                 </div>
                 <div class="article-card-body-small">
                   <h5 class="article-card-title-small">
@@ -323,9 +225,7 @@
                     Regular servicing keeps your car running efficiently—here's
                     when and why it matters.
                   </p>
-                  <a href="#" class="article-card-link"
-                    >Read More <i class="bi bi-arrow-right"></i
-                  ></a>
+                  <a href="#" class="article-card-link">Read More <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -334,65 +234,48 @@
       </section>
       <div class="expert-care-banner">
         <div class="expert-card">
-          <img
-            src="assets/getexpertcareee.png"
-            alt="Get Expert Care from Verified Professionals"
-            class="expert-card-img"
-          />
+          <img src="assets/getexpertcareee.png" alt="Get Expert Care from Verified Professionals"
+            class="expert-card-img" />
           <!-- <img
-            src="assets/trained-certified-verified-pro-service.png"
-            alt="100% Verified"
-            class="verified-badge"
-          /> -->
+              src="assets/trained-certified-verified-pro-service.png"
+              alt="100% Verified"
+              class="verified-badge"
+            /> -->
         </div>
       </div>
       <a href="referral.html" class="ride-together-banner mb-3">
         <div class="ride-card">
-          <img
-            src="assets/group-231.png"
-            alt="Ride Together, Earn Together"
-            class="ride-card-img"
-          />
+          <img src="assets/group-231.png" alt="Ride Together, Earn Together" class="ride-card-img" />
         </div>
       </a>
       <div class="spacer-200"></div>
     </div>
+  </div>
 
-    <div class="bottom-nav ">
-      <div class="row text-center g-0 w-100">
-        <div class="col">
-          <a href="bookings.html" class="nav-item">
-            <img
-              src="assets/navbar-my-booking-icon.png"
-              class="nav-icon"
-              alt="Bookings"
-            />
-            <span>My Bookings</span>
-          </a>
-        </div>
-        <div class="col">
-          <a href="home.html" class="nav-item active">
-            <img
-              src="assets/navbar-home-active-icon.png"
-              class="nav-icon"
-              alt="Home"
-            />
-            <span>Home</span>
-          </a>
-        </div>
-        <div class="col">
-          <a href="account.html" class="nav-item">
-            <img
-              src="assets/navbar-account-icon.png"
-              class="nav-icon"
-              alt="Account"
-            />
-            <span>Account</span>
-          </a>
-        </div>
+  <div class="bottom-nav ">
+    <div class="row text-center g-0 w-100">
+      <div class="col">
+        <a href="bookings.html" class="nav-item">
+          <img src="assets/navbar-my-booking-icon.png" class="nav-icon" alt="Bookings" />
+          <span>My Bookings</span>
+        </a>
+      </div>
+      <div class="col">
+        <a href="home.html" class="nav-item active">
+          <img src="assets/navbar-home-active-icon.png" class="nav-icon" alt="Home" />
+          <span>Home</span>
+        </a>
+      </div>
+      <div class="col">
+        <a href="account.html" class="nav-item">
+          <img src="assets/navbar-account-icon.png" class="nav-icon" alt="Account" />
+          <span>Account</span>
+        </a>
       </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

@@ -497,6 +497,33 @@ body {
 .home-page .home-top-orange-bg {
     background-color: var(--theme-color);
     padding: 1rem 1rem 1.5rem 1rem; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 430px;
+    z-index: 10;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.home-page .home-top-orange-bg::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 10;
+    background: var(--bg-light-grey);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.home-content-container {
+    margin-top: 190px;
+    z-index: 1;
+    overflow-y: auto;
+    flex-grow: 1;
+    padding-top: 20px;
+    background-color: var(--bg-light-grey);
 }
 
 .home-page .home-header-content {
