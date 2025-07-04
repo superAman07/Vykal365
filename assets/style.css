@@ -1524,6 +1524,12 @@ body {
     margin-top: -79px;
     width: 100%;
 }
+.app-container-my-account .referral-header-content-blog { 
+    z-index: 1;
+    /* margin-top: -79px; */
+    margin: auto;
+    width: 100%;
+}
 
 .blog-header-bg {
     background: #fff7f4;
@@ -1536,6 +1542,42 @@ body {
     align-items: center;  
     z-index: 1;
     overflow: hidden;
+}
+.app-container-my-account .blog-header-bg {
+    background: #fff7f4;
+    padding: 18px 1rem;
+    position: fixed;  
+    width: 100%;
+    height: 144px;
+    min-height: 144px;  
+    display: flex;  
+    align-items: center;  
+    z-index: 10;
+    overflow: hidden;
+}
+.app-container-my-account .blog-header-bg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background-color: var(--bg-light-grey);
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+.app-container-my-account .blog-header-bg::before {
+    content: '';
+    position: absolute;
+    bottom: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    max-width: 368px;
+    height: 4px;
+    background-color: #FFAC8C;
+    border-radius: 14px;
+    z-index: 11;
 }
 .blog-header-bg .referral-header-content-blog h1 {
     color: #404040;
@@ -1722,6 +1764,12 @@ body {
   z-index: 1;
   position: relative;
   margin-top: -105px;
+  text-align: center;
+}
+.app-container-my-account #bookings_empty {
+  z-index: 1;
+  position: relative;
+  margin-top: 94px !important;
   text-align: center;
 }
 #bookings_empty .indicator {
