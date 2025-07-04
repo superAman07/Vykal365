@@ -1,95 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Bookings - Vykal 365</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
-  </head>
-  <body class="referral-page">
-    <div class="app-container position-relative">
-      <div class="blog-header-bg">
-        <img
-          src="assets/referalbgpatterncream.png"
-          alt="Pattern"
-          class="background-pattern"
-        />
-        <div class="referral-header-content-blog d-flex align-items-center">
-          <a
-            href="home.html"
-            class="btn btn-link text-white me-2 fs-4 back-button-circled"
-            title="Go to Home"
-          >
-            <img
-              src="assets/arrow-curved-left-orange.png"
-              alt="Back"
-              class="back-arrow-icon"
-            />
-          </a>
-          <h1 class="h5">My Bookings</h1>
-        </div>
-      </div>
 
-      <div id="bookings_empty">
-        <div class="indicator"></div>
-        <div class="card">
-          <div class="content">
-            <div class="img-wrap">
-              <img
-                src="assets/mybookingmiddlelayer.png"
-                alt="Empty state illustration"
-              />
-            </div>
-            <div class="text-wrap">
-              <h2>Looks empty here…</h2>
-              <p>Schedule a service to keep your ride in top shape!</p>
-            </div>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bookings - Vykal 365</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body class="referral-page">
+  <div class="app-container position-relative">
+    <div class="blog-header-booking-bg">
+      <img src="assets/referalbgpatterncream.png" alt="Pattern" class="background-pattern-bookings" />
+      <div class="referral-header-content-blog d-flex align-items-center">
+        <a href="home.html" class="btn btn-link text-white me-2 fs-4 back-button-circled" title="Go to Home">
+          <img src="assets/arrow-curved-left-orange.png" alt="Back" class="back-arrow-icon" />
+        </a>
+        <h1 class="h5">My Bookings</h1>
       </div>
-      <div class="bottom-nav">
-        <div class="row text-center g-0 w-100">
-          <div class="col">
-            <a href="bookings.html" class="nav-item active">
-              <img
-                src="assets/navbar-my-booking-active-icon.png"
-                class="nav-icon"
-                alt="Bookings"
-              />
-              <span>My Bookings</span>
-            </a>
+    </div>
+
+    <div id="bookings_empty" class="bookings_empty_bookings">
+      <!-- <div class="indicator"></div> -->
+      <div class="card">
+        <div class="content">
+          <div class="img-wrap">
+            <img src="assets/mybookingmiddlelayer.png" alt="Empty state illustration" />
           </div>
-          <div class="col">
-            <a href="home.html" class="nav-item">
-              <img
-                src="assets/navbar-home-icon.png"
-                class="nav-icon"
-                alt="Home"
-              />
-              <span>Home</span>
-            </a>
-          </div>
-          <div class="col">
-            <a href="account.html" class="nav-item">
-              <img
-                src="assets/navbar-account-icon.png"
-                class="nav-icon"
-                alt="Account"
-              />
-              <span>Account</span>
-            </a>
+          <div class="text-wrap">
+            <h2>Looks empty here…</h2>
+            <p>Schedule a service to keep your ride in top shape!</p>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <div class="bottom-nav">
+      <div class="row text-center g-0 w-100">
+        <div class="col">
+          <a href="bookings.html" class="nav-item active">
+            <img src="assets/navbar-my-booking-active-icon.png" class="nav-icon" alt="Bookings" />
+            <span>My Bookings</span>
+          </a>
+        </div>
+        <div class="col">
+          <a href="home.html" class="nav-item">
+            <img src="assets/navbar-home-icon.png" class="nav-icon" alt="Home" />
+            <span>Home</span>
+          </a>
+        </div>
+        <div class="col">
+          <a href="account.html" class="nav-item">
+            <img src="assets/navbar-account-icon.png" class="nav-icon" alt="Account" />
+            <span>Account</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
