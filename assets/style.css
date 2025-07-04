@@ -3239,6 +3239,48 @@ body .my-booking-view-invoice-page {
     align-items: center;  
     z-index: 1;
 }
+.bike-service-header-bg-bike-6 .background-pattern { 
+    object-fit: inherit;
+    z-index: 0;
+}
+.bike-service-header-bg-bike-6::before {
+    content: '';
+    position: absolute;
+    bottom: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    max-width: 368px;
+    height: 4px;
+    background-color: #A8CCFF;
+    border-radius: 14px;
+    z-index: 11;
+}
+.bike-service-header-bg-bike-6 { 
+    background: linear-gradient(to bottom, #3e78cc calc(100% - 2px), transparent 0);
+    padding: 18px 1rem;
+    position: fixed;  
+    max-width: 430px;
+    width: 100%;
+    height: 144px;
+    min-height: 144px;  
+    display: flex;  
+    align-items: flex-start;  
+    z-index: 10;
+    overflow-y: hidden;
+}
+.bike-service-header-bg-bike-6::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 14px;
+    background: linear-gradient(0deg, #e9f2ff, #e8f1ff);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
 .bike-service-header-content-bike-service {
     display: flex; 
     justify-content: space-between;
@@ -3283,6 +3325,12 @@ body .my-booking-view-invoice-page {
     margin-top: auto;
     z-index: 2;
 }
+.bike-service-header-bg-bike-6 .bike-service-header-content-bike-service h1 {
+    color: #ffff;
+    font-weight: 500;
+    margin-top: auto;
+    z-index: 2;
+}
 .bike-service-header-bg .background-pattern {
     position: absolute;
     top: 0;
@@ -3290,6 +3338,18 @@ body .my-booking-view-invoice-page {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+.bike-service-header-bg-bike-6 .background-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bike-service-content {
+    margin-top: 130px;
 }
 .bike-service-overlap {
     margin-top: -114px;
