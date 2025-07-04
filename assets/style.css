@@ -3230,16 +3230,41 @@ body .my-booking-view-invoice-page {
     object-fit: inherit;
     z-index: 0;
 }
+.bike-service-header-bg::before {
+    content: '';
+    position: absolute;
+    bottom: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    max-width: 368px;
+    height: 4px;
+    background-color: #A8CCFF;
+    border-radius: 14px;
+    z-index: 11;
+}
 .bike-service-header-bg { 
     background:#3e78cc;
     padding: 18px 1rem;
-    position: relative;  
+    position: fixed;  
+    max-width: 430px;
     width: 100%;
-    height: 233px;
-    min-height: 233px;  
+    height: 145px;
+    min-height: 140px;  
     display: flex;  
     align-items: center;  
-    z-index: 1;
+    z-index: 10;
+}
+.bike-service-header-bg::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 14px;
+    background: linear-gradient(0deg, #e9f2ff, #e8f1ff);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .bike-service-header-content-bike-service {
     display: flex; 
@@ -3249,7 +3274,7 @@ body .my-booking-view-invoice-page {
     margin-top: 30px;
     max-height: 60px;
     height: 100%;
-    margin-bottom: auto; 
+    margin-bottom: 0; 
 }
 .bike-wrench-icon-top-header {
     width: 60px;
@@ -3260,6 +3285,14 @@ body .my-booking-view-invoice-page {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border: 2px solid #FF5505;
+}
+.bike-service-content {
+    margin-top: 140px;
+    z-index: 1;
+    overflow-y: auto;
+    flex-grow: 1;
+    position: relative;
 }
 
 .bike-service-header-content-bike-service .bike-wrench-icon-top-header img{
@@ -3294,7 +3327,7 @@ body .my-booking-view-invoice-page {
     z-index: -1;
 }
 .bike-service-overlap {
-    margin-top: -114px;
+    margin-top: 0px;
     position: relative;
     z-index: 1;
 }
@@ -3307,6 +3340,7 @@ body .my-booking-view-invoice-page {
     border-top-right-radius: 14px;
     display: flex;
     justify-content: center;
+    padding-top: 16px;
 }
 .top-blue-line {
     height: 4px;
@@ -3316,7 +3350,9 @@ body .my-booking-view-invoice-page {
     background-color: #A8CCFF;
     border-radius:14px;
     position: absolute;
-    top: 0;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     margin-top: -2px;
     z-index: 2;
 }
