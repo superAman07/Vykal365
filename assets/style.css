@@ -4126,21 +4126,46 @@ body .my-booking-view-invoice-page {
     margin: 0 auto; 
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: auto;
+    flex-direction: column; 
     padding-bottom: 70px;
 }
 .my-cart-app-container .my-cart-header-bg {
     background: #fff7f4;
     padding: 1rem 1rem;
-    position: relative;
+    position: fixed;
     width: 100%;
-    height: 212px;
-    min-height: 212px;
+    height: 144px;
+    min-height: 144px;
     display: flex;
     align-items: center;
-    z-index: 1;
+    z-index: 100;
+}
+.my-cart-header-bg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background-color: var(--bg-light-grey);
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    z-index:1;
+    margin-top: 30px;
+    width: 100%;
+}
+.my-cart-header-bg::before {
+    content: '';
+    position: absolute;
+    bottom: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    max-width: 368px;
+    height: 4px;
+    background-color: #FFD579;
+    border-radius: 14px;
+    z-index: 11;
 }
 .my-cart-header-bg .background-pattern {
     position: absolute;
@@ -4154,7 +4179,7 @@ body .my-booking-view-invoice-page {
 }
 .my-cart-header-content-blog {
     z-index: 1;
-    margin-top: -63px;
+    margin-top: 0px;
     width: 100%;
 }
 .my-cart-header-content-blog .h5 {
@@ -4164,7 +4189,7 @@ body .my-booking-view-invoice-page {
     font-size: 18px;
 }
 .my-cart-app-container .my-cart-overlap {
-    margin-top: -80px;
+    margin-top: 123px;
     position: relative;
     z-index: 10;
 }
