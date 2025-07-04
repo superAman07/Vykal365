@@ -4237,6 +4237,7 @@ body .my-booking-view-invoice-page {
     padding: 1rem 1rem;
     position: fixed;
     width: 100%;
+    max-width: 430px;
     height: 144px;
     min-height: 144px;
     display: flex;
