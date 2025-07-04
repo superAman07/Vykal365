@@ -3243,8 +3243,8 @@ body .my-booking-view-invoice-page {
     border-radius: 14px;
     z-index: 11;
 }
-.bike-service-header-bg { 
-    background:#3e78cc;
+.bike-service-header-bg {  
+    background: linear-gradient(to bottom, #3e78cc calc(100% - 2px), transparent 0);
     padding: 18px 1rem;
     position: fixed;  
     max-width: 430px;
@@ -3294,6 +3294,7 @@ body .my-booking-view-invoice-page {
     overflow-y: auto;
     flex-grow: 1;
     position: relative;
+    background-color: var(--bg-light-grey);
 }
 
 .bike-service-header-content-bike-service .bike-wrench-icon-top-header img{
