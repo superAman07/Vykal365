@@ -1548,6 +1548,7 @@ body {
     padding: 15px 1rem 0;
     position: fixed;  
     width: 100%;
+    max-width: 430px;
     height: 119px;
     min-height: 119px;  
     display: flex;  
