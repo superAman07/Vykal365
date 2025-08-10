@@ -160,8 +160,7 @@
                   />
                   <span class="select-your-vehicle-name">Aprilia Caponord</span>
                 </div>
-              </div>
-
+              </div> 
               <button type="button" class="btn-next" disabled>Next</button>
             </div>
           </div>
@@ -177,9 +176,7 @@
       vehicleCards.forEach((card) => {
         card.addEventListener("click", () => {
           vehicleCards.forEach((c) => c.classList.remove("selected"));
-
           card.classList.add("selected");
-
           nextButton.classList.add("active");
           nextButton.disabled = false;
         });
