@@ -1,0 +1,2 @@
+AwbNo	CustRefNo	Pickup Request DT	Booking Date	Booking Ro	Booking Branch	Booking City	Customer MasterCode	Consignee	Destination Ro	Destination Branch	Destination City	Pin	Mode	PCS	Actual Weight	Charge Weight	Invoice value	STATUS	Status Date	Remark Details	Current RO	Current Branch	Dox / Non Dox	DSR_CONTENTS
+<img width="4232" height="25" alt="image" src="https://github.com/user-attachments/assets/0a9b5377-964a-4b5f-83df-ff296e8d3461" />
